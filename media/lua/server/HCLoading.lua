@@ -360,7 +360,7 @@ HCSprites.getSprites = function()
 	getTexture("Item_HCJarredpeach.png");
 	getTexture("Item_HCJarredorange.png");
 	getTexture("Item_HCJarredgrapes.png");
-	getTexture("Item_HCJarrednberries.png");	
+	getTexture("Item_HCJarredberries.png");	
 --Food Juice	
 	getTexture("Item_HCWaterbottleapplejuice.png");
 	getTexture("Item_HCWaterbottlegrapejuice.png");
@@ -961,7 +961,7 @@ end
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, 1);
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, "Hydrocraft.HCJarredgrapes");
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, 1);
-	table.insert(SuburbsDistributions["kitchen"]["counter"].items, "Hydrocraft.HCJarrednberries");
+	table.insert(SuburbsDistributions["kitchen"]["counter"].items, "Hydrocraft.HCJarredberries");
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, 1);
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, "Hydrocraft.HCJar");
 	table.insert(SuburbsDistributions["kitchen"]["counter"].items, 1);
@@ -3092,7 +3092,7 @@ end
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, 10);		
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, "Hydrocraft.HCCardboarbox");
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, 5);	
-	table.insert(SuburbsDistributions["poststorage"]["all"].items, "Hydrocraft.Rubberband");
+	table.insert(SuburbsDistributions["poststorage"]["all"].items, "Hydrocraft.RubberBand");
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, 5);	
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, "Hydrocraft.HCRubberbandbox");
 	table.insert(SuburbsDistributions["poststorage"]["all"].items, 5);
@@ -4676,7 +4676,7 @@ end
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, 1);
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, "Hydrocraft.HCTortillachipsbag");
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, 1);
-	table.insert(SuburbsDistributions["grocery"]["shelves"].items, "Hydrocraft.HCJarHoney");
+	table.insert(SuburbsDistributions["grocery"]["shelves"].items, "Hydrocraft.HCJarhoney");
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, 1);
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, "Hydrocraft.HCDogkibble");
 	table.insert(SuburbsDistributions["grocery"]["shelves"].items, 1);
