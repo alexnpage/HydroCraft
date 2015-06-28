@@ -337,7 +337,7 @@ module Hydrocraft
 		Icon		=	HCBookthesaurus,
 		BoredomChange	=	-50,
         	ReplaceOnUse    =   	HCBookthesaurus,
-	}'
+	}
 
 	item HCBooktreeguide
 	{
@@ -998,9 +998,8 @@ module Hydrocraft
         	ReplaceOnUse    =   	HCBookwinemaking,
 	}
 
-/************************RECIPES************************/	
+/************************RECIPES************************/
 
 
-    
 
 }
