@@ -92,7 +92,7 @@ module Hydrocraft
 		MinimumSwingTime		=	1.5,
 		MaxHitCount			=	1,
 		MultipleHitConditionAffected	=	FALSE,
-		NPCSoundBosst			=	1.5,
+		NPCSoundBoost			=	1.5,
 		ProjectileCount			=	1,
 		PushBackMod			=	0.45,
 		RecoilDelay			=	10,
@@ -148,7 +148,7 @@ module Hydrocraft
 		MinimumSwingTime		=	1.5,
 		MaxHitCount			=	1,
 		MultipleHitConditionAffected	=	FALSE,
-		NPCSoundBosst			=	1.5,
+		NPCSoundBoost			=	1.5,
 		ProjectileCount			=	1,
 		PushBackMod			=	0.2,
 		RecoilDelay			=	10,
@@ -307,7 +307,7 @@ module Hydrocraft
     }
 
 /************************RECIPES************************/
-    
+
 
 recipe Make Duct Tape Fletching
     {
@@ -390,7 +390,7 @@ recipe Craft Potato Cannon
         DuctTape=2,
         keep Saw,
         keep Screwdriver,
-        
+
         Result:HCPotatocannon,
        	NeedToBeLearn:true,
         Time:400.0,
@@ -403,7 +403,7 @@ recipe Craft Slingshot
         TreeBranch,
 	Woodglue/Glue/Scotchtape/DuctTape,
         keep Saw,
-        
+
         Result:HCSlingshot,
         Time:50.0,
        	Category:Engineer,
@@ -415,7 +415,7 @@ recipe Craft Slingshot
         TreeBranch,
 	Woodglue/Glue/Scotchtape/DuctTape,
         keep Saw,
-        
+
         Result:HCSlingshot,
         Time:50.0,
        	Category:Engineer,
@@ -433,6 +433,6 @@ recipe Unbox BBs
     HCBBbox,
     Result:HCBB=100,
     Time:15,
-    } 
+    }
 
 }
