@@ -1,0 +1,342 @@
+module Base
+{
+	item Fertilizer
+    	{
+        	Type			=	Drainable,
+        	DisplayName		=	NPK Fertilizer,
+       		Icon			=	TZ_IndieStoneNPK,
+        	Weight			=	2.0,
+       		UseDelta		=	0.25,
+        	UseWhileEquipped	=	false,
+		ReplaceOnDeplete	=	EmptySandbag,
+    	}
+
+    	item NormalHikingBag
+	{
+		WeightReduction		=	70,
+		Weight			=	0.5,
+		Type			=	Container,
+		Capacity		=	20,
+		DisplayName		=	Normal Hiking Bag,
+		Icon			=	HCNormalhikingbag,
+        	CanBeEquipped 		= 	Back,
+        	OpenSound   		=   	PZ_OpenBag,
+        	CloseSound   		=   	PZ_CloseBag,
+        	PutInSound   		=   	PZ_PutInBag,
+	}
+
+    	item BigHikingBag
+	{
+		WeightReduction		=	80,
+		Weight			=	0.5,
+		Type			=	Container,
+		Capacity		=	22,
+		DisplayName		=	Big Hiking Bag,
+		Icon			=	HCBighikingbag,
+        	CanBeEquipped 		= 	Back,
+        	OpenSound   		=   	PZ_OpenBag,
+        	CloseSound   		=   	PZ_CloseBag,
+        	PutInSound   		=   	PZ_PutInBag,
+	}
+
+	item BookTrapping1
+    	{
+        	NumberOfPages		=	220,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Trapping for Beginners,
+        	Icon			=	HCBooktrapping,
+        	SkillTrained 		= 	Trapping,
+        	LvlSkillTrained 	= 	1,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+    	item BookTrapping2
+    	{
+        	NumberOfPages		=	260,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Trapping for Intermediates,
+        	Icon			=	HCBooktrapping,
+        	SkillTrained 		= 	Trapping,
+        	LvlSkillTrained 	= 	3,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookTrapping3
+    	{
+        	NumberOfPages		=	300,
+       	 	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Advanced Trapping,
+        	Icon			=	HCBooktrapping,
+        	SkillTrained 		= 	Trapping,
+        	LvlSkillTrained 	= 	5,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookTrapping4
+    	{
+        	NumberOfPages		=	340,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Expert Trapping,
+        	Icon			=	HCBooktrapping,
+        	SkillTrained 		= 	Trapping,
+        	LvlSkillTrained 	= 	7,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookTrapping5
+    	{
+        	NumberOfPages		=	380,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Master Trapping,
+        	Icon			=	HCBooktrapping,
+        	SkillTrained 		= 	Trapping,
+        	LvlSkillTrained 	= 	9,
+        	NumLevelsTrained 	= 	2,
+     	}
+
+	item BookFishing1
+    	{
+        	NumberOfPages		=	220,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Fishing for Beginners,
+        	Icon			=	HCBookfishing,
+        	SkillTrained 		= 	Fishing,
+        	LvlSkillTrained 	= 	1,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+    	item BookFishing2
+    	{
+        	NumberOfPages		=	260,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Fishing for Intermediates,
+        	Icon			=	HCBookfishing,
+        	SkillTrained 		= 	Fishing,
+        	LvlSkillTrained 	= 	3,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookFishing3
+    	{
+        	NumberOfPages		=	300,
+        	Weight			=	0.8,
+       	 	Type			=	Literature,
+        	DisplayName		=	Advanced Fishing,
+        	Icon			=	HCBookfishing,
+        	SkillTrained 		= 	Fishing,
+        	LvlSkillTrained 	= 	5,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookFishing4
+    	{
+        	NumberOfPages		=	340,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Expert Fishing,
+        	Icon			=	HCBookfishing,
+        	SkillTrained 		= 	Fishing,
+        	LvlSkillTrained 	= 	7,
+        	NumLevelsTrained 	= 	2,
+    	}
+
+     	item BookFishing5
+    	{
+        	NumberOfPages		=	380,
+        	Weight			=	0.8,
+        	Type			=	Literature,
+        	DisplayName		=	Master Fishing,
+        	Icon			=	HCBookfishing,
+        	SkillTrained 		= 	Fishing,
+        	LvlSkillTrained 	= 	9,
+        	NumLevelsTrained 	= 	2,
+     	}
+
+	item BookCarpentry1
+	{
+		NumberOfPages		=	220,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Carpentry for Beginners,
+		Icon			=	HCBookcarpentry,
+        	SkillTrained 		= 	Carpentry,
+        	LvlSkillTrained 	= 	1,
+        	NumLevelsTrained 	= 	2,
+	}
+
+	item BookCarpentry2
+	{
+		NumberOfPages		=	260,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Carpentry for Intermediates,
+		Icon			=	HCBookcarpentry,
+        	SkillTrained 		= 	Carpentry,
+        	LvlSkillTrained 	= 	3,
+        	NumLevelsTrained 	= 	2,
+	}
+
+    	item BookCarpentry3
+	{
+		NumberOfPages		=	300,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Advanced Carpentry,
+		Icon			=	HCBookcarpentry,
+        	SkillTrained 		= 	Carpentry,
+        	LvlSkillTrained 	= 	5,
+        	NumLevelsTrained 	= 	2,
+	}
+
+    	item BookCarpentry4
+	{
+		NumberOfPages		=	340,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Expert Carpentry,
+		Icon			=	HCBookcarpentry,
+        	SkillTrained 		= 	Carpentry,
+        	LvlSkillTrained 	= 	7,
+        	NumLevelsTrained 	= 	2,
+	}
+
+    	item BookCarpentry5
+	{
+		NumberOfPages		=	380,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Master Carpentry,
+		Icon			=	HCBookcarpentry,
+        	SkillTrained 		= 	Carpentry,
+        	LvlSkillTrained 	= 	9,
+        	NumLevelsTrained 	= 	2,
+    	}
+  
+    	item BookCooking1
+	{
+		NumberOfPages		=	220,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Cooking for Beginners,
+		Icon			=	HCBookcooking,
+        	SkillTrained 		= 	Cooking,
+        	LvlSkillTrained 	= 	1,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookCooking2
+	{
+		NumberOfPages		=	260,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Cooking for Intermediates,
+		Icon			=	HCBookcooking,
+        	SkillTrained 		= 	Cooking,
+        	LvlSkillTrained 	= 	3,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookCooking3
+	{
+		NumberOfPages		=	300,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Advanced Cooking,
+		Icon			=	HCBookcooking,
+        	SkillTrained 		= 	Cooking,
+        	LvlSkillTrained 	= 	5,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookCooking4
+	{
+		NumberOfPages		=	340,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Expert Cooking,
+		Icon			=	HCBookcooking,
+        	SkillTrained 		= 	Cooking,
+        	LvlSkillTrained 	= 	7,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookCooking5
+	{
+		NumberOfPages		=	380,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Master Cooking,
+		Icon			=	HCBookcooking,
+        	SkillTrained 		= 	Cooking,
+        	LvlSkillTrained 	= 	9,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookFarming1
+	{
+		NumberOfPages		=	220,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Farming for Beginners,
+		Icon			=	HCBookfarming,
+        	SkillTrained 		= 	Farming,
+        	LvlSkillTrained 	= 	1,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookFarming2
+	{
+		NumberOfPages		=	260,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Farming for Intermediates,
+		Icon			=	HCBookfarming,
+        	SkillTrained 		= 	Farming,
+        	LvlSkillTrained 	= 	3,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookFarming3
+	{
+		NumberOfPages		=	300,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Advanced Farming,
+		Icon			=	HCBookfarming,
+        	SkillTrained 		= 	Farming,
+        	LvlSkillTrained 	= 	5,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookFarming4
+	{
+		NumberOfPages		=	340,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Expert Farming,
+		Icon			=	HCBookfarming,
+        	SkillTrained 		= 	Farming,
+        	LvlSkillTrained 	= 	7,
+        	NumLevelsTrained 	= 	2,
+	}
+  
+    	item BookFarming5
+	{
+		NumberOfPages		=	380,
+		Weight			=	0.8,
+		Type			=	Literature,
+		DisplayName		=	Master Farming,
+		Icon			=	HCBookfarming,
+        	SkillTrained 		= 	Farming,
+        	LvlSkillTrained 	= 	9,
+        	NumLevelsTrained 	= 	2,
+	}
+
+}

@@ -1,0 +1,95 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCBinoculars
+    {
+        Weight    		= 	1,
+	Type			=	Normal,
+        DisplayName         	= 	Binoculars,
+        icon 			= 	HCBinoculars,
+    }
+
+item HCCompass
+    {
+        Weight    = 1,
+        Type    = Normal,
+        DisplayName         = Compass,
+        icon = HCCompass,
+    }
+
+item HCCanteen
+    {
+        Weight    = 1,
+	CanStoreWater	=	TRUE,
+        Type    = Normal,
+        DisplayName         = Canteen,
+	ReplaceOnUseOn	=	WaterSource-HCCanteenfull,
+        icon = HCCanteen,
+    }
+
+item HCCanteenfull
+    {
+	IsWaterSource	=	TRUE,
+	Weight	=	2,
+	CanStoreWater	=	TRUE,
+	Type	=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta	=	0.07,
+	DisplayName	=	Full Canteen,
+	ReplaceOnDeplete	=	HCCanteen,
+	ReplaceOnUseOn	=	WaterSource-HCCanteenfull,
+	Icon	=	HCCanteen,
+    }
+
+/************************WEAPONS************************/
+
+    item HCJackknife
+	{
+		MaxRange	=	0.9,
+		WeaponSprite	=	Knife,
+		MinAngle	=	0,
+		Type	=	Weapon,
+		MinimumSwingTime	=	2,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	Blade,
+		ConditionLowerChanceOneIn	=	20,
+		Weight	=	0.3,
+		SplatNumber	=	0,
+		PushBackMod	=	0.3,
+		MaxDamage	=	0.6,
+		SubCategory	=	Stab,
+		AimingMod	=	0.8,
+		ConditionMax	=	10,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	1,
+		SwingAnim	=	Stab,
+		WeaponWeight	=	1.7,
+		DisplayName	=	Jack Knife,
+		MinRange	=	0.61,
+		CloseKillMove = Jaw_Stab,
+		SwingTime	=	2,
+		MinDamage	=	0.3,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	HCJackknife,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   2,
+        EnduranceMod = 0.5,
+	}
+
+
+/************************RECIPES************************/
+    
+	
+}

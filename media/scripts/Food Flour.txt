@@ -1,0 +1,149 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCGruelbowl
+	{
+		HungerChange		=	-15,
+		Type			=	Food,
+		DisplayName		=	Bowl of Gruel,
+		Weight			=	1,
+		DaysTotallyRotten	=	3,
+		UnhappyChange		=	30,
+		BoredomChange		=	30,
+		Icon			=	BowlFull,
+		ReplaceOnUse		=	Bowl,
+		DaysFresh		=	1,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+	
+item HCGruelbowlsweet
+	{
+		HungerChange		=	-15,
+		Type			=	Food,
+		DisplayName		=	Bowl of Sweetened Gruel,
+		Weight			=	1,
+		DaysTotallyRotten	=	3,
+		UnhappyChange		=	10,
+		BoredomChange		=	10,
+		Icon			=	BowlFull,
+		ReplaceOnUse		=	Bowl,
+		DaysFresh		=	1,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+	
+item HCPancakebatter
+    {
+        	HungerChange		=	-20,
+        	Weight			=	1,
+        	Type			=	Food,
+        	UnhappyChange		=	-10,
+		BoredomChange		=	-10,
+       	 	DisplayName		=	Homemade Pancake Batter,
+        	DaysTotallyRotten	=	5,
+        	DaysFresh 		= 	3,
+        	Icon			=	Pancakes,
+		IsCookable		=	TRUE,
+		DangerousUncooked	=	TRUE,
+		MinutesToCook		=	12,
+		MinutesToBurn		=	17,
+    }
+
+
+item HCPancakeshomemade
+	{
+		HungerChange		=	-20,
+		Weight			=	1,
+		Type			=	Food,
+		UnhappyChange		=	5,
+		BoredomChange		=	5,
+		IsCookable		=	TRUE,
+		DangerousUncooked	=	TRUE,
+    		MinutesToCook		=	12,
+		MinutesToBurn		=	17,
+		ReplaceOnUse		=	Pan,
+		ReplaceOnCooked		=	Hydrocraft.HCPancakeshomemadecooked,
+		DisplayName		=	Uncooked Homemade Pancake,
+		Icon			=	Pancakes,
+	}
+
+item HCPancakeshomemadecooked
+	{
+		HungerChange		=	-20,
+		Weight			=	1,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		BoredomChange		=	-10,
+		ReplaceOnUse		=	Pan,
+		DisplayName		=	Cooked Homemade Pancake,
+		Icon			=	Pancakes,
+	}
+
+
+/************************RECIPES************************/
+  
+recipe Make Bowl of Gruel
+	{
+		Bowl,
+       		Water=2,
+       		Flour=1,
+       		Result:HCGruelbowl,
+       		Time:30.0,
+	   	Category:Cooking,
+	}
+	
+recipe Make Bowl of Sweetened Gruel
+	{
+		Bowl,
+       		Water=2,
+       		Flour=1,
+		Sugar=1,
+       		Result:HCGruelbowlsweet,
+       		Time:30.0,
+	   	Category:Cooking,
+	}
+	
+recipe Make Dry Ramen Noodles
+	{
+		keep RollingPin,
+		keep KitchenKnife/HuntingKnife/ButterKnife,
+		Water=1,
+		Flour=1,
+		Result:Ramen,
+		Time:150.0,
+	   	Category:Cooking,
+	}
+	
+recipe Make Homemade Pancake Batter
+	{
+	   	keep Bowl,
+		keep HCWhisk/HCEggbeater,
+       		Water=1,
+       		Flour=1,
+	   	Sugar=1,
+	   	Yeast=1,
+	   	Egg/Wildeggs,
+      	 	Result:HCPancakebatter,
+       		Time:30.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Homemade Pancakes
+	{
+	   	keep HCIcecreamscoop/HCLadle,
+	   	HCPancakebatter,
+       		Pan,
+      	 	Result:HCPancakeshomemade,
+       		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:hcbowl,
+	}
+	
+		
+}

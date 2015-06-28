@@ -1,0 +1,229 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCBeetle
+    {
+        HungerChange        =    -3,    
+        Weight    = 0.1,
+        Type    =    Food,
+        UnhappyChange        =    20,
+        DisplayName         = Beetle,
+        icon = HCBeetle,
+    }
+
+item HCBollweevil
+    {
+        HungerChange        =    -1,    
+        Weight    = 0.1,
+        Type    =    Food,
+        UnhappyChange        =    20,
+        DisplayName         = Boll Weevil,
+        icon = HCBollweevil,
+    }
+
+item HCLadybug
+    {
+        HungerChange        =    -1,    
+        Weight    = 0.1,
+        Type    =    Food,
+        UnhappyChange        =    20,
+        DisplayName         = Ladybug,
+        icon = HCLadybug,
+    }
+
+item HCDragonfly
+    {
+        HungerChange        =    -1,    
+        Weight    = 0.1,
+        Type    =    Food,
+        UnhappyChange        =    20,
+        DisplayName         = Dragonfly,
+        icon = HCDragonfly,
+    }
+
+item HCGardenspider
+    {
+        HungerChange        =    -1,    
+        Weight    = 0.1,
+        Type    =    Food,
+        UnhappyChange        =    20,
+        DisplayName         = Garden Spider,
+        icon = HCGardenspider,
+    }
+
+item HCCaterpillar
+   {
+	HungerChange	=	-1,
+	Weight	=	0.1,
+	Type	=	Food,
+        UnhappyChange        =    20,
+	DisplayName	=	Caterpillar,
+	Icon	=	HCCaterpillar,
+        Poison = true,
+        PoisonDetectionLevel = 1,
+        PoisonPower = 5,
+        UseForPoison = 1,
+   }
+
+item HCBumblebee
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Bumblebee,
+        icon = HCBumblebee,
+    }
+
+item HCCandleberry
+    {
+        HungerChange        =    -2,    
+        Weight    = 0.1,
+        Type    =    Food,
+        DisplayName         = Candleberry,
+        icon = HCBeetle,
+    }
+
+item HCGooseegg
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Goose Egg,
+        icon = HCGooseegg,
+    }
+
+item HCGrass
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Grass,
+        icon = HCGrass,
+    }
+
+item HCBark
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Bark,
+        icon = HCBark,
+    }
+
+item HCBirchbark
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Birch Bark,
+        icon = HCBirchbark,
+    }
+
+item HCFircone
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Fir Cone,
+        icon = HCFircone,
+    }
+
+item HCHickorynuts
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Hickory Nuts,
+        icon = HCHickorynuts,
+    }
+
+item HCHickoryleaves
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Hickory Leaves,
+        icon = HCHickoryleaves,
+    }
+
+item HCOakleaves
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Oak Leaves,
+        icon = HCOakleaves,
+    }
+
+item HCWillowbranch
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Willow Branch,
+        icon = HCWillowbranch,
+    }
+
+item HCPinebough
+    {
+        Weight    = 0.3,
+        Type    = Normal,
+        DisplayName         = Pine Bough,
+        icon = HCPinebough,
+    }
+
+item HCFirbough
+    {
+        Weight    = 0.3,
+        Type    = Normal,
+        DisplayName         = Fir Bough,
+        icon = HCFirbough,
+    }
+
+item HCWhitefeathers
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = White Feathers,
+        icon = HCWhitefeathers,
+    }
+
+item HCStripedfeather
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Striped Feather,
+        icon = HCStripedfeather,
+    }
+
+item HCBluejayfeather
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Blue Jay Feather,
+        icon = HCBluejayfeather,
+    }
+
+item HCDeerpoop
+    {
+        Weight    = 0.2,
+        Type    = Normal,
+        DisplayName         = Deer Poop,
+        icon = HCDeerpoop,
+    }
+
+item HCCowpoop
+    {
+        Weight    = 0.2,
+        Type    = Normal,
+        DisplayName         = Cow Poop,
+        icon = HCCowpoop,
+    }
+
+item HCStonearrowhead
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Stone Arrowhead,
+        icon = HCStonearrowhead,
+    }
+
+}

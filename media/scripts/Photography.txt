@@ -1,0 +1,49 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCCamera
+    {
+        Weight    = 1,
+        Type    = Normal,
+        DisplayName         = Camera,
+        icon = HCCamera,
+    }
+
+
+item HCFilmcanister
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Film Canister,
+        icon = HCFilmcanister,
+    }
+
+
+item HCFilmroll
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Roll of Film,
+        icon = HCFilmroll,
+    }
+
+
+
+/************************WEAPONS************************/
+
+
+
+/************************RECIPES************************/	
+
+
+    
+
+}

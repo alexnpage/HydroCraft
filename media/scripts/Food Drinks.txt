@@ -1,0 +1,277 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCHotcuppa
+{
+	FatigueChange			=	-5,
+	HungerChange			=	-5,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-5,
+	ThirstChange			=	-50,
+	DisplayName			=	Hot Cuppa,
+	StressChange			=	-10,
+	ReplaceOnUse			=	Mugl,
+	Icon				=	HCHotcuppa,
+}
+
+item HCCoco
+	{
+	Weight				=	1,
+	Type				=	Drainable,
+	UseWhileEquipped		=	FALSE,
+	UseDelta			=	0.2,
+	DisplayName			=	Cocoa Powder,
+	Icon				=	HCCoco,
+	}
+	
+item HCCococup
+	{
+	HungerChange			=	-5,
+	UnhappyChange			=	-10,
+	StressChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	ThirstChange			=	-50,
+	DisplayName			=	Cup of Hot Chocolate,
+	ReplaceOnUse			=	Mugl,
+	Icon				=	HCCococup,
+	CustomContextMenu 		= 	Drink,
+	}
+	
+item HCCoffeeblack
+	{
+	FatigueChange			=	-15,
+	UnhappyChange			=	-5,
+	StressChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	ThirstChange			=	-50,
+	DisplayName			=	Cup of Black Coffee,
+	ReplaceOnUse			=	Mugl,
+	Icon				=	HCCoffeecup,
+	CustomContextMenu 		= 	Drink,
+	}
+	
+item HCCoffeeirish
+	{
+	FatigueChange			=	-15,
+	UnhappyChange			=	-15,
+	StressChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	ThirstChange			=	-50,
+	DisplayName			=	Cup of Irish Coffee,
+	ReplaceOnUse			=	Mugl,
+	Icon				=	HCCoffeecup,
+	CustomContextMenu 		= 	Drink,
+	}
+
+item HCApplecider
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Apple Cider,
+		Icon			=	HCApplecider,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+	
+item HCSodacherry
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Cherry Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodacherry,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodacola
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Cola Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodacola,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodacream
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Cream Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodacream,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodadrpepper
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Dr. Pickins Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodadrpepper,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodagingerale
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Ginger Ale Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodagingerale,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodagrape
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Grape Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodagrape,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodagrapefruit
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Grapefruit Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodagrapefruit,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodalemonlime
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Lemon Lime Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodalemonlime,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodapineapple
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Pineapple Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodapineapple,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+item HCSodarootbeer
+	{
+		HungerChange		=	-12,
+		Weight			=	0.8,
+		Type			=	Food,
+		UnhappyChange		=	-10,
+		ThirstChange		=	-85,
+		DisplayName		=	Root Beer Soda,
+		ReplaceOnUse		=	PopBottleEmpty,
+		Icon			=	HCSodarootbeer,
+		CustomContextMenu 	= 	Drink,
+		CustomEatSound 		= 	PZ_DrinkingFromBottle,
+	}
+
+
+/************************RECIPES************************/
+    
+
+recipe Make Hot Drink
+    {
+	HCClaymug,
+	Water,
+	Coffee/Teabag,
+	Sugar,
+	Result:HCHotcuppa,
+	Time:70.0,
+	Category:Cooking,
+    }
+
+recipe Make Cup of Hot Chocolate
+	{
+		Mugl,
+		Milk/HCUHTmilk/HCSoymilk,
+		Coco,
+		Result:HCCococup,
+		Time:70.0,
+	   	Category:Cooking,	  
+}	
+
+recipe Brew Black Coffee
+	{
+		Mugl,
+		Water,
+		Coffee,
+		Result:HCCoffeeblack,
+		Time:70.0,
+	   	Category:Cooking,	  
+	}
+	
+recipe Brew Irish Coffee
+	{
+		Mugl,
+		Water,
+		Coffee,
+		WhiskeyHalf/WhiskeyFull,
+		Result:HCCoffeeirish,
+		Time:70.0,
+	   	Category:Cooking,	  
+	}
+	
+}

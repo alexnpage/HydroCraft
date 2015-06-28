@@ -1,0 +1,319 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCBakedpotato
+	{
+	HungerChange			=	-35,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	Baked Potato,
+	Icon				=	HCBakedpotato,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	}
+
+item HCHashbrowns
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-10,
+	Weight				=	2,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Hashbrowns,
+	DaysFresh			=	3,
+	ReplaceOnUse			=	Pan, 
+	Icon				=	HCHashbrowns,
+}
+
+item HCPotatopancakes
+	{
+	HungerChange			=	-10,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.2,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Potato Pancakes,
+	DaysFresh			=	3,
+	ReplaceOnUse			=	Pan,
+	Icon				=	HCPotatopancakes,
+	}
+
+item HCMashedpotatosplain
+	{
+	HungerChange			=	-30,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	50,
+	DaysFresh			=	3,	
+	DaysTotallyRotten		=	6,
+	Icon				=	PotFull,
+	ReplaceOnCooked			=	Hydrocraft.HCMashedpotatosplaincooked,
+	ReplaceOnUse			=	Pot, 
+	DisplayName			=	Plain Mashed Potatos,
+}
+
+item HCMashedpotatoscreamy
+	{
+	HungerChange			=	-40,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	50,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	6,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot, 	
+	ReplaceOnCooked			=	Hydrocraft.HCMashedpotatoscreamycooked,
+	DisplayName			=	Creamy Mashed Potatos,
+	}	
+
+
+item HCMashedpotatosplaincooked
+	{
+	HungerChange			=	-30,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysFresh			=	3,	
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Cooked Plain Mashed Potatos,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot, 	
+}
+	
+item HCMashedpotatoscreamycooked
+	{
+	HungerChange			=	-40,
+	BoredomChange			=	-20,
+	UnhappyChange			=	-30,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysFresh			=	3,	
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Cooked Plain Mashed Potatos,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot, 	
+}
+
+item HCMashedpotatosplainbowl
+	{
+	HungerChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysFresh			=	3,	
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Bowl of Plain Mashed Potatos,
+	Icon				=	HCMashedbowl,
+	ReplaceOnUse			=	Bowl, 	
+}
+
+item HCMashedpotatoscreamybowl
+	{
+	HungerChange			=	-20,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysFresh			=	3,	
+	DaysTotallyRotten		=	6,
+	DisplayName			=	Bowl of Creamy Mashed Potatos,
+	Icon				=	HCMashedbowl,
+	ReplaceOnUse			=	Bowl, 	
+	}
+
+item HCFries
+    {
+	HungerChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Homemade Fries,
+	DaysTotallyRotten		=	5,
+	DaysFresh 			= 	3,
+	Icon				=	Fries,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	10,
+	MinutesToBurn			=	20,
+    }
+
+item HCPotatoflour
+	{
+	Weight				=	1,
+	Type				=	Drainable,
+	UseWhileEquipped		=	FALSE,
+	UseDelta			=	0.25,
+	DisplayName			=	Bag of Potato Flour,
+	ReplaceOnUse			=	HCZipperbagempty,
+	Icon				=	HCPotatoflour,
+	}
+	
+item HCPotatomush
+	{
+	HungerChange			=	-30,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	DisplayName			=	Tray of Potato Mush,
+	IsCookable 			= 	TRUE,
+	MinutesToCook			=	45,
+	MinutesToBurn			=	70,
+	ReplaceOnCooked			=	Hydrocraft.HCPotatomushbaked,
+	ReplaceOnUse			=	BakingTray,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPotatomush,
+	}
+
+item HCPotatomushbaked
+	{
+	HungerChange			=	-30,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	BoredomChange			=	-10,
+	DisplayName			=	Tray of Dried Potato Mush,
+	ReplaceOnUse			=	BakingTray,
+	Icon				=	HCPotatomush,
+	}
+
+/************************RECIPES************************/
+  
+recipe Bake Potato
+	{
+		keep BakingTray,
+		Potato,
+		Butter/HCCookingoil,
+		Result:HCBakedpotato,
+		Time:55.0,
+		Category:Cooking,
+	}
+  
+recipe Make Hashbrowns
+	{
+       		SkillRequired:Cooking=2,
+		keep Pan,
+		keep HCCheesegrater,
+		keep HCPotatopeeler,
+		Potato,
+		Result:HCHashbrowns,
+		Time:50.0,
+		Category:Cooking,
+	}	
+
+recipe Make Potato Pancakes
+	{
+       		SkillRequired:Cooking=2,
+		keep Pan,
+		Butter/HCCookingoil,
+		HCMashedpotatos,
+		Result:HCPotatopancakes=4,
+		Time:50.0,
+		Category:Cooking,
+	}
+
+recipe Make Plain Mashed Potatos
+	{
+		Potato=2,
+		keep HCPotatopeeler,
+		WaterPot/Pot,
+		Water=2,
+		keep HCPotatomasher,
+		Result:HCMashedpotatosplain,
+		Time:75.0,
+		Category:Cooking,
+}
+
+recipe Make Creamy Mashed Potatos
+	{
+       		SkillRequired:Cooking=1,
+		Potato=2,
+		keep HCPotatopeeler,
+		WaterPot,
+		Butter/CookingOil,
+		keep HCPotatomasher,
+		Result:HCMashedpotatoscreamy,
+		Time:75.0,
+		Category:Cooking,
+	}	
+	
+recipe Make Bowl of Plain Mashed Potatos
+	{
+		Bowl=2,
+		HCMashedpotatosplaincooked,
+		Result:HCMashedpotatosplainbowl=2,
+		Time:35.0,
+		Category:Cooking,
+	}		
+
+recipe Make Bowl of Creamy Mashed Potatos
+	{
+		Bowl=2,
+		HCMashedpotatoscreamycooked,
+		Result:HCMashedpotatoscreamybowl=2,
+		Time:35.0,
+		Category:Cooking,
+	}
+
+recipe Make French Fries
+	{
+       		SkillRequired:Cooking=2,
+		keep Pot,
+		keep KitchenKnife,
+		keep HCPotatopeeler,
+		Potato,
+		HCCookingoil=2,
+		Result:HCFries,
+		Time:85.0,
+		Category:Cooking,
+	}
+
+recipe Prepare Potato Flour
+	{
+       		SkillRequired:Cooking=2,
+		keep HCPotatomasher,
+		destroy BakingTray,
+		Potato=2,
+		keep HCPotatopeeler,
+		Result:HCPotatomush,
+		Time:75.0,
+		Category:Cooking,
+	}
+	
+recipe Smash Dried Potato to Flour
+	{
+       		SkillRequired:Cooking=2,
+		keep HCPotatomasher,
+		HCPotatomushbaked,
+		HCZipperbag/HCZipperbagempty,
+		Result:HCPotatoflour,
+		Time:55.0,
+		Category:Cooking,
+	}
+	
+	
+}

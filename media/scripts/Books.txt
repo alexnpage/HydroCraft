@@ -1,0 +1,1006 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+	item HCBookalgebra
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Algebra Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookalgebra,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookalgebra,
+	}
+
+	item HCBookastronomy
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Astronomy Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookastronomy,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookastronomy,
+	}
+
+	item HCBookalmanac
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Farmer's Almanac,
+		StressChange	=	-40,
+		Icon		=	HCBookalmanac,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookalmanac,
+	}
+
+	item HCBookamericanhistory
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	American History Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookamericanhistory,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookamericanhistory,
+	}
+
+	item HCBookanimalhusbandry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Animal Husbandry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookanimalhusbandry,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Breed Rabbits,
+        	ReplaceOnUse    =   	HCBookanimalhusbandry,
+	}
+
+	item HCBookbedtime
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Bedtime Stories,
+		StressChange	=	-40,
+		Icon		=	HCBookbedtime,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookbedtime,
+	}
+
+	item HCBookcalculus
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Calculus Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookcalculus,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookcalculus,
+	}
+
+	item HCBookceltic
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Celtic Folklore,
+		StressChange	=	-40,
+		Icon		=	HCBookceltic,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookceltic,
+	}
+
+	item HCBookchemistry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Chemistry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookchemistry,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Glue;Make Charcoal Powder;Make Saltpeter Powder;Make Sulphur Powder;Make Gunpowder,
+        	ReplaceOnUse    =   	HCBookchemistry,
+	}
+
+	item HCBookdictionary
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Dictionary,
+		StressChange	=	-40,
+		Icon		=	HCBookdictionary,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookdictionary,
+	}
+
+	item HCBookencyclopedia
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Encyclopedia,
+		StressChange	=	-40,
+		Icon		=	HCBookencyclopedia,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookencyclopedia,
+	}
+
+	item HCBookenglish
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	English Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookenglish,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookenglish,
+	}
+
+	item HCBookentomology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Entomology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookentomology,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Catch Bugs,
+        	ReplaceOnUse    =   	HCBookentomology,
+	}
+
+
+	item HCBookfairytale
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Fairytale Book,
+		StressChange	=	-40,
+		Icon		=	HCBookfairytale,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookfairytale,
+	}
+
+	item HCBookfrench
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	French Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookfrench,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookfrench,
+	}
+
+	item HCBookgenealogy
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Genealogy of Kentucky,
+		StressChange	=	-40,
+		Icon		=	HCBookgenealogy,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookgenealogy,
+	}
+
+	item HCBookgeometry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Geometry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookgeometry,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookgeometry,
+	}
+
+	item HCBookgerman
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	German Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookgerman,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookgerman,
+	}
+
+	item HCBookitalian
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Italian Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookitalian,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookitalian,
+	}
+
+	item HCBookmath
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Basic Mathematics Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookmath,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookmath,
+	}
+
+	item HCBookmedical
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Medical Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookmedical,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Take Blood from Yourself;Take Blood from Zombie;Inject Yourself with Human Blood;Inject Yourself with Rabbit Blood;Inject Yourself with Zombie Blood,
+        	ReplaceOnUse    =   	HCBookmedical,
+	}
+
+	item HCBookmusic
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Music Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookmusic,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Play Music,
+        	ReplaceOnUse    =   	HCBookmusic,
+	}
+
+	item HCBookpaleontology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paleontology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookpaleontology,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookpaleontology,
+	}
+
+	item HCBookpoetry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book of Poetry,
+		StressChange	=	-40,
+		Icon		=	HCBookpoetry,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookpoetry,
+	}
+
+	item HCBookscrap
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Scrapbook,
+		StressChange	=	-40,
+		Icon		=	HCBookscrap,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookscrap,
+	}
+
+	item HCBookspanish
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Spanish Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookspanish,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookspanish,
+	}
+
+	item HCBookthesaurus
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Thesaurus,
+		StressChange	=	-40,
+		Icon		=	HCBookthesaurus,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookthesaurus,
+	}'
+
+	item HCBooktreeguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Tree Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBooktreeguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBooktreeguide,
+	}
+
+	item HCBookstrigonometry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Trigonometry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooktrigonometry,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookstrigonometry,
+	}
+
+	item HCBookvet
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Veterinary Medicine Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookvet,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Take Blood from Rabbit;Inject Rabbit with Rabbit Blood;Inject Rabbit with Human Blood;Inject Rabbit with Zombie Blood,
+        	ReplaceOnUse    =   	HCBookvet,
+	}
+
+	item HCBookworldhistory
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	World History Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookworldhistory,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookworldhistory,
+	}
+
+	item HCBookanatomy
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Anatomy Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookanatomy,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Harvest Bones,
+        	ReplaceOnUse    =   	HCBookanatomy,
+	}
+
+	item HCBookarthistory
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Art History Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookarthistory,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookarthistory,
+	}
+
+	item HCBookbible
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Holy Bible,
+		StressChange	=	-40,
+		Icon		=	HCBookbible,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookbible,
+	}
+
+	item HCBookbirdgude
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Bird Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookbirdgude,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookbirdgude,
+	}
+
+	item HCBookbology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Biology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookbology,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookbology,
+	}
+
+	item HCBookcommunications
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Communications Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookcommunications,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookcommunications,
+	}
+
+	item HCBookeconomics
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Economics Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookeconomics,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookeconomics,
+	}
+
+	item HCBookfishguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Fish Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookfishguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookfishguide,
+	}
+
+	item HCBookflowerguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Flower Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookflowerguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookflowerguide,
+	}
+
+	item HCBookgeology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Geology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookgeology,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Shift Dirt;Dig Mine;Mine,
+        	ReplaceOnUse    =   	HCBookgeology,
+	}
+
+	item HCBookgreekmyths
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Greek Mythology,
+		StressChange	=	-40,
+		Icon		=	HCBookgreekmyths,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookgreekmyths,
+	}
+
+	item HCBookhealth
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Health Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookhealth,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookhealth,
+	}
+
+	item HCBooklaw
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Law Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooklaw,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBooklaw,
+	}
+
+	item HCBookliterature
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Literature Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookliterature,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookliterature,
+	}
+
+	item HCBookmammalguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Mammal Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookmammalguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookmammalguide,
+	}
+
+	item HCBooknorsemyths
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Norse Mythology,
+		StressChange	=	-40,
+		Icon		=	HCBooknorsemyths,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBooknorsemyths,
+	}
+
+	item HCBookoceanography
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Oceanography Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookoceanography,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookoceanography,
+	}
+
+	item HCBookphilosophy
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Philosophy Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookphilosophy,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookphilosophy,
+	}
+
+	item HCBookphysics
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Physics Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookphysics,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookphysics,
+	}
+
+	item HCBookpoliticalscience
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Political Science Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookpoliticalscience,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookpoliticalscience,
+	}
+
+	item HCBookreptileguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Reptile Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookreptileguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookreptileguide,
+	}
+
+	item HCBookrobotics
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Robotics Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookrobotics,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookrobotics,
+	}
+
+	item HCBookscience
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Science Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookscience,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookscience,
+	}
+
+	item HCBooksociology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Sociology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooksociology,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBooksociology,
+	}
+
+	item HCBookworldatlas
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	World Atlas,
+		StressChange	=	-40,
+		Icon		=	HCBookworldatlas,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookworldatlas,
+	}
+
+	item HCBookamphibianguide
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Amphibian Fieldguide,
+		StressChange	=	-40,
+		Icon		=	HCBookamphibianguide,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookamphibianguide,
+	}
+
+	item HCBookapiculture
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Apiculture Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookapiculture,
+		BoredomChange	=	-50,
+        	TeachedRecipes  =   	Build Honeycomb Frame;Build Brood Box;Build Beehive;Upgrade Beehive;Build Roof for Beehive;Fill Bee Smoker with Fuel;Harvest Honeycomb;Harvest 2 Honeycombs;Harvest 4 Honeycombs;Process Honeycomb;Collect Bee;Collect Bees;Collect New Queen Bee,
+        	ReplaceOnUse    =   	HCBookapiculture,
+	}
+
+	item HCBookplumbing
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Plumbing Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookplumbing,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookplumbing,
+	}
+
+	item HCBookelectrical
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Electrical Engineering Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookelectrical,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookelectrical,
+	}
+
+	item HCBookanthropology
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Anthropology Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookanthropology,
+		BoredomChange	=	-50,
+        	ReplaceOnUse    =   	HCBookanthropology,
+	}
+
+	item HCBookarchery
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Archery Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookarchery,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Longbow;Make Arrow;Make Crossbow;Make Bolt,
+        	ReplaceOnUse    =   	HCBookarchery,
+	}
+
+	item HCBookpottery
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Pottery Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookpottery,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Kiln;Make Clay Pot;Make Clay Flowerpot;Make Clay Jar;Make Clay Mug;Make Clay Teapot;Make Clay Cauldron;Make Clay Urn;Make Clay Pipe;Make Ingot Mold;Make Nail Mold;Make Anvil Mold;Make Bullet Casing Mold;Make Bullet Tip Mold;Make Buckshot Mold,
+        	ReplaceOnUse    =   	HCBookpottery,
+	}
+
+	item HCBookglassworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Glass Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookglassworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Create Glass from Sand;Create Glass Flask;Recycle Glass;Create Glass Jar;Create Glass Whiskey Bottle;Create Glass Wine Bottle;Create Glass Graduated Cylinder;Create Glass Test Tube,
+        	ReplaceOnUse    =   	HCBookglassworking,
+	}
+
+	item HCBookcopperworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Copper Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookcopperworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Copper Ingot;Recycle Copper,
+        	ReplaceOnUse    =   	HCBookcopperworking,
+	}
+
+	item HCBooktinworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Bronze Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooktinworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Tin Ingot;Recycle Tin,
+        	ReplaceOnUse    =   	HCBooktinworking,
+	}
+
+	item HCBookbronzeworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Bronze Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookbronzeworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Bronze Ingot;Make Bronze Bullet Casings;Recycle Bronze,
+        	ReplaceOnUse    =   	HCBookbronzeworking,
+	}
+
+	item HCBookironworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Iron Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookironworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Iron Ingot;Make Anvil;Make Nails;Recycle Iron,
+        	ReplaceOnUse    =   	HCBookironworking,
+	}
+
+	item HCBookleadworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Lead Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookleadworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Lead Ingot;Make Lead Buckshot;Make Lead Bullet Tips,
+        	ReplaceOnUse    =   	HCBookleadworking,
+	}
+
+	item HCBooksteelworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Steel Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooksteelworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Steel Ingot;Cut Steel Pipe;Make Steel BBs;Recycle Steel,
+        	ReplaceOnUse    =   	HCBooksteelworking,
+	}
+
+	item HCBooksilverworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Silver Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBooksilverworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Silver Ingot;Recycle Silver,
+        	ReplaceOnUse    =   	HCBooksilverworking,
+	}
+
+	item HCBookgoldworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Gold Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookgoldworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Gold Ingot;Recycle Gold,
+        	ReplaceOnUse    =   	HCBookgoldworking,
+	}
+
+	item HCBookaluminumworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Aluminum Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookaluminumworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Aluminum Ingot;Recycle Aluminum,
+        	ReplaceOnUse    =   	HCBookaluminumworking,
+	}
+
+	item HCBookrubberworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Rubber Working Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookrubberworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Recycle Rubber,
+        	ReplaceOnUse    =   	HCBookrubberworking,
+	}
+
+	item HCBookcandlemaking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Candle Making Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookcandlemaking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Candleberry Wax;Recycle Wax,
+        	ReplaceOnUse    =   	HCBookcandlemaking,
+	}
+
+	item HCBookbasketry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Basketry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookbasketry,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Wicker Basket;Make Birch Bark Basket;Make Straw Basket,
+        	ReplaceOnUse    =   	HCBookbasketry,
+	}
+
+	item HCBookmasonry
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Masonry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookmasonry,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Grey Brick;Make Red Brick;Make Smelter,
+        	ReplaceOnUse    =   	HCBookmasonry,
+	}
+
+	item HCBookhunting
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Hunting Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookhunting,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Skin Rabbit;Skin Squirrel;Make Drying Frame;Dry Fur;Stitch Fur Coat;Stitch Fur Pants,
+        	ReplaceOnUse    =   	HCBookhunting,
+	}
+
+	item HCBookleatherworking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Masonry Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookleatherworking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Make Tannin;Make Leather;Make Leather Boots,
+        	ReplaceOnUse    =   	HCBookleatherworking,
+	}
+
+	item HCBookwinemaking
+	{
+		Weight		=	0.5,
+		Type		=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Wine Making Textbook,
+		StressChange	=	-40,
+		Icon		=	HCBookwinemaking,
+		BoredomChange	=	-50,
+		TeachedRecipes  =   	Ferment Grape Juice;Ferment Wine,
+        	ReplaceOnUse    =   	HCBookwinemaking,
+	}
+
+/************************RECIPES************************/	
+
+
+    
+
+}

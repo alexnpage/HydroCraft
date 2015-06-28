@@ -1,0 +1,90 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+	
+item HCCornonthecob
+	{
+	HungerChange			=	-20,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	DaysFresh			=	5,
+	DaysTotallyRotten		=	8,
+	DisplayName			=	Corn On the Cob,
+	ReplaceOnUse			=	Pan,
+	Icon				=	HCCorncob,
+	}
+
+item HCLeftovers1
+	{
+	HungerChange			=	-50,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Leftovers,
+	Icon				=	HCLeftovers1,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	BoredomChange			=	-10,
+	}
+
+item HCLeftovers2
+	{
+	HungerChange			=	-25,
+	Weight				=	0.25,
+	Type				=	Food,
+	DisplayName			=	Chinese Takeout,
+	Icon				=	HCLeftovers2,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	BoredomChange			=	-10,
+	}
+
+item HCCottoncandy
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Cotton Candy,
+	Icon				=	HCCottoncandy,
+	}
+
+item HCPretzel
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Pretzel,
+	Icon				=	HCPretzel,
+	}
+		
+/************************RECIPES************************/
+    
+recipe Make Butter
+    {
+    	Milk,
+	keep HCChurn,
+    	Result:Butter=4,
+    	Time:500,
+	Category:Cooking,
+    }
+		
+recipe Make Corn on the Cob
+	{
+		Pan,
+		Corn,
+		Butter/HCCookingoil,
+		Result:HCCornonthecob,
+		Time:85.0,
+	   	Category:Cooking,
+	}	
+			
+}

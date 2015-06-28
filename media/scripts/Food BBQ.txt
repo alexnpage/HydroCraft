@@ -1,0 +1,214 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCBBQsaucebowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of BBQ Sauce,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCBBQsaucebowl,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	ReplaceOnUse			=	Bowl,
+	CustomContextMenu 		= 	Eat,
+	Spice   			=   	true,
+	EvolvedRecipe 			= 	Sandwich:2;Burger:2,
+	}
+
+
+item HCBBQsteak
+	{
+	HungerChange			=	-40,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	BBQ Steak,
+	Icon				=	HCBBQsteak,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	EvolvedRecipe 			= 	Stew:15;Stir fry:15;Burger:15;Roasted Vegetables:15,
+	}
+	
+item HCBBQsalmon
+	{
+	HungerChange			=	-40,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	BBQ Salmon,
+	Icon				=	HCBBQsalmon,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	EvolvedRecipe 			= 	Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Salad:10|Cooked;Roasted Vegetables:15,
+	}
+	
+item HCBBQchicken
+	{
+	HungerChange			=	-40,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	BBQ Chicken,
+	Icon				=	HCBBQchicken,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	EvolvedRecipe 			= 	Soup:15;Stew:15;Pie:10;Stir fry:15;Sandwich:5|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:10,
+	}
+	
+item HCBBQrat
+	{
+	HungerChange			=	-20,
+	UnhappyChange			=	-5,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	BBQ Rat,
+	Icon				=	HCBBQrat,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+        EvolvedRecipe 			= 	Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:15,
+	}
+	
+item HCBBQmushroom
+	{
+	HungerChange			=	-25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	BBQ Mushroom,
+	Icon				=	HCBBQmushroom,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	EvolvedRecipe 			= 	Stew:3;Pie:3;Soup:3;Sandwich:3;Salad:3;Roasted Vegetables:3,
+	}
+	
+item HCGrilledeggplant
+	{
+	HungerChange			=	-35,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	70,
+	DisplayName			=	Grilled Eggplant,
+	Icon				=	HCGrilledeggplant,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	7,
+	EvolvedRecipe 			= 	Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5;Salad:10;Roasted Vegetables:15,
+	}
+	
+/************************RECIPES************************/
+
+recipe Make BBQ Sauce
+	{
+		Bowl,
+		Ketchup,
+		Sugar,
+		Result:HCBBQsaucebowl,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make BBQ Steak
+	{
+		keep Pan,
+		Steak,
+		HCBBQsauce/HCBBQsaucebowl,
+		Result:HCBBQsteak,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make BBQ Salmon
+	{
+		keep Pan,
+		Salmon,
+		HCBBQsauce/HCBBQsaucebowl,
+		Result:HCBBQsalmon,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+	
+recipe Make BBQ Chicken
+	{
+		keep Pan,
+		Chicken,
+		HCBBQsauce/HCBBQsaucebowl,
+		Result:HCBBQchicken,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make BBQ Rat
+	{
+		keep Pan,
+		DeadRat,
+		HCBBQsauce/HCBBQsaucebowl,
+		Result:HCBBQrat,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+	
+recipe Make BBQ Mushroom
+	{
+		keep Pan,
+		MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/HCMushroom/HCShiitake,
+		HCBBQsauce/HCBBQsaucebowl,
+		Result:HCBBQmushroom,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+	
+recipe Grill Eggplant
+	{
+		keep BakingTray,
+		keep KitchenKnife,
+		Eggplant,
+		HCCookingoil,
+		Result:HCGrilledeggplant,
+		Time:55.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+    	
+}

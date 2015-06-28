@@ -1,0 +1,125 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCCookingoil
+	{
+	Weight 				= 	0.75,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.1,
+	DisplayName 			= 	Cooking Oil,
+	Icon 				= 	HCCookingoil,
+	}
+
+item HCGarlicpowder
+	{
+	Weight 				= 	0.25,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	Garlic Powder,
+	Icon 				= 	HCGarlicpowderfull,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCSoysauce
+	{
+	Weight 				= 	0.5,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	Soy Sauce,
+	Icon				=	HCSoysaucefull,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCBBQsauce
+	{
+	Weight 				= 	0.4,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	BBQ Sauce,
+	Icon 				= 	HCBBQsaucefull,
+	Spice   			=   	true,
+	EvolvedRecipe 			= 	Sandwich:2;Salad:1;Burger:2,
+	}
+
+item HCHerbs
+    {
+        HungerChange			=	-2,
+        Weight				=	0.2,
+        Type				=	Food,
+        DisplayName			=	Italian Herbs,
+        Icon				=	HCHerbs,
+        Spice   			=   	true,
+        ThirstChange			=	20,
+        BoredomChange			=	15,
+        UnhappyChange			=	20,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+    }
+
+item HCHotsauce
+	{
+	Weight 				= 	0.4,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	Hot Sauce,
+	Icon 				= 	HCHotsauce,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCChilipowder
+    {
+        HungerChange			=	-2,
+        Weight				=	0.2,
+        Type				=	Food,
+        DisplayName			=	Chili Powder,
+        Icon				=	HCChilipowder,
+        Spice   			=   	true,
+        ThirstChange			=	30,
+        BoredomChange			=	15,
+        UnhappyChange			=	20,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1,
+    }
+
+item HCParmesan
+	{
+	Weight 				= 	0.4,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	Parmesan Cheese,
+	Icon 				= 	HCParmesan,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCCream
+    {
+	Type				=	Food,
+	DisplayName			=	Cream,
+	Weight				=	0.1,
+	ThirstChange 			=	-5,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			=	4,
+	Icon				=	HCCream,
+    }
+
+/************************RECIPES************************/
+    
+	
+}

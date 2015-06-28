@@ -1,0 +1,123 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCCloth
+    {
+        Weight    	=    0.2,
+        Type    	=    Normal,
+        DisplayName    	=    Cloth,
+        Icon    	=    HCCloth.png,
+    }
+
+item HCBandanna
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName 	= Bandanna,
+        icon 		= HCBandanna,
+    }
+
+item HCSafetypin
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Safety Pin,
+        icon 		= HCSafetypin,
+    }
+
+item HCSewingpin
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Sewing Pin,
+        icon 		= HCSewingpin,
+    }
+
+item HCThimble
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Thimble,
+        icon 		= HCThimble,
+    }
+
+item HCPlastichanger
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Plastic Hanger,
+        icon 		= HCPlastichanger,
+    }
+
+item HCWirehanger
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Wire Hanger,
+        icon 		= HCWirehanger,
+    }
+
+item HCWoodhanger
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Wood Hanger,
+        icon 		= HCWoodhanger,
+    }
+
+item HCMittens
+    {
+        Weight    	= 0.25,
+        Type    	= Normal,
+        DisplayName     = Mittens,
+        icon 		= HCMittens,
+    }
+
+item HCSkimask
+    {
+        Weight    	= 0.1,
+        Type    	= Normal,
+        DisplayName     = Ski Mask,
+        icon 		= HCSkimask,
+    }
+
+item HCClothespin
+    {
+        Weight    	=    0.2,
+        Type    	=    Normal,
+        DisplayName    	=    Clothespin,
+        Icon    	=    HCClothespin.png,
+    }
+
+item HCClothespinbox
+    {
+        Weight    	=    0.6,
+        Type    	=    Normal,
+        DisplayName    	=    Box of Clothespins,
+        Icon    	=    HCClothespinbox.png,
+    }
+
+/************************RECIPES************************/
+    
+recipe Box Clothespins
+    {
+    HCClothespin=100,
+    Result:HCClothespinbox,
+    Time:15,
+    }
+
+recipe Unbox Clothespins
+    {
+    HCClothespinbox,
+    Result:HCClothespin=100,
+    Time:15,
+    }
+	
+}

@@ -1,0 +1,35 @@
+module Hydrocraft
+
+{
+	item HCFireextinguisherfull
+	{
+		Type 			= Drainable,
+		Weight 			= 5.0,
+		UseWhileEquipped 	= FALSE,
+		DisplayName 		= Fire Extinguisher,
+		Icon 			= HCFireextinguisher,
+		UseDelta 		= 0.1,
+		IsWaterSource		= TRUE,
+		CanStoreWater		= TRUE,
+		ReplaceOnUseOn 		= WaterSource-HCFireextinguisherfull,
+		ReplaceOnDeplete 	= HCFireextinguisherempty,
+	}
+
+	item HCFireextinguisherempty
+	{
+		Weight 			= 2.0,
+		CanStoreWater 		= TRUE,
+		Type 			= Normal,
+		DisplayName 		= Empty Fire Extinguisher,
+		Icon 			= HCFireextinguisher,
+		ReplaceOnUseOn 		= WaterSource-HCFireextinguisherfull,
+	}
+
+	item HCFireblanket
+	{
+	    	Weight 			= 1.0,
+        	Type 			= Normal,
+        	DisplayName 		= Fire Blanket,
+        	Icon 			= HCFireblanket,
+	}
+}

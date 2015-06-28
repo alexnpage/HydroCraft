@@ -1,0 +1,216 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCStethoscope
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Stethoscope,
+        icon 			= HCStethoscope,
+    }  
+
+item HCHeadmirror
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Head Mirror,
+        icon 			= HCHeadmirror,
+    } 
+
+item HCThermometer
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Thermometer,
+        icon 			= HCThermometer,
+    } 
+
+item HCBonesaw
+    {
+        Weight    		= 0.7,
+        Type    		= Normal,
+        DisplayName         	= Bone Saw,
+        icon 			= HCBonesaw,
+    } 
+
+item HCTonguedepressor
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName     	= Tongue Depressor,
+        icon 			= HCTonguedepressor,
+    } 
+
+item HCWheelchair
+    {
+        Weight    		= 20,
+        Type    		= Normal,
+        DisplayName     	= Wheelchair,
+        icon 			= HCWheelchair,
+	ResizeWorldIcon 	= FALSE,
+    } 
+
+item HCSyringeempty
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName     	= Syringe,
+        icon 			= HCSyringeempty,
+    } 
+
+item HCSyringeblood
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName     	= Syringe with Human Blood,
+        icon 			= HCSyringeblood,
+    } 
+
+item HCSyringerabbit
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName     	= Syringe with Rabbit Blood,
+        icon 			= HCSyringeblood,
+    } 
+
+item HCSyringezombie
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName     	= Syringe with Zombie Blood,
+        icon 			= HCSyringeblood,
+    } 
+
+
+/************************WEAPONS************************/
+
+item HCScalpel
+	{
+		MaxRange			=	0.9,
+		WeaponSprite			=	Knife,
+		MinAngle			=	0,
+		Type				=	Weapon,
+		MinimumSwingTime		=	2,
+		KnockBackOnNoDeath		=	FALSE,
+		SwingAmountBeforeImpact		=	0.02,
+		Categories			=	Blade,
+		ConditionLowerChanceOneIn	=	2,
+		Weight				=	0.3,
+		SplatNumber			=	0,
+		PushBackMod			=	0.3,
+		MaxDamage			=	0.6,
+		SubCategory			=	Stab,
+		AimingMod			=	0.8,
+		ConditionMax			=	10,
+		MaxHitCount			=	1,
+		IsAimedHandWeapon		=	TRUE,
+		DoorDamage			=	1,
+		SwingAnim			=	Stab,
+		WeaponWeight			=	1.7,
+		DisplayName			=	Scalpel,
+		MinRange			=	0.61,
+		CloseKillMove 			= 	Jaw_Stab,
+		SwingTime			=	2,
+		MinDamage			=	0.3,
+		KnockdownMod			=	0,
+		SplatBloodOnNoDeath		=	TRUE,
+		Icon				=	HCScalpel,
+		RunAnim				=	Run_Weapon2,
+        	IdleAnim			=	Idle_Weapon2,
+        	BreakSound  			=   	PZ_MetalSnap,
+        	TreeDamage  			=   	1,
+        	EnduranceMod 			= 	0.5,
+	}
+
+
+/************************RECIPES************************/
+    
+
+recipe Take Blood from Yourself
+    {
+	HCSyringeempty,
+    	Result:HCSyringeblood,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Take Blood from Rabbit
+    {
+	HCSyringeempty,
+    	HCRabbitmale/HCRabbitfemale,
+    	Result:HCSyringerabbit,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Take Blood from Zombie
+    {
+	HCSyringeempty,
+    	keep CorpseMale/CorpseFemale,
+    	Result:HCSyringezombie,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Inject Rabbit with Human Blood
+    {
+	HCSyringeblood,
+    	keep HCRabbitmale/HCRabbitfemale,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Inject Rabbit with Rabbit Blood
+    {
+	HCSyringerabbit,
+    	keep HCRabbitmale/HCRabbitfemale,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Inject Rabbit with Zombie Blood
+    {
+    	keep HCRabbitmale/HCRabbitfemale,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+	OnCreate:HCInjectrabbit,
+    }
+
+recipe Inject Yourself with Human Blood
+    {
+	HCSyringeblood,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Inject Yourself with Rabbit Blood
+    {
+	HCSyringerabbit,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+    }
+
+recipe Inject Yourself with Zombie Blood
+    {
+	HCSyringezombie,
+    	Result:HCSyringeempty,
+       	NeedToBeLearn:true,
+    	Time:15.0,
+	OnCreate:HCInjectyourself,
+    }
+
+}

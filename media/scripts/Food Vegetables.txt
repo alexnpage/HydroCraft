@@ -1,0 +1,171 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+   item HCPeapod
+   {
+	HungerChange			=		-20,
+	Weight				=		0.6,
+	Type				=		Food,
+	DaysTotallyRotten		=		5,
+	DisplayName			=		Peapod,
+	Icon				=		HCPeapod,
+	DaysFresh			=		3,
+	EvolvedRecipe 			= 		Soup:10;Stew:10;Stir fry:10;Roasted Vegetables:10,
+	FoodType    			=   		Vegetables,
+   }
+
+   item HCSweetpotato
+   {
+	Type				=		Food,
+	DisplayName			=		Sweet Potato,
+	Icon				=		HCSweetpotato,
+	Weight				=		0.2,
+	HungerChange 			=		-20,
+	DaysFresh 			=		14,
+	DaysTotallyRotten 		=	 	28,
+        FoodType    			=   		Vegetables,
+        EvolvedRecipe       		=       	Soup:10;Stew:10;Pie:10;Stir fry:10;Salad:10;Roasted Vegetables:10,
+   }
+
+   item HCChinesecabbage
+   {
+	Type				=		Food,
+	DisplayName			=		Chinese Cabbage,
+	Icon				=		HCChinesecabbage,
+	Weight				=		0.2,
+	HungerChange 			=		-10,
+	ThirstChange			=		-15,
+	DaysFresh 			=		2,
+	DaysTotallyRotten 		=	 	4,
+	FoodType    			=   		Vegetables,
+	EvolvedRecipe       		=       	Soup:10;Stew:10;Pie:10;Stir fry:10;Sandwich:5;Burger:10;Salad:10;Roasted Vegetables:10,
+    }
+
+    item HCCucumber
+    {
+        Type				=		Food,
+        DisplayName			=		Cucumber,
+        Icon				=		HCCucumber,
+        Weight				=		0.3,
+        HungerChange 			=		-15,
+        DaysFresh 			=		6,
+        DaysTotallyRotten 		=	 	14,
+        FoodType            		=       	Vegetables,
+        EvolvedRecipe 			= 		Soup:15;Stew:15;Stir fry:15;Sandwich:5;Burger:10;Salad:10;Roasted Vegetables:10,
+    }
+
+    item HCCauliflower
+    {
+	HungerChange			=		-15,
+	Weight				=		0.2,
+	Type				=		Food,
+	DaysTotallyRotten		=		6,
+	DisplayName			=		Cauliflower,
+	Icon				=		HCCauliflower,
+	DaysFresh			=		4,
+	FoodType    			=   		Vegetables,
+	EvolvedRecipe 			= 		Soup:15;Stew:15;Pie:15;Stir fry:15;Salad:10;Roasted Vegetables:15,
+    }
+
+    item HCBellpeppergreen
+    {
+	HungerChange			=		-15,
+        Weight				=		0.2,
+        Type				=		Food,
+        DaysTotallyRotten		=		8,
+        DisplayName			=		Bell Pepper,
+        Icon				=		HCBellpeppergreen,
+        DaysFresh			=		5,
+        FoodType    			=   		Vegetables,
+        EvolvedRecipe 			= 		Soup:15;Pie:15;Stir fry:15;Sandwich:5;Burger:5;Salad:10;Roasted Vegetables:15,
+     }
+
+    item HCBellpepperyellow
+    {
+	HungerChange			=		-15,
+        Weight				=		0.2,
+        Type				=		Food,
+        DaysTotallyRotten		=		8,
+        DisplayName			=		Bell Pepper,
+        Icon				=		HCBellpepperyellow,
+        DaysFresh			=		5,
+        FoodType    			=   		Vegetables,
+        EvolvedRecipe 			= 		Soup:15;Pie:15;Stir fry:15;Sandwich:5;Burger:5;Salad:10;Roasted Vegetables:15,
+     }
+
+     item HCOniongreen
+     {
+	HungerChange			=		-15,
+	Weight				=		0.2,
+	Type				=		Food,
+	DaysTotallyRotten		=		9,
+	DisplayName			=		Green Onion,
+	Icon				=		HCOniongreen,
+	DaysFresh			=		7,
+	FoodType    			=   		Vegetables,
+	EvolvedRecipe 			= 		Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5;Burger:10;Salad:10;Roasted Vegetables:15,
+     }
+
+     item HCGarlic
+     {
+	HungerChange			=		-15,
+	Weight				=		0.2,
+	Type				=		Food,
+	DaysTotallyRotten		=		9,
+	DisplayName			=		Garlic,
+	Icon				=		HCGarlic,
+	DaysFresh			=		7,
+	FoodType    			=   		Vegetables,
+	EvolvedRecipe 			= 		Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5;Burger:10;Salad:10;Roasted Vegetables:15,
+     }
+
+   item HCGinger
+   {
+	Type				=		Food,
+	DisplayName			=		Ginger,
+	Icon				=		HCGinger,
+	Weight				=		0.2,
+	HungerChange 			=		-20,
+	DaysFresh 			=		14,
+	DaysTotallyRotten 		=	 	28,
+        FoodType    			=   		Vegetables,
+	EvolvedRecipe 			= 		Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5;Burger:10;Salad:10;Roasted Vegetables:15,
+   }
+
+   item HCMushroom
+   {
+	HungerChange			=		-3,
+	Weight				=		0.2,
+	Type				=		Food,
+	DisplayName			=		Portobello Mushroom,
+	Icon				=		HCMushroom,
+	EvolvedRecipe 			= 		Stew:3;Pie:3;Soup:3;Sandwich:3;Burger:3;Salad:3;Roasted Vegetables:3,
+	FoodType    			=   		Vegetables,
+	DaysFresh			=		2,
+	DaysTotallyRotten		=		3,
+   }
+
+   item HCShiitake
+   {
+	HungerChange			=		-3,
+	Weight				=		0.2,
+	Type				=		Food,
+	DisplayName			=		Shiitake Mushroom,
+	Icon				=		HCShiitake,
+	FoodType    			=   		Vegetables,
+	EvolvedRecipe 			= 		Stew:3;Pie:3;Soup:3;Sandwich:3;Burger:3;Salad:3;Roasted Vegetables:3,
+	DaysFresh			=		2,
+	DaysTotallyRotten		=		3,
+   }
+
+/************************RECIPES************************/
+
+	
+}

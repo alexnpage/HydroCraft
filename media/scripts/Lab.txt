@@ -1,0 +1,307 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCGlassflask
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Glass Flask,
+        icon 			= HCGlassflask,
+    }  
+
+item HCGlassgraduatedcylinder
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Glass Graduated Cylinder,
+        icon 			= HCGlassgraduatedcylinder,
+    }  
+
+item HCGlasstesttube
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Glass Test Tube,
+        icon 			= HCGlasstesttube,
+    } 
+
+item HCEyedropper
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Eye Dropper,
+        icon 			= HCEyedropper,
+    } 
+
+item HCBugjar
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Bug Jar,
+        icon 			= HCBugjar,
+    } 
+
+item HCBugnet
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Bug Net,
+        icon 			= HCBugnet,
+    } 
+
+item HCMagnifyglass
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Magnifying Glass,
+        icon 			= HCMagnifyglass,
+    } 
+
+item HCMicroscope
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName     	= Microscope,
+        icon 			= HCMicroscope,
+    } 
+
+item HCProtractor
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Protractor,
+        icon 			= HCProtractor,
+    } 
+
+item HCCalculator
+    {
+        Weight    		= 0.7,
+        Type    		= Normal,
+        DisplayName         	= Calculator,
+        icon 			= HCCalculator,
+    }  
+
+item HCSolarcell
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Solar Cell,
+        icon 			= HCSolarcell,
+    }  
+
+item HCLatexgloves
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Latex Gloves,
+        icon 			= HCLatexgloves,
+    } 
+
+item HCCharcoalpowder
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Charcoal Powder,
+        icon 			= HCCharcoalpowder,
+    } 
+
+item HCSaltpeter
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Saltpeter,
+        icon 			= HCSaltpeter,
+    } 
+
+item HCSaltpeterpowder
+    {
+        Weight    		= 0.6,
+        Type    		= Normal,
+        DisplayName         	= Bowl of Saltpeter,
+        icon 			= HCSaltpeterpowder,
+    }  
+
+item HCSulphur
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Sulphur,
+        icon 			= HCSulphur,
+    } 
+
+item HCSulphurpowder
+    {
+        Weight    		= 0.6,
+        Type    		= Normal,
+        DisplayName         	= Sulphur Powder,
+        icon 			= HCSulphurpowder,
+    }
+
+item HCBone
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bone,
+        icon 			= HCBone,
+    } 
+
+item HCZombiebones
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Zombie Bones,
+        icon 			= HCZombiebones,
+    } 
+
+/************************RECIPES************************/
+    
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    CorpseMale/CorpseFemale,
+    Result:HCZombiebones,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Glue
+    {
+    keep HCMortarandpestle,
+    HCBone=10,
+    Result:Glue,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make Glue
+    {
+    keep HCMortarandpestle,
+    HCZombiebones=20,
+    Result:Glue,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Put Bug in Jar
+    {
+    EmptyJar,
+    HCBeetle/HCBollweevil/HCLadybug/HCDragonfly/HCGardenspider/HCCaterpillar/HCBumblebee/Worm/Cricket/Grasshopper/Cockroach,
+    Result:HCBugjar,
+    Time:15,
+    }
+
+recipe Play With
+    {
+    HCBugjar,
+    Result:EmptyJar,
+    Time:500,
+    OnCreate:HC_ToyStatModifier,
+    }
+
+recipe Catch Bugs
+    {
+    keep HCBugnet,
+    HCMagnifyglass,
+    Result:HCMagnifyglass,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Survivalist,
+    OnCreate:HCBugCatch,
+    }
+
+recipe Make Charcoal Powder
+    {
+    keep HCMortarandpestle,
+    Charcoal,
+    Result:HCCharcoalpowder,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make Saltpeter Powder
+    {
+    keep HCMortarandpestle,
+    HCSaltpeter,
+    Result:HCSaltpeterpowder,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make Sulphur Powder
+    {
+    keep HCMortarandpestle,
+    HCSulphur,
+    Result:HCSulphurpowder,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make Gunpowder
+    {
+    HCSulphurpowder,
+    HCSaltpeterpowder,
+    Result:GunPowder,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make 9mm Bullets
+    {
+    keep HCFunnel,
+    GunPowder,
+    HCBulletcasings,
+    HCBullettips,
+    Result:Bullets9mm,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make .223 Bullets
+    {
+    keep HCFunnel,
+    GunPowder=3,
+    HCBulletcasings,
+    HCBullettips,
+    Result:223Bullets,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make .308 Bullets
+    {
+    keep HCFunnel,
+    GunPowder=3,
+    HCBulletcasings,
+    HCBullettips,
+    Result:308Bullets,
+    Time:50,
+    Category:Engineer,
+    }
+
+recipe Make Shotgun Shells
+    {
+    keep HCFunnel,
+    GunPowder,
+    HCBuckshot,
+    SheetPaper,
+    Result:ShotgunShells,
+    Time:50,
+    Category:Engineer,
+    }
+
+}

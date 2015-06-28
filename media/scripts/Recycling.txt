@@ -1,0 +1,3116 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCPlastic
+    {
+        Weight    		=    	0.1,
+        Type    		=    	Normal,
+        DisplayName    		=    	Plastic,
+        Icon    		=    	HCPlastic,
+    }
+
+item HCTincan
+    {
+        Weight    		=    	0.2,
+        Type    		=    	Normal,
+        DisplayName    		=    	Tincan,
+        Icon    		=    	HCTincan,
+    }
+
+
+item HCWaxrecycled
+    {
+        Weight    		=    	0.1,
+        Type    		=    	Normal,
+        DisplayName    		=    	Recyled Wax,
+        Icon    		=    	HCWaxrecycled,
+    }
+
+item HCRubber
+    {
+        Weight    		=    	0.1,
+        Type    		=    	Normal,
+        DisplayName    		=    	Rubber,
+        Icon    		=    	HCRubber,
+    }
+
+item HCPVCpipe
+    {
+        Weight 			= 	1,
+        Type 			= 	Normal,
+        DisplayName 		= 	PVC Pipe,
+        Icon 			= 	HCPVCpipe,
+    }
+
+
+/************************WEAPONS************************/
+
+	item HCSteelpipe
+	{
+		MaxRange			=	1.3,
+		WeaponSprite			=	Baseballbat,
+		MinAngle			=	0,
+		Type				=	Weapon,
+		MinimumSwingTime		=	3,
+		KnockBackOnNoDeath 		= 	TRUE,
+		SwingAmountBeforeImpact		=	0.02,
+		Categories			=	Blunt,
+		Weight				=	1.5,
+		ConditionLowerChanceOneIn	=	70,
+		PushBackMod			=	0.5,
+		MinDamage			=	0.6,
+		MaxDamage			=	1.1,
+		SubCategory			=	Swinging,
+		ConditionMax			=	15,
+		MaxHitCount			=	1,
+		DoorDamage			=	8,
+		IdleAnim			=	Idle_Weapon2,
+		SwingAnim			=	Bat,
+		CriticalChance			=	10,
+		WeaponWeight			=	4,
+		DisplayName			=	Steel Pipe,
+		MinRange			=	0.61,
+		SwingTime			=	3,
+		HitAngleMod			=	-30,
+		KnockdownMod			=	0,
+		Icon				=	HCSteelpipe,
+		RunAnim				=	Run_Weapon2,
+		BreakSound  			=   	PZ_MetalSnap,
+		TreeDamage  			=   	1,
+	}
+
+/************************RECIPES************************/
+    
+
+recipe Recycle Steel
+    {
+    Fork=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Spoon=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Hammer,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Needle=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Saw,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Sledgehammer,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Screwdriver=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    NailsBox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    ScrewsBox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Hinge=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    Doorknob=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Wire=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    ButterKnife=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    KitchenKnife=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HuntingKnife=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Pan,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Kettle,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    BakingPan=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    BakingSheet=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    RoastingPan,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Pot,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCHubcap,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    GardeningSprayEmpty/GardeningSprayFull,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    WateredCan/WateredCanFull,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HandShovel=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Shovel,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    PaperclipBox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Tweezers=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    Crowbar,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Golfclub,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Axe,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Scissors=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Corkscrew=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCTongs=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCPliers=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCAnvil,
+    Log,
+    HCIngotmold=18,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot=18,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Gold
+    {
+    WeddingRing_Man=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Gold
+    {
+    WeddingRing_Woman=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Silver
+    {
+    Ring=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSilveringot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Gold
+    {
+    Locket=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Gold
+    {
+    Earrings=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    BarbedWire=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    TinOpener=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    TentPeg=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }  
+
+recipe Recycle Glass
+    {
+    WhiskeyEmpty=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    Salt=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    Mirror=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    WineEmpty=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    WineEmpty2=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+
+recipe Recycle Glass
+    {
+    EmptyJar=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    Pepper=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Aluminum
+    {
+    JarLid=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Pillow
+    {
+    keep KitchenKnife/HuntingKnife/Scissors/HCScalpel/HCJackknife,
+    Pillow,
+    Result:HCWhitefeathers=10,
+    Time:100,
+    Category:Engineer,
+    OnCreate:recipe_hcpillowcase,
+    }
+
+recipe Recycle Feather Duster
+    {
+    HCFeatherduster,
+    Result:HCWhitefeathers=5,
+    Time:100,
+    Category:Engineer,
+    OnCreate:recipe_hcwoodenstick,
+    }
+
+recipe Recycle Steel
+    {
+    HCTireiron,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCJackknife=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCToolbox,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCRake,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCHedgetrimmer,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBottleopener=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCCheesegrater=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCEggbeater=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCColander,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCIcecreamscoop=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCLadle=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCPizzacutter=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCTablespoon=6,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCTeaspoon=8,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCToaster,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCNutcracker=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCPotatopeeler=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSteakknife=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMeatcleaver,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCGlassflask=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCGlassgraduatedcylinder=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCGlasstesttube=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCEyedropper=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    LightBulb=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCThermometer=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCHeadmirror=8,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBonesaw,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCScalpel=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCStaplesbox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCStapler=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    LetterOpener=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCAuger,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCShoehorn=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCChildsafetyscissors=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCNailgunammobox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCWrench=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMonkeywrench,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCHarmonica=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Aluminum
+    {
+    UmbrellaOpen=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCWirehanger=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Tin
+    {
+    HCWirehanger=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCTiningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMakeshiftaxe,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMakeshiftaxeworn,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMakeshiftaxeblunt,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCAxehead,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCAxeheadworn,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCAxeheadblunt,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCFishtank,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCToywagon,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCWheelbarrow,
+    Log,
+    HCIngotmold=4,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=4,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMedicalbox,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCLunchbox,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMetalbox=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Aluminum
+    {
+    HCFireextinguisherempty,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCWhisk=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSieve=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCJuicer2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCPotatomasher=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSpatula=4,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSurvivalaxe=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCHatchetsteel=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCHatchetiron=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCHatchetbronze=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCHatchetcopper=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBattleaxesteel,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCBattleaxeiron,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCBattleaxebronze,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCBattleaxecopper,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCMachete=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCCombatknife=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCKatana,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCKnifesteel=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCKnifeiron=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCKnifebronze=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCKnifecopper=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCDaggersteel=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCDaggeriron=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCDaggerbronze=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCDaggercopper=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCShortswordsteel=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCShortswordiron=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCShortswordbronze=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCShortswordcopper=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCLongswordsteel,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCLongswordiron,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCLongswordbronze,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCLongswordcopper,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBastardswordsteel,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCBastardswordiron,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCBastardswordbronze,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCBastardswordcopper,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCGreatswordsteel,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCGreatswordiron,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCGreatswordbronze,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCGreatswordcopper,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSmithyhammersteel=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCSmithyhammeriron=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCSmithyhammerbronze=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCbronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCSmithyhammercopper=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCWarhammersteel,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCWarhammeriron,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCWarhammerbronze,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCWarhammercopper,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCHalberdsteel,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCHalberdiron,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Bronze
+    {
+    HCHalberdbronze,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    HCHalberdcopper,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Wax
+    {
+    Crayons=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCWaxrecycled,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Wax
+    {
+    Candle=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCWaxrecycled,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    Rubberducky=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    Shoes=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    Rainboots,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    RecoilPad=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCRubberball,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    Basketball,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    TennisBall,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCBalloonbox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCPaddleball=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    DogChew=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCPlunger=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCGardenhose,
+    Log,
+    HCIngotmold=3,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber=3,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCStethoscope=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCRubberbandbox=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCWeldinghose,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    HCBungeecord=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCSteelpipe,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    Pipe=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    IcePick=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    KnittingNeedles=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Copper
+    {
+    ElectronicsScrap,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    ScrapMetal,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+
+recipe Recycle Aluminum
+    {
+    SheetMetal,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Rubber
+    {
+    Eraser=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCRubber,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Wooden Crate
+    {
+    HCWoodencrate,
+    keep Hammer,
+    Result:Plank=2,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Recycle Wooden Beehive
+    {
+    HCBeehive1,
+    keep Hammer,
+    Result:Plank=2,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Recycle Steel
+    {
+    HCNailclipper=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCDustpan=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBreadknife=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCFloursieve=2,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCScale,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCMuffinpan=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCBreadpan=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Glass
+    {
+    HCMeasuringcup=3,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGlassingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Iron
+    {
+    HCWok,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCBinderclip=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Aluminum
+    {
+    HCBookend=5,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCClipboard=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCStapleremover=10,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Recycle Steel
+    {
+    HCThumbtack=20,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+}

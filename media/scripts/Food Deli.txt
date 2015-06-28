@@ -1,0 +1,149 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCSlicedtomato
+	{
+	Type				=	Food,
+	DisplayName			=	Sliced Tomato,
+	Icon				=	HCSlicedtomato,
+	Weight				=	0.1,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	12,
+	HungerChange			=	-2,
+	ThirstChange			=	-3,
+	EvolvedRecipe       		=       Soup:5;Stew:5;Pie:5;Stir fry:5;Sandwich:5;Burger:5;Salad:5;Roasted Vegetables:5,
+	}
+		
+item HCSlicedonion
+	{
+	Type				=	Food,
+	DisplayName			=	Sliced Onion,
+	Icon				=	HCSlicedonion,
+	Weight				=	0.1,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	12,
+	HungerChange			=	-10,
+	EvolvedRecipe 			= 	Soup:5;Stew:5;Pie:5;Stir fry:5;Sandwich:5;Burger:5;Salad:5;Roasted Vegetables:5,
+	}
+
+item HCSlicedham
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	AlwaysWelcomeGift		=	TRUE,
+	Type				=	Food,
+	DisplayName			=	Sliced Ham,
+	Icon				=	HCSlicedham,
+	EvolvedRecipe 			= 	Sandwich:5;Burger:5;Salad:5,
+	}
+
+item HCSalami
+	{
+	HungerChange			=	-40,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Salami,
+	Icon				=	HCSalami,
+	EvolvedRecipe 			= 	Sandwich:10;Burger:10;Salad:10,
+	}	
+	
+item HCSlicedsalami
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Sliced Salami,
+	Icon				=	HCSlicedsalami,
+	EvolvedRecipe 			= 	Sandwich:5;Burger:5;Salad:5,
+	}
+
+item HCPeanutjellysandwich
+	{
+	HungerChange			=	-45,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Peanut Butter and Jelly Sandwich,
+	Icon				=	HCJellysandwich,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	}
+
+item HCJellysandwich
+	{
+	HungerChange			=	-25,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Jelly Sandwich,
+	Icon				=	HCJellysandwich,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	}
+	
+/************************RECIPES************************/
+   
+
+recipe Slice Tomato
+	{
+		keep KitchenKnife,
+		Tomato,	
+		Result:HCSlicedtomato = 4,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+	  
+recipe Slice Onion
+	{
+		keep KitchenKnife,
+		Onion,		
+	    	Result:HCSlicedonion = 2,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Slice Ham
+	{
+		keep KitchenKnife,
+		Ham,
+		Result:HCSlicedham=4,
+		Time:25.0,
+	   	Category:Cooking,
+	}
+	
+recipe Slice Salami
+	{
+		keep KitchenKnife,
+		HCSalami,
+		Result:HCSlicedsalami=4,
+		Time:150.0,
+	   	Category:Cooking,
+	}
+
+recipe Make some Peanut Butter and Jelly Sandwiches
+	{
+		BreadSlices=4,
+		PeanutButter,
+		HCJamgrape/HCJamapple/HCJamorange/HCJampeach/HCJampear/HCJamwatermelon/HCJampineapple/HCJamcherry/HCJamblueberry/HCJamblackberry/HCJamwildberry,
+		Result:HCPeanutjellysandwich=2,
+		Time:50.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jelly Sandwich
+	{
+		BreadSlices=2,
+		HCJamgrape/HCJamapple/HCJamorange/HCJampeach/HCJampear/HCJamwatermelon/HCJampineapple/HCJamcherry/HCJamblueberry/HCJamblackberry/HCJamwildberry,
+		Result:HCJellysandwich,
+		Time:50.0,
+	   	Category:Cooking,
+	}
+
+}

@@ -1,0 +1,900 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCTacosaucebottle
+	{
+	Weight 				= 	0.5,
+	AlwaysWelcomeGift 		= 	true,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName 			= 	Bottle of Taco Sauce,
+	Icon 				= 	HCTacosaucebottle,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCTacosaucebowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Taco Sauce,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCTacosaucebowl,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	ReplaceOnUse			=	Bowl,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCGuacamolejar
+	{
+	HungerChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Jar of Guacamole,
+	Icon				=	HCGuacamolejar,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCGuacamolebowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Guacamole,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCGuacamolebowl,
+	DaysTotallyRotten		=	4,
+	DaysFresh 			= 	1,
+	ReplaceOnUse			=	Bowl,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCSalsajar
+	{
+	HungerChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Jar of Salsa,
+	Icon				=	HCSalsajar,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1,
+	}
+
+item HCSalsabowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Salsa,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCSalsabowl,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	ReplaceOnUse			=	Bowl,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1,
+	}
+
+item HCNachojar
+	{
+	HungerChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Jar of Nacho Cheese,
+	Icon				=	HCNachojar,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCNachobowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Nacho Cheese,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCNachobowl,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	ReplaceOnUse			=	Bowl,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+
+item HCSourcream
+	{
+	HungerChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Sour Cream,
+	Icon				=	HCSourcream,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Burger:1;Salad:1,
+	}
+	
+item HCTortillacornbag
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Bag of Corn Tortillas,
+	Icon				=	HCTortillacornbag,
+	}
+
+item HCTortillaflourbag
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Bag of Flour Tortillas,
+	Icon				=	HCTortillaflourbag,
+	}
+
+item HCTortillacorn
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Corn Tortilla,
+	Icon				=	HCTortillacorn,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	6,
+	}
+
+item HCTortillaflour
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Flour Tortilla,
+	Icon				=	HCTortillaflour,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	6,
+	}
+
+item HCTortillacornuncooked
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DaysTotallyRotten		=	9,
+	DisplayName			=	Uncooked Corn Tortilla,
+	Icon				=	HCTortillacorn,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTortillacorn,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	20,
+	MinutesToBurn			=	50,
+	DaysFresh			=	4,
+	UnhappyChange			=	10,
+	BoredomChange			=	15,
+	}
+
+item HCTortillaflouruncooked
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DaysTotallyRotten		=	9,
+	DisplayName			=	Uncooked Flour Tortilla,
+	Icon				=	HCTortillaflour,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTortillaflour,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	20,
+	MinutesToBurn			=	50,
+	DaysFresh			=	4,
+	UnhappyChange			=	10,
+	BoredomChange			=	15,
+	}
+
+item HCQuesadillauncooked
+	{
+	HungerChange			=	-50,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Uncooked Quesadilla,
+	Icon				=	HCQuesadilla,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCQuesadilla,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	20,
+	MinutesToBurn			=	50,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	}
+
+item HCQuesadilla
+	{
+	HungerChange			=	-50,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Quesadilla,
+	Icon				=	HCQuesadilla,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	BoredomChange			=	-10,
+	}
+
+item HCBurritouncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Burrito,
+	Icon				=	HCBurritouncooked,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCBurrito,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCBurrito
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Burrito,
+	Icon				=	HCBurrito,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCBurritogradeuncooked
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Uncooked Burrito Grande,
+	Icon				=	HCBurritouncooked,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCBurritogrande,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCBurritogrande
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Burrito Grande,
+	Icon				=	HCBurrito,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-30,
+	}
+
+item HCTaquitouncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Taquito,
+	Icon				=	HCTaquitouncooked,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTaquito,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTaquito
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Taquito,
+	Icon				=	HCTaquito,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCTacocornuncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Taco,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacocorn,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacocorn
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Taco,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCTacocorngradeuncooked
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Uncooked Taco Grande,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacocorngrande,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacocorngrande
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Taco Grande,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-30,
+	}
+
+item HCTacoflouruncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Soft Taco,
+	Icon				=	HCTacoflour,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacoflour,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacoflour
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Soft Taco,
+	Icon				=	HCTacoflour,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCTacoflourgrandeuncooked
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Uncooked Soft Taco Grande,
+	Icon				=	HCTacoflour,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacoflourgrande,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacoflourgrande
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Soft Taco Grande,
+	Icon				=	HCTacoflour,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-30,
+	}
+
+item HCTacofishuncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Fish Taco,
+	Icon				=	HCTacofish,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacofish,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacofish
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Fish Taco,
+	Icon				=	HCTacofish,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCTacocornedbeefuncooked
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Uncooked Corned Beef Taco,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCTacocornedbeef,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCTacocornedbeef
+	{
+	HungerChange			=	-80,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Corned Beef Taco,
+	Icon				=	HCTacocorn,
+	ReplaceOnUse			=	Pan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+
+item HCEnchiladauncooked
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Uncooked Enchiladas,
+	Icon				=	HCEnchiladauncooked,
+	ReplaceOnUse			=	Pan,
+	ReplaceOnCooked			=	Hydrocraft.HCEnchilada,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	}
+
+item HCEnchilada
+	{
+	HungerChange			=	-160,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Enchiladas,
+	Icon				=	HCEnchilada,
+	ReplaceOnUse			=	RoastingPan,
+	DaysFresh			=	3,
+	DaysTotallyRotten		=	5,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-30,
+	}
+
+item HCTortillachipsbag
+	{
+	HungerChange			=	-15,
+	Weight				=	0.2,
+	Type				=	Food,
+	DisplayName			=	Bag of Tortilla Chips,
+	Icon				=	HCTortillachipsbag,
+        EvolvedRecipe 			= 	Soup:2;Stew:2;Salad:2,
+	}
+
+item HCSalsagreenjar
+	{
+	HungerChange			=	-10,
+	Weight				=	0.5,
+	Type				=	Food,
+	DisplayName			=	Jar of Salsa Verde,
+	Icon				=	HCSalsagreenjar,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCNachos
+	{
+	HungerChange			=	-50,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Nachos,
+	Icon				=	HCNachos,
+	ReplaceOnUse			=	Bowl,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	-10,
+	BoredomChange			=	-10,
+	}
+
+item HCNachosgrande
+	{
+	HungerChange			=	-80,
+	Weight				=	0.3,
+	Type				=	Food,
+	DisplayName			=	Nachos Grande,
+	Icon				=	HCNachos,
+	ReplaceOnUse			=	Bowl,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	}
+	
+/************************RECIPES************************/
+
+recipe Make Taco Sauce
+	{
+       		SkillRequired:Cooking=2,
+		HCTomatosaucebowl,
+		Vinegar,
+		HCHotsauce,
+		Result:HCTacosaucebowl,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Guacamole
+	{
+       		SkillRequired:Cooking=2,
+		Avocado=3,
+		Bowl,
+		keep KitchenKnife,
+		keep Spoon/HCWoodenspoon/HCSpork,
+		Result:HCGuacamolebowl,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Salsa
+	{
+       		SkillRequired:Cooking=2,
+		HCSlicedtomato,
+		HCSlicedonion,
+		BellPepper,
+		Bowl,
+		keep KitchenKnife,
+		Result:HCGuacamolebowl,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Nacho Cheese
+	{
+       		SkillRequired:Cooking=2,
+       		Flour,
+       		Milk,
+       		Butter,
+		HCGratedcheese/Processedcheese,
+		Bowl,
+		keep KitchenKnife,
+		Result:HCNachobowl,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Bag of Corn Tortillas
+    {
+    HCTortillacornbag,
+    Result:HCTortillacorn=20,
+    Time:15,
+    Category:Cooking,
+    }
+
+recipe Open Bag of Flour Tortillas
+    {
+    HCTortillaflourbag,
+    Result:HCTortillaflour=20,
+    Time:15,
+    Category:Cooking,
+    }
+ 
+recipe Make Corn Tortilla
+	{
+       		SkillRequired:Cooking=2,
+       		Cornflour,
+		Water,
+		HCCookingoil,
+		Pan,
+		Result:HCTortillacornuncooked,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Flour Tortilla
+	{
+       		SkillRequired:Cooking=2,
+       		Flour,
+		Water,
+		Salt,
+		Pan,
+		Result:HCTortillaflouruncooked,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Quesadilla
+	{
+       		SkillRequired:Cooking=1,
+       		HCTortillaflour,
+		HCGratedcheese/Processedcheese,
+		Pan,
+		Result:HCQuesadillauncooked,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Burrito
+	{
+       		SkillRequired:Cooking=2,
+       		HCTortillaflour,
+		HCGratedcheese/Processedcheese,
+		HCCannedrefriedbeansopen,
+		Pan,
+		Result:HCBurritouncooked,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Burrito Grande
+	{
+       		SkillRequired:Cooking=3,
+       		HCTortillaflour,
+		HCGratedcheese/Processedcheese,
+		HCCannedrefriedbeansopen,
+		HCTacosaucebottle/HCTacosaucebowl,
+		HCGuacamolejar/HCGuacamolebowl,
+		HCSalsajar/HCSalsabowl/HCSalsagreenjar,
+		HCSourcream,
+		Pan,
+		Result:HCBurritogradeuncooked,
+		Time:150.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Taquito
+	{
+       		SkillRequired:Cooking=2,
+       		HCTortillacorn,
+		HCCookingoil,
+		MeatPatty/Chicken,
+		Pan,
+		Result:HCTaquitouncooked,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Taco
+	{
+       		SkillRequired:Cooking=2,
+       		HCTortillacorn,
+		HCCookingoil,
+		MeatPatty/Chicken,
+		HCGratedcheese/Processedcheese,
+		Lettuce,
+		HCSlicedtomato,
+		HCSlicedonion,
+		HCTacosaucebottle/HCTacosaucebowl,
+		Pan,
+		Result:HCTacocornuncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Taco Grande
+	{
+       		SkillRequired:Cooking=3,
+       		HCTacocornuncooked,
+		HCGuacamolejar/HCGuacamolebowl,
+		HCSalsajar/HCSalsabowl/HCSalsagreenjar,
+		HCSourcream,
+		Result:HCTacocorngradeuncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Soft Taco
+	{
+       		SkillRequired:Cooking=2,
+       		HCTortillaflour,
+		HCCookingoil,
+		MeatPatty/Chicken,
+		HCGratedcheese/Processedcheese,
+		Lettuce,
+		HCSlicedtomato,
+		HCSlicedonion,
+		HCTacosaucebottle/HCTacosaucebowl,
+		Pan,
+		Result:HCTacoflouruncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Soft Taco Grande
+	{
+       		SkillRequired:Cooking=3,
+       		HCTacoflouruncooked,
+		HCGuacamolejar/HCGuacamolebowl,
+		HCSalsajar/HCSalsabowl/HCSalsagreenjar,
+		HCSourcream,
+		Result:HCTacoflourgrandeuncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Fish Taco
+	{
+       		SkillRequired:Cooking=4,
+       		HCTortillacorn,
+		HCCookingoil,
+		FishFillet,
+		Cabbage,
+		HCSlicedtomato,
+		HCSlicedonion,
+		HCTacosaucebottle/HCTacosaucebowl,
+		Pan,
+		Result:HCTacofishuncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Corned Beef Taco
+	{
+       		SkillRequired:Cooking=4,
+       		HCTortillacorn,
+		HCCookingoil,
+		CannedCornedBeefOpen,
+		Cabbage,
+		HCTacosaucebottle/HCTacosaucebowl,
+		MayonnaiseFull,
+		Pan,
+		Result:HCTacocornedbeefuncooked,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Enchilada
+	{
+       		SkillRequired:Cooking=3,
+       		HCTortillacorn=4,
+		HCCookingoil,
+		HCGratedcheese/Processedcheese,
+		MeatPatty/Chicken,
+		HCTacosaucebottle/HCTacosaucebowl,
+		HCSourcream,
+		RoastingPan,
+		Result:HCEnchiladauncooked,
+		Time:150.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Nachos
+	{
+       		SkillRequired:Cooking=2,
+       		HCTortillachipsbag,
+		HCNachojar/HCNachobowl,
+		Bowl,
+		Result:HCNachos,
+		Time:150.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Nachos Grande
+	{
+       		SkillRequired:Cooking=3,
+       		HCTortillachipsbag,
+		HCNachojar/HCNachobowl,
+		HCCannedrefriedbeansopen,
+		HCTacosaucebottle/HCTacosaucebowl,
+		HCGuacamolejar/HCGuacamolebowl,
+		HCSalsajar/HCSalsabowl/HCSalsagreenjar,
+		HCSourcream,
+		Bowl,
+		Result:HCNachosgrande,
+		Time:150.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+  	
+}

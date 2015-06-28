@@ -1,0 +1,33 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCFloppy
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Floppy Disk,
+        icon 			= HCFloppy,
+    }
+
+item HCFloppyapiculture
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Apiculture Floppy Disk,
+        icon 			= HCFloppyfull,
+    }
+
+/************************RECIPES************************/	
+
+
+    
+
+}

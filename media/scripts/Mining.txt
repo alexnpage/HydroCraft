@@ -1,0 +1,183 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCMinehole
+    {
+        Weight    		= 30,
+        Type    		= Normal,
+        DisplayName         	= Mine Hole,
+        icon 			= HCMinehole,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+
+item HCCoal
+    {
+        Weight    		= 1.0,
+        Type    		= Normal,
+        DisplayName         	= Coal,
+        icon 			= HCCoal,
+    }
+
+item HCGreyclay
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Grey Clay,
+        icon 			= HCGreyclay,
+    }
+
+item HCGreyclaybag
+    {
+        Weight    		= 1.0,
+        Type    		= Normal,
+        DisplayName         	= Bag of Grey Clay,
+        icon 			= HCGreyclaybag,
+    }
+
+item HCRedclay
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Red Clay,
+        icon 			= HCRedclay,
+    }
+
+item HCRedclaybag
+    {
+        Weight    		= 1.0,
+        Type    		= Normal,
+        DisplayName         	= Bag of Red Clay,
+        icon 			= HCRedclaybag,
+    }
+
+item HCCopperore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName        	= Copper Ore,
+        icon 			= HCCopperore,
+    }
+
+item HCTinore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Tin Ore,
+        icon 			= HCTinore,
+    }     
+
+item HCIronore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Iron Ore,
+        icon 			= HCIronore,
+    }     
+
+item HCLeadore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Lead Ore,
+        icon 			= HCLeadore,
+    }
+
+item HCBauxiteore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Bauxite Ore,
+        icon 			= HCBauxiteore,
+    }
+
+item HCSilverore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Silver Ore,
+        icon 			= HCSilverore,
+    }     
+
+item HCGoldore
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Gold Ore,
+        icon 			= HCGoldore,
+    }     
+
+/************************RECIPES************************/	
+
+recipe Dig Mine
+    {
+    HCAuger,
+    HCRopethick,
+    TentPeg=3,
+    HCWoodenladder,
+    Result:HCMinehole,
+    NeedToBeLearn:true,
+    Time:1000,
+    Category:Engineer,
+    }
+
+recipe Mine
+    {
+    keep HCMinehole,
+    keep Shovel,
+    CanBeDoneFromFloor:true,
+    Result:Stone,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    OnCreate:HCSiftDirt,
+    }
+
+recipe Shift Dirt
+    {
+    Dirtbag,
+    HCColander,
+    Result:HCColander,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Survivalist,
+    OnCreate:HCSiftDirt,
+    }
+
+recipe Unpack Grey Clay
+    {
+    HCGreyclaybag,
+    Result:HCGreyclay=20,
+    Time:15,
+    }
+
+recipe Pack Grey Clay
+    {
+    HCGreyclay=20,
+    Result:HCGreyclaybag,
+    Time:15,
+    }
+
+recipe Unpack Red Clay
+    {
+    HCRedclaybag,
+    Result:HCRedclay=20,
+    Time:15,
+    }
+
+recipe Pack Red Clay
+    {
+    HCRedclay=20,
+    Result:HCRedclaybag,
+    Time:15,
+    }
+
+}

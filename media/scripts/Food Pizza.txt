@@ -1,0 +1,328 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCGratedcheese
+{
+	Type				=			Food,
+	DisplayName			=			Grated Cheese,
+	Icon				=			HCGratedcheese,
+	Weight				=			0.2,
+	HungerChange 			=			-20,
+	DaysFresh 			=			7,
+	DaysTotallyRotten 		= 			10,
+	EvolvedRecipe 			= 			Soup:5;Sandwich:5;Burger:5;Salad:5,
+}
+	
+item HCTomatosaucepot
+	{
+	HungerChange			=	-20,
+	Weight				=	6,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	UnhappyChange			=	10,
+	MinutesToBurn			=	140,
+	DisplayName			=	Pot of Tomato Sauce,
+	ReplaceOnUse			=	Pot,
+	Icon				=	PotFull,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	70,
+	UnhappyChange			=	-10,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+	}
+	
+item HCTomatosaucebowl
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	UnhappyChange			=	10,
+	MinutesToBurn			=	140,
+	DisplayName			=	Bowl of Tomato Sauce,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCTomatosaucebowl,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	70,
+	UnhappyChange			=	-5,
+	BoredomChange			=	-5,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCPizzadough
+	{
+	Type				=	Food,
+	DisplayName			=	Pizza Dough,
+	Icon				=	HCPizzadough,
+	Weight				=	0.3,
+	HungerChange			=	-10,
+	}
+
+item HCBoringpizza
+    {
+	HungerChange			=	-25,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	DisplayName			=	Uncooked Boring Pizza,
+	IsCookable 			= 	TRUE,
+	MinutesToCook			=	45,
+	MinutesToBurn			=	70,
+	ReplaceOnCooked			=	Hydrocraft.HCBoringpizzabaked,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaA,
+	}
+
+item HCSimplepizza
+    {
+	HungerChange			=	-30,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	DisplayName			=	Uncooked Cheese Pizza,
+	IsCookable 			= 	TRUE,
+	MinutesToCook			=	45,
+	MinutesToBurn			=	70,
+	ReplaceOnCooked			=	Hydrocraft.HCSimplepizzabaked,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaB,
+	}
+
+item HCTastypizza
+	{
+	HungerChange			=	-35,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	DisplayName			=	Uncooked Tasty Pizza,
+	IsCookable 			= 	TRUE,
+	MinutesToCook			=	45,
+	MinutesToBurn			=	70,
+	ReplaceOnCooked			=	Hydrocraft.HCTastypizzabaked,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaC,
+	}
+
+item HCBoringpizzabaked
+	{
+	HungerChange			=	-60,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	DisplayName			=	Baked Boring Pizza,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaA,
+	}
+
+item HCSimplepizzabaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-20,
+	DisplayName			=	Baked Cheese Pizza,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaB,
+	}
+
+item HCTastypizzabaked
+	{
+	HungerChange			=	-100,
+	Weight				=	2,
+	Type				=	Food,
+	UnhappyChange			=	-35,
+	BoredomChange			=	-35,
+	DisplayName			=	Baked Tasty Pizza,
+	ReplaceOnUse			=	HCPizzastone,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzaC,
+   	}
+
+item HCBorringpizzaslice
+    {
+   	HungerChange			=	-15,
+	Weight				=	0.3,
+	Type				=	Food,
+	UnhappyChange			=	-5,
+	BoredomChange			=	-5,
+	DisplayName			=	Slice of Boring Pizza,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzasliceA,
+    }
+
+item HCSimplepizzaslice
+	{
+	HungerChange			=	-20,
+	Weight				=	0.3,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	BoredomChange			=	-10,
+	DisplayName			=	Slice of Simple Pizza,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzasliceB,
+	}
+
+item HCTastypizzaslice
+	{
+	HungerChange			=	-25,
+	Weight				=	0.3,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	BoredomChange			=	-15,
+	DisplayName			=	Slice of Tasty Pizza,
+	DaysTotallyRotten		=	7,
+	DaysFresh 			= 	4,
+	Icon				=	HCPizzasliceC,
+	}
+
+
+/************************RECIPES************************/
+   
+
+recipe Grate Cheese
+	{
+		keep HCCheesegrater,
+		Cheese,		
+	    	Result:HCGratedcheese,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Tomato Sauce
+	{
+       		SkillRequired:Cooking=3,
+		Pot,
+		Tomato =4,
+		Salt,	
+		HCGarlicpowder/Onion,
+		HCHerbs,		
+		Result:HCTomatosaucepot,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+	
+recipe Fill Tomato Sauce into Bowls
+	{
+		Bowl=2,
+		HCTomatosaucepot,
+		Result:HCTomatosaucebowl=2,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Knead Pizza Dough
+	{
+       		SkillRequired:Cooking=4,
+		Water = 1,
+		Flour/HCPotatoflour,
+		Yeast,	
+		Salt;1,	
+		HCHerbs;1,			
+		Result:HCPizzadough,
+		Time:60.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Boring Pizza
+	{
+       		SkillRequired:Cooking=4,
+		HCPizzastone,
+		HCPizzadough,
+		HCTomatosaucebowl,	
+		Result:HCBoringpizza,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+	
+recipe Make Cheese Pizza
+	{
+       		SkillRequired:Cooking=4,
+		HCBoringpizza,	
+		HCGratedcheese,
+		Result:HCSimplepizza,
+	   	Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Tasty Pizza
+	{
+       		SkillRequired:Cooking=4,
+		HCSimplepizza,
+		BellPepper/Broccoli/Leek/Eggplant/Pineapple/Avocado/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/HCSlicedonion/HCSlicedtomato/HCDriedtomatobag/HCCannedmushrooms,
+		Chicken/TunaTinOpen/CannedSardinesOpen/Salmon/BaconRashers/BaconBits/Frogmeat/HCSlicedsalami/HCSlicedham/HCCannedspam/HCBellpeppergreen/HCBellpepperyellow/HCGarlic/HCMushroom/HCShiitake/HCCrab,
+		Result:HCTastypizza,
+		Time:100.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Tasty Pizza
+	{
+       		SkillRequired:Cooking=4,
+		HCBoringpizza,
+		BellPepper/Broccoli/Leek/Eggplant/Pineapple/Avocado/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/HCSlicedonion/HCSlicedtomato/HCDriedtomatobag/HCCannedmushrooms,
+		Chicken/TunaTinOpen/CannedSardinesOpen/Salmon/BaconRashers/BaconBits/Frogmeat/HCSlicedsalami/HCSlicedham/HCCannedspam/HCBellpeppergreen/HCBellpepperyellow/HCGarlic/HCMushroom/HCShiitake/HCCrab,
+		HCGratedcheese,
+		Result:HCTastypizza,
+		Time:100.0,
+	   	Category:Cooking,
+	}	
+	
+recipe Cut Boring Pizza
+	{
+		keep HCPizzacutter,
+		HCBoringpizzabaked,
+		Result:HCBorringpizzaslice=4,
+		Time:20.0,
+	   	Category:Cooking,
+	}
+	
+recipe Cut Simple Pizza
+	{
+		keep HCPizzacutter,
+		HCSimplepizzabaked,
+		Result:HCSimplepizzaslice=4,
+		Time:20.0,
+	   	Category:Cooking,
+	}
+	
+recipe Cut Tasty Pizza
+	{
+		keep HCPizzacutter,
+		HCTastypizzabaked,
+		Result:HCTastypizzaslice=4,
+		Time:20.0,
+	   	Category:Cooking,
+
+	}
+		
+}

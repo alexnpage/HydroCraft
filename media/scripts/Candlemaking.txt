@@ -1,0 +1,41 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCCandleberrywax
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Candleberry Wax,
+        icon = HCCandleberrywax,
+    }   
+
+item HCBeeswax
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Beeswax,
+        icon = HCBeeswax,
+    }   
+
+
+
+/************************RECIPES************************/
+    
+
+recipe Make Candleberry Wax
+    {
+    HCCandleberry=5,
+    Result:HCCandleberrywax,
+    NeedToBeLearn:true,
+    Time:100,
+    }
+
+}

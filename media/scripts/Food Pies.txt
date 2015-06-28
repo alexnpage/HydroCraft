@@ -1,0 +1,274 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCPiepan
+    	{
+    	Weight				=	0.5,
+    	Type				=	Normal,
+    	DisplayName			=   	Pie Pan,
+    	Icon				=	HCPiepan,
+	}
+
+item HCPiecrust
+	{	
+	Type				=	Food,
+	DisplayName			=	Pie Crust,
+	Icon				=	HCPiecrust,
+	Weight				=	1,
+	HungerChange			=	-10,
+	ReplaceOnUse			=	HCPiepan,
+	}
+
+item HCPieapple
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Uncooked Apple Pie,
+	Icon				=	HCPieapple,
+	ReplaceOnUse			=	HCPiepan,
+	ReplaceOnCooked			=	HCPieapplebaked,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	5,
+	UnhappyChange			=	15,
+	BoredomChange			=	15,
+	}
+
+item HCPieapplebaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Baked Apple Pie,
+	Icon				=	HCPieapple,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	}
+
+item HCPieblueberry
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Uncooked Blueberry Pie,
+	Icon				=	HCPieblueberry,
+	ReplaceOnUse			=	HCPiepan,
+	ReplaceOnCooked			=	HCPieblueberrybaked,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	5,
+	UnhappyChange			=	15,
+	BoredomChange			=	15,
+	}
+
+item HCPieblueberrybaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Baked Blueberry Pie,
+	Icon				=	HCPieblueberry,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	}
+
+item HCPiepeach
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Uncooked Peach Pie,
+	Icon				=	HCPiepeach,
+	ReplaceOnUse			=	HCPiepan,
+	ReplaceOnCooked			=	HCPiepeachbaked,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	5,
+	UnhappyChange			=	15,
+	BoredomChange			=	15,
+	}
+
+item HCPiepeachbaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Baked Peach Pie,
+	Icon				=	HCPiepeach,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	}
+
+item HCPiepear
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Uncooked Pear Pie,
+	Icon				=	HCPiepeach,
+	ReplaceOnUse			=	HCPiepan,
+	ReplaceOnCooked			=	HCPiepearbaked,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	5,
+	UnhappyChange			=	15,
+	BoredomChange			=	15,
+	}
+
+item HCPiepearbaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Baked Pear Pie,
+	Icon				=	HCPiepear,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	}
+
+item HCPiepumpkin
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Uncooked Pumpkin Pie,
+	Icon				=	HCPiepumpkin,
+	ReplaceOnUse			=	HCPiepan,
+	ReplaceOnCooked			=	HCPiepumpkinbaked,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	DaysFresh			=	5,
+	UnhappyChange			=	15,
+	BoredomChange			=	15,
+	}
+
+item HCPiepumpkinbaked
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Baked Pumpkin Pie,
+	Icon				=	HCPiepumpkin,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	}
+
+item HCQuiche
+	{
+	HungerChange			=	-80,
+	Weight				=	2,
+	Type				=	Food,
+	DaysTotallyRotten		=	10,
+	DisplayName			=	Quiche,
+	Icon				=	HCQuiche,
+	ReplaceOnUse			=	HCPiepan,
+	DaysFresh			=	5,
+	UnhappyChange			=	-25,
+	BoredomChange			=	-12,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	MinutesToCook			=	30,
+	MinutesToBurn			=	50,
+	}
+
+/************************RECIPES************************/
+   
+recipe Make Pie Crust
+	{
+		HCPiepan,
+		PieDough,
+		Result:HCPiecrust,
+		Time:55.0,
+	   	Category:Cooking,
+	}
+ 
+recipe Make Apple Pie
+	{
+		HCPiecrust,
+		Apple/HCCannedappleopen,
+		Result:HCPieapple,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Blueberry Pie
+	{
+		HCPiecrust,
+		BerryBlue=10,
+		Result:HCPieblueberry,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Peach Pie
+	{
+		HCPiecrust,
+		Peach/HCCannedpeachopen,
+		Result:HCPiepeach,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Pear Pie
+	{
+		HCPiecrust,
+		HCPear/HCCannedpearopen,
+		Result:HCPiepear,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Pumpkin Pie
+	{
+		HCPiecrust,
+		Pumpkin/HCCannedpumpkinopen,
+		Result:HCPiepumpkin,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Quiche
+	{
+		HCPiecrust,
+		Cheese,
+		Egg,
+		Chicken/Steak/Onion/Broccoli/Tomato/Leek/Ham,
+		Result:HCQuiche,
+		Time:125.0,
+	   	Category:Cooking,
+	}
+	
+}

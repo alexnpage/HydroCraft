@@ -1,0 +1,158 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCChocolatewhite
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	White Chocolate,
+	Icon				=	HCChocolatewhite,
+	}
+
+item HCChocolatedark
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Dark Chocolate,
+	Icon				=	HCChocolatedark,
+	}
+	
+item HCTrailmix
+	{
+	HungerChange			=	-15,
+	UnhappyChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	DisplayName			=	Trail Mix,
+	Icon				=	HCTrailmix,
+	}
+	
+item HCEnergybar	
+	{
+	HungerChange			=	-15,
+	UnhappyChange			=	-10,
+	FatigueChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	DisplayName			=	Energy bar,
+	Icon				=	HCEnergybar,
+	}
+
+item HCGum
+    	{
+        Weight    			= 0.1,
+        Type   				= Normal,
+        DisplayName         		= Pack of Chewing Gum,
+        icon 				= HCGum,
+    	}
+
+item HCGumstick
+	{
+	HungerChange			=	-1,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Stick of Chewing Gum,
+	Icon				=	HCGumstick,
+	}
+
+item HCCandycorn
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Candy Corn,
+	Icon				=	HCCandycorn,
+	}
+
+item HCCandymnm
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Rainbow Chocolate Candy,
+	Icon				=	HCCandymnm,
+	}
+
+item HCCandyrainbow
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Rainbow Fruit Candy,
+	Icon				=	HCCandyrainbow,
+	}
+
+item HCGummybears
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Gummy Bears,
+	Icon				=	HCGummybears,
+	}
+
+item HCGummyworms
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Gummy Worms,
+	Icon				=	HCGummyworms,
+	}
+
+item HCJellybeans
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Jellybeans,
+	Icon				=	HCJellybeans,
+	}
+
+item HCTaffy
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Taffy,
+	Icon				=	HCTaffy,
+	}
+
+/************************RECIPES************************/
+
+recipe Pack Stick of Chewing Gum
+    {
+    HCGumstick=20,
+    Result:HCGum,
+    Time:15,
+    Category:Cooking,
+    }
+
+recipe Open Pack of Chewing Gum
+    {
+    HCGum,
+    Result:HCGumstick=20,
+    Time:15,
+    Category:Cooking,
+    }    
+	
+}

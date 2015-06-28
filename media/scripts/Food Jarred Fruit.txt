@@ -1,0 +1,528 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCJar
+    {
+        Weight    		= 0.3,
+        Type   			= Normal,
+        DisplayName         	= Jar with Lid,
+        icon 			= HCJar,
+    }
+
+
+item HCJarredmelon
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Watermelon,
+	Icon				=	HCJarredmelon,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJarredmelonpot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Watermelon,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCJarredmeloncooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredmeloncooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Watermelon,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredapples
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Apples,
+	Icon				=	HCJarredapple,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+	
+item HCJarredapplesauce
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Applesauce,
+	Icon				=	HCApplesauce,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}	
+
+item HCJarredapplepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Apples,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	cccp.HCJarredapplecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredapplecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Apples,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredapplesmashedcooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Smashed Cooked Apples,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredpeach
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Peaches,
+	Icon				=	HCJarredpeach,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJarredpeachpot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Peaches,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCJarredpeachcooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredpeachcooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Peaches,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+	
+item HCJarredorange
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Orange Slices,
+	Icon				=	HCJarredorange,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+	
+item HCJarredorangepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Oranges,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCJarredorangecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredorangecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Oranges,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredgrapes
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Grapes,
+	Icon				=	HCJarredgrapes,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+	
+item HCJarredgrapespot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Grapes,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCJarredgrapescooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredgrapescooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Grapes,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredberries
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jarred Berries,
+	Icon				=	HCJarredberries,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCBunchofberries
+	{
+	HungerChange			=	-10,
+	BoredomChange			=	-10,
+	Weight				=	0.8,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Bunch of Berries,
+	Icon				=	HCBunchofberries,
+	DaysFresh			=	6,
+	DaysTotallyRotten		=	10,
+	}
+	
+item HCJarredberriespot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Berries,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCJarredberriescooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJarredberriescooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Berries,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+
+/************************RECIPES************************/
+
+
+recipe Put on Lid
+	{
+        	EmptyJar,
+        	JarLid,	
+		Result:HCJar,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Remove Lid
+	{
+        	HCJar,
+		Result:EmptyJar,
+		Time:75.0,
+    		OnCreate:recipe_hcjarlid,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Jarred Waterlon 
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		Vinegar,
+		Sugar,
+		WatermelonSliced=4,	
+		Result:HCJarredmelonpot,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Jar Cooked Waterlon 
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJarredmeloncooked,
+		Result:HCJarredmelon=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+	
+recipe Prepare Jarred Apples 
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Sugar,
+		HCSlicedApple= 8,	
+		Result:HCJarredapplepot,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Apple Sauce
+	{
+        	SkillRequired:Cooking=4,
+		keep Hammer/BaseballBat/Plank,
+		HCJarredapplecooked,
+		Result:HCJarredapplesmashedcooked,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+	
+recipe Jar Cooked Apples 
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,	
+		HCJarredapplecooked,
+		Result:HCJarredapples=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Jarred Peaches
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Sugar,
+		Peach=2,	
+		Result:HCJarredpeachpot,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+	
+recipe Jar Cooked Peaches
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,	
+		HCJarredpeachcooked,
+		Result:HCJarredpeach=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}	
+
+recipe Jar Apple Sauce 
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJarredapplesmashedcooked,
+		Result:HCJarredapplesauce=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot
+	}	
+	
+recipe Prepare Jarred Oranges 
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Sugar,
+		HCSlicedorange=8,	
+		Result:HCJarredorangepot,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+	
+recipe Jar Cooked Oranges 
+	{
+        	SkillRequired:Cooking=4,
+		HCJar =2,	
+		HCJarredorangecooked,
+		Result:HCJarredorange=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}	
+
+recipe Prepare Jarred Grapes 
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Sugar,
+		Grapes=2,	
+		Result:HCJarredgrapespot,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+		
+recipe Jar Cooked Grapes 
+	{
+        	SkillRequired:Cooking=4,
+		HCJar =2,	
+		HCJarredgrapescooked,
+		Result:HCJarredgrapes=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+	
+recipe Prepare Jarred Berries 
+	{
+        	SkillRequired:Cooking=4,
+		Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5,
+		Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5,
+		Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5,
+		Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5,
+		Result:HCBunchofberries,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Cook Berries 
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Sugar,
+		HCBunchofberries,
+		Result:HCJarredberriespot,
+		Time:75.0,
+	   	Category:Cooking,
+	}	
+recipe Jar Cooked Berries
+	{
+        	SkillRequired:Cooking=4,
+		HCJar =2,
+		HCJarredberriescooked,
+		Result:HCJarredberries=2,
+		Time:75.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+	
+}

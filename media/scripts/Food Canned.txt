@@ -1,0 +1,297 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+
+item HCCannedapple
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Apples,
+	Icon				=	HCCannedapple,
+	}
+
+item HCCannedpear
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Pears,
+	Icon				=	HCCannedpear,
+	}
+
+item HCCannedpeach
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Peaches,
+	Icon				=	HCCannedpeach,
+	}
+
+item HCCannedgreenbeans
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Green Beans,
+	Icon				=	HCCannedgreenbeans,
+	}
+
+item HCCannedmushrooms
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Mushrooms,
+	Icon				=	HCCannedmushrooms,
+	}
+
+item HCCannedpumpkin
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Pumpkin,
+	Icon				=	HCCannedpumpkin,
+	}
+
+item HCCannedspam
+	{
+	Weight				=	0.3,
+	Type				=	Normal,
+	DisplayName			=	Canned Spam,
+	Icon				=	HCCannedspam,
+	}
+
+item HCCannedcranberries
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Cranberries,
+	Icon				=	HCCannedcranberries,
+	}
+
+item HCCannedpineapple
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Pineapple,
+	Icon				=	HCCannedpineapple,
+	}
+
+item HCCannedrefriedbeans
+	{
+	Weight				=	0.5,
+	Type				=	Normal,
+	DisplayName			=	Canned Refried Beans,
+	Icon				=	HCCannedrefriedbeans,
+	}
+
+item HCCannedappleopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Canned Apples,
+	Icon				=	HCCannedappleopen,
+	DaysFresh			=	2,
+	}
+
+item HCCannedpearopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Canned Pears,
+	Icon				=	HCCannedpearopen,
+	DaysFresh			=	2,
+	}
+
+item HCCannedpeachopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Canned Peaches,
+	Icon				=	HCCannedpeachopen,
+	DaysFresh			=	2,
+	}
+
+item HCCannedgreenbeansopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Canned Green Beans,
+	Icon				=	HCCannedgreenbeansopen,
+	DaysFresh			=	2,
+	}
+item HCCannedmushroomsopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Canned Mushrooms,
+	Icon				=	HCCannedmushroomsopen,
+	DaysFresh			=	2,
+	}
+item HCCannedpumpkinopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Cannned Pumpkin,
+	Icon				=	HCCannedpumpkinopen,
+	DaysFresh			=	2,
+	}
+item HCCannedspamopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Cannned Spam,
+	Icon				=	HCCannedspamopen,
+	DaysFresh			=	2,
+	}
+item HCCannedcranberriesopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Cannned Cranberries,
+	Icon				=	HCCannedcranberriesopen,
+	DaysFresh			=	2,
+	}
+
+item HCCannedpineappleopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Cannned Pineapple,
+	Icon				=	HCCannedpineappleopen,
+	DaysFresh			=	2,
+	}
+
+item HCCannedrefriedbeansopen
+	{
+	HungerChange			=	-30,
+	Weight				=	0.5,
+	Type				=	Food,
+	DaysTotallyRotten		=	4,
+	UnhappyChange			=	10,
+	DisplayName			=	Open Cannned Refried Beans,
+	Icon				=	HCCannedrefriedbeansopen,
+	DaysFresh			=	2,
+	}
+
+/************************RECIPES************************/
+    
+recipe Open Canned Apple
+	{
+		HCCannedapple,
+	   	keep TinOpener, 
+	   	Result:HCCannedappleopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Canned Pear
+	{
+	   	HCCannedpear,
+	  	keep TinOpener, 
+	   	Result:HCCannedpearopen,
+	  	Time:80.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Canned Peach
+	{
+	   	HCCannedpeach,
+	   	keep TinOpener, 
+	   	Result:HCCannedpeachopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Canned Green Beans
+	{
+	   	HCCannedgreenbeans,
+	   	keep TinOpener, 
+	   	Result:HCCannedgreenbeansopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+recipe Open Canned Mushrooms
+	{
+	   	HCCannedmushrooms,
+	   	keep TinOpener, 
+	   	Result:HCCannedmushroomsopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+recipe Open Canned Pumpkin
+	{
+	   	HCCannedpumpkin,
+	   	keep TinOpener, 
+	   	Result:HCCannedpumpkinopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+recipe Open Canned Spam
+	{
+	   	HCCannedspam,
+	   	keep TinOpener, 
+	   	Result:HCCannedspamopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+recipe Open Canned Cranberries
+	{
+	   	HCCannedcranberries,
+	   	keep TinOpener, 
+	   	Result:HCCannedcranberriesopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Canned Pineapple
+	{
+	   	HCCannedpineapple,
+	   	keep TinOpener, 
+	   	Result:HCCannedpineappleopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+
+recipe Open Canned Refried Beans
+	{
+	   	HCCannedrefriedbeans,
+	   	keep TinOpener, 
+	   	Result:HCCannedrefriedbeansopen,
+	   	Time:80.0,
+	   	Category:Cooking,
+	}
+	
+}

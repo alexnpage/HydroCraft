@@ -1,0 +1,338 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCHoneybee
+	{
+	Weight 				= 	0.1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Honeybee,
+	Icon				=	HCHoneybee,
+	}
+
+item HCQueenbee
+	{
+	Weight 				= 	0.1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Queen Honeybee,
+	Icon				=	HCQueenbee,
+	}
+
+item HCBeekeeperhat
+	{
+	Weight 				= 	0.2,
+	Type 				= 	Normal,
+	DisplayName 			= 	Beekeeper Hat,
+	Icon				=	HCBeekeeperhat,
+	}
+
+item HCBeesmokerempty
+	{
+	Weight 				= 	0.5,
+	Type 				= 	Normal,
+	DisplayName 			= 	Empty Bee Smoker,
+	Icon				=	HCBeesmoker,
+	}
+
+item HCBeesmokerfull
+	{
+	Weight 				= 	0.5,
+	Type				=	Drainable,
+	UseWhileEquipped		=	FALSE,
+	UseDelta			=	0.25,
+	DisplayName 			= 	Bee Smoker,
+	ReplaceOnDeplete		=	HCBeesmokerempty,
+	Icon				=	HCBeesmoker,
+	}
+
+item HCHoney
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Honey,
+	Icon				=	HCHoney,
+	BoredomChange			=	-10,
+	}
+
+item HCJarhoney
+	{
+	HungerChange			=	-35,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Honey,
+	Icon				=	HCJarhoney,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCWoodenbuckethoney
+    {
+        Weight    		= 4,
+        Type    		= Normal,
+        DisplayName         	= Wooden Bucket with Honey,
+        icon 			= HCWoodenbuckethoney,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+
+item HCHoneycomb
+	{
+	Weight 				= 	0.3,
+	Type 				= 	Normal,
+	DisplayName 			= 	Honeycomb,
+	Icon				=	HCHoneycomb,
+	}
+
+item HCHoneycombframe
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Honeycomb Frame,
+	Icon				=	HCHoneycombframe,
+	}
+
+item HCBroodbox
+	{
+	Weight 				= 	3,
+	Type 				= 	Normal,
+	DisplayName 			= 	Brood Box,
+	Icon				=	HCBroodbox,
+	}
+
+item HCBeehive1
+	{
+	Weight 				= 	4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Beehive (Stage 1),
+	Icon				=	HCBeehive1,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBeehive2
+	{
+	Weight 				= 	8,
+	Type 				= 	Normal,
+	DisplayName 			= 	Beehive (Stage 2),
+	Icon				=	HCBeehive2,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+
+item HCBeehive3
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Beehive (Stage 3),
+	Icon				=	HCBeehive3,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+
+		
+/************************RECIPES************************/
+    
+recipe Build Honeycomb Frame
+    {
+	Plank,
+	Nails,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCHoneycombframe,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=3,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Build Brood Box
+    {
+	Plank=3,
+	Nails=2,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCBroodbox,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=3,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Build Beehive
+    {
+	Plank,
+	Nails,
+	HCBroodbox,
+	HCHoneycombframe=3,
+	HCHoneybee=10,
+	HCQueenbee,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCBeehive1,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=3,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Upgrade Beehive
+    {
+	Plank,
+	Nails,
+	HCBroodbox,
+	HCHoneycombframe=3,
+	HCBeehive1,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCBeehive2,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=4,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Build Roof for Beehive
+    {
+	Nails=2,
+	HCWoodshingles=2,
+	HCBeehive2,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCBeehive3,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=5,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Fill Bee Smoker with Fuel
+    {
+    	HCBeesmokerempty,
+	SheetPaper/HCGrass/HCBark/HCBirchbark/HCOakleaves/HCWillowbranch/HCPinebough/HCFirbough,
+	Lighter/Matches/PercedWood,
+    	Result:HCBeesmokerfull,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Harvest Honeycomb
+    {
+	keep HCBeehive1,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+	Violets,
+    	CanBeDoneFromFloor:true,
+    	Result:HCHoneycomb,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Harvest 2 Honeycombs
+    {
+	keep HCBeehive2,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+	Violets,
+    	CanBeDoneFromFloor:true,
+    	Result:HCHoneycomb=2,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Harvest 4 Honeycombs
+    {
+	keep HCBeehive3,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+	Violets,
+    	CanBeDoneFromFloor:true,
+    	Result:HCHoneycomb=4,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Process Honeycomb
+    {
+    	HCWoodenbucket,
+	HCHoneycomb=4,
+    	Result:HCWoodenbuckethoney,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+	Category:Cooking,
+    	OnCreate:recipe_hcbeeswax,
+    }
+
+recipe Jar Honey
+    {
+        SkillRequired:Cooking=4,
+    	HCJar=4,
+	HCWoodenbuckethoney,
+    	Result:HCJarhoney=4,
+    	Time:50.0,
+	Category:Cooking,
+    	OnCreate:recipe_hcwoodenbucket,
+    }
+
+recipe Collect Bee
+    {
+	keep HCBugnet,
+	keep HCBeehive2,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+    	CanBeDoneFromFloor:true,
+    	Result:HCHoneybee,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Collect Bees
+    {
+	keep HCBugnet,
+	keep HCBeehive3,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+    	CanBeDoneFromFloor:true,
+    	Result:HCHoneybee=2,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Collect New Queen Bee
+    {
+	keep HCBugnet,
+	keep HCBeehive3,
+	keep HCBeekeeperhat,
+	keep HCWorkgloves,
+	HCBeesmokerfull,
+    	CanBeDoneFromFloor:true,
+    	Result:HCQueenbee,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Farming,
+    }
+				
+}

@@ -1,0 +1,573 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCKiln
+    {
+        Weight    		= 20.0,
+        Type    		= Normal,
+        DisplayName         	= Kiln,
+        icon 			= HCKiln,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCGreybrick
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Grey Brick,
+        icon 			= HCGreybrick,
+    }
+
+item HCRedbrick
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Red Brick,
+        icon 			= HCRedbrick,
+    }
+
+item HCIngotmold
+    {
+        Weight    		= 0.5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Ingot Mold,
+        icon 			= HCIngotmold,
+    }
+
+item HCNailmold
+    {
+        Weight    		= 0.5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Nail Mold,
+        icon 			= HCNailmold,
+    }
+
+item HCAnvilmold
+    {
+        Weight    		= 5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Anvil Mold,
+        icon 			= HCAnvilmold,
+    }
+
+
+item HCBulletcasingmold
+    {
+        Weight    		= 0.5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Bullet Casing Mold,
+        icon 			= HCBulletcasingmold,
+    }
+
+item HCBullettipmold
+    {
+        Weight    		= 0.5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Bullet Tip Mold,
+        icon 			= HCBullettipmold,
+    }
+
+item HCBuckshotmold
+    {
+        Weight    		= 0.5,
+	Type 			= Drainable,
+	UseDelta 		= 0.25,
+        DisplayName         	= Buckshot Mold,
+        icon 			= HCBuckshotmold,
+    }
+
+item HCClaypot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Clay Pot,
+        icon 			= HCClaypot,
+    }
+
+item HCClayflowerpot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Clay Flowerpot,
+        icon 			= HCClayflowerpot,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCClayjar
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Clay Jar,
+        icon 			= HCClayjar,
+    }
+
+item HCClaypipe
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Clay Pipe,
+        icon 			= HCClaypipe,
+    }
+
+item HCClaycauldron
+    {
+        Weight    		= 5,
+        Type    		= Normal,
+        DisplayName         	= Clay Cauldron,
+        icon 			= HCClaycauldron,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCClayurn
+    {
+        Weight    		= 3,
+        Type    		= Normal,
+        DisplayName         	= Clay Urn,
+        icon 			= HCClayurn,
+    }
+
+item HCClayteapot
+    {
+        Weight    		= 1,
+	CanStoreWater		= TRUE,
+        Type    		= Normal,
+        DisplayName         	= Clay Teapot,
+	ReplaceOnUseOn		= WaterSource-HCClayteapotfull,
+        icon 			= HCClayteapot,
+    }
+
+item HCClayteapot
+    {
+	IsWaterSource		=	TRUE,
+	Weight			=	2,
+	CanStoreWater		=	TRUE,
+	Type			=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta		=	0.07,
+	DisplayName		=	Full Clay Teapot,
+	ReplaceOnDeplete	=	HCClayteapot,
+	ReplaceOnUseOn		=	WaterSource-HCClayteapotfull,
+	Icon			=	HCClayteapot,
+    }
+
+item HCClaymug
+    {
+        Weight    		= 0.2,
+	CanStoreWater		= TRUE,
+        Type    		= Normal,
+        DisplayName         	= Clay Mug,
+	ReplaceOnUseOn		= WaterSource-HCClaymugfull,
+        icon 			= HCClaymug,
+    }
+
+item HCClaymugfull
+    {
+	IsWaterSource		=	TRUE,
+	Weight			=	1,
+	CanStoreWater		=	TRUE,
+	Type			=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta		=	0.07,
+	DisplayName		=	Full Clay Mug,
+	ReplaceOnDeplete	=	HCClayteapot,
+	ReplaceOnUseOn		=	WaterSource-HCClaymugfull,
+	Icon			=	HCClaymug,
+    }
+
+
+/************************RECIPES************************/
+    
+
+recipe Make Kiln
+    {
+    HCGreyclay=20,
+    Result:HCKiln,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Kiln
+    {
+    HCRedclay=20,
+    Result:HCKiln,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Grey Brick
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCGreybrick,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Red Brick
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCRedbrick,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Pot
+    {
+    HCGreyclay=5,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaypot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Pot
+    {
+    HCRedclay=5,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaypot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Flowerpot
+    {
+    HCGreyclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayflowerpot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Flowerpot
+    {
+    HCRedclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayflowerpot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Jar
+    {
+    HCGreyclay=3,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayjar,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Jar
+    {
+    HCRedclay=3,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayjar,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Mug
+    {
+    HCGreyclay=2,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaymug,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Mug
+    {
+    HCRedclay=2,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaymug,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Teapot
+    {
+    HCGreyclay=4,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayteapot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Teapot
+    {
+    HCRedclay=4,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayteapot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Cauldron
+    {
+    HCGreyclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaycauldron,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Cauldron
+    {
+    HCRedclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaycauldron,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Urn
+    {
+    HCGreyclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayurn,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Urn
+    {
+    HCRedclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClayurn,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Pipe
+    {
+    HCGreyclay=2,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaypipe,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Clay Pipe
+    {
+    HCRedclay=2,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCClaypipe,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Ingot Mold
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCIngotmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Ingot Mold
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCIngotmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Nail Mold
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCNailmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Nail Mold
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCNailmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Anvil Mold
+    {
+    HCGreyclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCAnvilmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Anvil Mold
+    {
+    HCRedclay=10,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCAnvilmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+
+recipe Make Bullet Casing Mold
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBulletcasingmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Bullet Casing Mold
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBulletcasingmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Bullet Tip Mold
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBullettipmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Bullet Tip Mold
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBullettipmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Buckshot Mold
+    {
+    HCGreyclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBuckshotmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Buckshot Mold
+    {
+    HCRedclay,
+    Log,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:HCBuckshotmold,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+}

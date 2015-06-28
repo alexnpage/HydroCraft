@@ -1,0 +1,316 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCHardhat
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Hard Hat,
+        icon 			= HCHardhat,
+    }
+
+
+item HCCowboyhat
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Cowboy Hat,
+        icon 			= HCCowboyhat,
+    }
+
+item HCTophat
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Top Hat,
+        icon 			= HCTophat,
+    }
+
+
+item HCBandanna
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bandanna,
+        icon 			= HCBandanna,
+    }
+
+item HCMittens
+    {
+        Weight    		= 0.25,
+        Type    		= Normal,
+        DisplayName         	= Mittens,
+        icon 			= HCMittens,
+    }
+
+item HCSkimask
+   {
+	BodyLocation		= Head,
+        Weight    		= 0.1,
+	Type			= Clothing,
+	Temperature		= 10,
+	DisplayName		= Ski Mask,
+	Icon			= HCSkimask,
+	}
+
+item HCRaincoat
+   {
+	Palettes		= Shirt_White,
+	BodyLocation		= Top,
+	PalettesStart		= Shirt_,
+	Type			= Clothing,
+	Temperature		= 15,
+	SpriteName		= Shirt,
+	DisplayName		= Raincoat,
+	Icon			= HCRaincoat,
+   }
+
+item HCRainponcho
+   {
+	Palettes		= Shirt_White,
+	BodyLocation		= Top,
+	PalettesStart		= Shirt_,
+	Type			= Clothing,
+	Temperature		= 10,
+	SpriteName		= Shirt,
+	DisplayName		= Rain Poncho,
+	Icon			= HCRainponcho,
+   }
+
+item HCDownjacket
+	{
+	Palettes		= Shirt_White,
+	BodyLocation		= Top,
+	PalettesStart		= Shirt_,
+	Type			= Clothing,
+	Temperature		= 25,
+	SpriteName		= Shirt,
+	DisplayName		= Down Jacket,
+	Icon			= Sweater,
+	}
+
+item HCLifevest
+	{
+	Palettes		= Vest_White,
+	BodyLocation		= Top,
+	PalettesStart		= Vest_,
+	Type			= Clothing,
+	Temperature		= 5,
+	SpriteName		= Vest,
+	DisplayName		= Life Vest,
+	Icon			= HCLifevest,
+	}
+
+item HCBra
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bra,
+        icon 			= HCBra,
+    }
+
+item HCBra2
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bra,
+        icon 			= HCBra2,
+    }
+
+item HCBra3
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bra,
+        icon 			= HCBra3,
+    }
+
+item HCBra4
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bra,
+        icon 			= HCBra4,
+    }
+
+item HCBra5
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bra,
+        icon 			= HCBra5,
+    }
+
+item HCBriefs
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs,
+    }
+
+item HCBriefs2
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs2,
+    }
+
+item HCBriefs3
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs3,
+    }
+
+item HCBriefs4
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs4,
+    }
+
+item HCBriefs5
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs5,
+    }
+
+item HCBriefs6
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs6,
+    }
+
+item HCBriefs7
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Briefs,
+        icon = HCBriefs7,
+    }
+
+item HCBoxers
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers,
+    }
+
+item HCBoxers2
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers2,
+    }
+
+item HCBoxers3
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers3,
+    }
+
+item HCBoxers4
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers4,
+    }
+
+item HCBoxers5
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers5,
+    }
+
+item HCBoxers6
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Boxers,
+        icon = HCBoxers6,
+    }
+
+item HCPanties
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Panties,
+        icon = HCPanties,
+    }
+
+item HCPanties2
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Panties,
+        icon = HCPanties2,
+    }
+
+item HCPanties3
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Panties,
+        icon = HCPanties3,
+    }
+
+item HCPanties4
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Panties,
+        icon = HCPanties4,
+    }
+
+item HCPanties5
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Panties,
+        icon = HCPanties5,
+    }
+
+item HCRollerskates
+	{
+		BodyLocation	=	Shoes,
+		Type		=	Clothing,
+		Temperature	=	3,
+		SpriteName	=	Shoes1,
+		DisplayName	=	Roller Skates,
+		Icon		=	HCRollerskates,
+	}
+
+/************************RECIPES************************/
+    
+
+recipe Make Rain Poncho
+    {
+    keep KitchenKnife/HuntingKnife/Scissors/HCScalpel/HCJackknife,
+    Garbagebag,
+    Result:HCRainponcho,
+    Time:15,
+    Category:Engineer,
+    }	
+}

@@ -1,0 +1,495 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCFloss
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Floss,
+        icon 			= HCFloss,
+    }
+
+item HCPlunger
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Plunger,
+        icon 			= HCPlunger,
+    }
+
+item HCHairgel
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Hairgel,
+        icon 			= HCHairgel,
+    }
+
+item HCHairdryer
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Hairdryer,
+        icon 			= HCHairdryer,
+    }
+
+item HCElectrictoothbrush
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Electric Toothbrush,
+        icon 			= HCElectrictoothbrush,
+    }
+
+item HCElectricrazor
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Electric Razor,
+        icon 			= HCElectricrazor,
+    }
+
+item HCQtip
+    {
+        Weight    		=    0.1,
+        Type    		=    Normal,
+        DisplayName    		=    Cotton Swab,
+        Icon    		=    HCQtip.png,
+    }
+
+item HCQtipbox
+    {
+        Weight    		=    0.3,
+        Type    		=    Normal,
+        DisplayName    		=    Box of Cotton Swabs,
+        Icon    		=    HCQtipbox.png,
+    }
+
+item HCWashclothwet
+    {
+	Type			=	Normal,
+	DisplayName		=	Wet Washcloth,
+	Icon			=	HCWashclothwet,
+	Weight			=	0.4,
+    }
+  
+item HCWashcloth
+    {
+	Weight			=	0.2,
+	Type			=	Drainable,
+	DisplayName		=	Washcloth,
+        UseWhileEquipped	=	FALSE,
+	Icon			=	HCWashcloth,
+        UseDelta		=	0.1,
+	ReplaceOnDeplete	=	HCWashclothwet,
+    }
+
+item HCChapstick
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Chapstick,
+        icon 			= HCChapstick,
+    }
+
+item HCDeodorantstick
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Deodorant Stick,
+        icon 			= HCDeodorantstick,
+    }
+
+item HCDeodorantspray
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Deodorant Spray,
+        icon 			= HCDeodorantspray,
+    }
+
+item HCDiaper
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Diaper,
+        icon 			= HCDiaper,
+	ReplaceOnUse    	= HCDiaperDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 2,
+    }
+
+item HCDiaperAlcohol
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Diaper,
+        icon 			= HCDiaper,
+	ReplaceOnUse    	= HCDiaperDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 2,
+    }
+
+item HCDiaperDirty
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Dirty Diaper,
+        icon 			= HCDiaperDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 0,
+        Alcoholic		= TRUE,
+    }
+
+item HCDiaperpack
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Pack of Diapers,
+        icon 			= HCDiaperpack,
+    }
+
+item HCMenstrualpad
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Menstrual Pad,
+        icon 			= HCMenstrualpad,
+	ReplaceOnUse    	= HCMenstrualpadDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 2,
+    }
+
+item HCMenstrualpadAlcohol
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Sterilized Menstrual Pad,
+        icon 			= HCMenstrualpad,
+	ReplaceOnUse    	= HCMenstrualpadDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 2,
+        Alcoholic		= TRUE,
+    }
+
+item HCMenstrualpadDirty
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Dirty Menstrual Pad,
+        icon 			= HCMenstrualpadDirty,
+	CanBandage		= TRUE,
+	BandagePower    	= 0,
+    }
+
+item HCMenstrualpadbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Menstrual Pads,
+        icon 			= HCMenstrualpadbox,
+    }
+
+item HCTampon
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Tampon,
+        icon 			= HCTampon,
+    }
+
+item HCTamponbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Tampons,
+        icon 			= HCTamponbox,
+    }
+
+item HCTissuebox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Tissues,
+        icon 			= HCTissuebox,
+    }
+
+item HCToiletbrush
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Toilet Brush,
+        icon 			= HCToiletbrush,
+    }
+
+item HCBabywipes
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Baby Wipes,
+        icon 			= HCBabywipes,
+    }
+
+item HCBodybrush
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Body Brush,
+        icon 			= HCBodybrush,
+    }
+
+item HCHairconditioner
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Hair Conditioner,
+        icon 			= HCHairconditioner,
+    }
+
+item HCHandsoap
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Hand Soap,
+        icon 			= HCHandsoap,
+    }
+
+item HCLoofah
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Loofah,
+        icon 			= HCLoofah,
+    }
+
+item HCMouthwash
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Mouthwash,
+        icon 			= HCMouthwash,
+    }
+
+item HCMouthwash2
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Mouthwash,
+        icon 			= HCMouthwash2,
+    }
+
+item HCNailclipper
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Nail Clipper,
+        icon 			= HCNailclipper,
+    }
+
+item HCPumice
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Pumice Stone,
+        icon 			= HCPumice,
+    }
+
+item HCShampoo
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Shampoo,
+        icon 			= HCShampoo,
+    }
+
+item HCShavingcream
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Shaving Cream,
+        icon 			= HCShavingcream,
+    }
+
+item HCSponge
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bath Sponge,
+        icon 			= HCSponge,
+    }
+
+item HCStylingfoam
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Styling Foam,
+        icon 			= HCStylingfoam,
+    }
+
+item HCToiletcleaner
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Toilet Cleaner,
+        icon 			= HCToiletcleaner,
+    }
+
+item HCToiletpaperpack
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Toiletpaper Pack,
+        icon 			= HCToiletpaperpack,
+    }
+
+item HCToothcleaner
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Tooth Cleaner,
+        icon 			= HCToothcleaner,
+    }
+
+
+/************************RECIPES************************/
+    
+
+recipe Box Cotton Swabs
+    {
+    HCQtip=100,
+    Result:HCQtipbox,
+    Time:15,
+    }
+
+recipe Unbox Cotton Swabs
+    {
+    HCQtipbox,
+    Result:HCQtip=100,
+    Time:15,
+    }
+
+recipe Pack Diapers
+    {
+    HCDiaper=100,
+    Result:HCDiaperpack,
+    Time:15,
+    }
+
+recipe Unpack Diapers
+    {
+    HCDiaperpack,
+    Result:HCDiaper=100,
+    Time:15,
+    }
+
+recipe Box Menstrual Pads
+    {
+    HCMenstrualpad=100,
+    Result:HCMenstrualpadbox,
+    Time:15,
+    }
+
+recipe Unbox Menstrual Pads
+    {
+    HCMenstrualpadbox,
+    Result:HCMenstrualpad=100,
+    Time:15,
+    }
+
+recipe Box Tampons
+    {
+    HCTampon=100,
+    Result:HCTamponbox,
+    Time:15,
+    }
+
+recipe Unbox Tampons
+    {
+    HCTamponbox,
+    Result:HCTampon=100,
+    Time:15,
+    }
+
+recipe Unbox Tissues
+    {
+    HCTissuebox,
+    Result:Tissue=100,
+    Time:15,
+    }
+
+recipe Open Toiletpaper Pack
+    {
+    HCToiletpaperpack,
+    Result:ToiletPaper=4,
+    Time:15,
+    }
+
+recipe Disinfect Diaper
+    {
+        destroy HCDiaper,
+        WhiskeyFull;10,
+
+        Result:HCDiaperAlcohol,
+        Time:40.0,
+        Category:Health,
+    }
+
+recipe Disinfect Diaper
+    {
+        destroy HCDiaper,
+        Disinfectant;3,
+
+        Result:HCDiaperAlcohol,
+        Time:40.0,
+        Category:Health,
+    }
+
+recipe Clean Diaper
+    {
+        HCDiaperDirty,
+        Water,
+
+        Result:HCDiaper,
+        Time:40.0,
+        Category:Health,
+    }
+
+recipe Disinfect Menstrual Pad
+    {
+        destroy HCMenstrualpad,
+        WhiskeyFull;10,
+
+        Result:HCMenstrualpadAlcohol,
+        Time:40.0,
+        Category:Health,
+    }
+
+recipe Disinfect Menstrual Pad
+    {
+        destroy HCMenstrualpad,
+        Disinfectant;3,
+
+        Result:HCMenstrualpadAlcohol,
+        Time:40.0,
+        Category:Health,
+    }
+
+recipe Clean Menstrual Pad
+    {
+        HCMenstrualpadDirty,
+        Water,
+
+        Result:HCMenstrualpad,
+        Time:40.0,
+        Category:Health,
+    }
+
+}

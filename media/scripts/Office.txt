@@ -1,0 +1,270 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCPencilsharpener
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Pencil Sharpener,
+        icon 			= HCPencilsharpener,
+    }
+
+item HCPencilbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Pencils,
+        icon 			= HCPencilbox,
+    }
+
+item HCPenbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Pens,
+        icon 			= HCPenbox,
+    }
+
+item HCStaples
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Staples,
+        icon 			= HCStaples,
+    }
+
+item HCStaplesbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Staples,
+        icon 			= HCStaplesbox,
+    }
+
+item HCStapler
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName     	= Empty Stapler,
+        icon 			= HCStapler,
+    }
+
+item HCStaplerfull
+    {
+	Weight			=	0.6,
+	Type			=	Drainable,
+	UseDelta		=	0.25,
+	DisplayName		=	Stapler,
+	ReplaceOnDeplete	=	HCStapler,
+	Icon			=	HCStapler,
+    }
+
+item HCPostit
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Post-It Note,
+        icon 			= HCPostit,
+    }
+
+item HCPostitpad
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Pad of Post-It Notes,
+        icon 			= HCPostitpad,
+    }
+
+item HCRubberbandbox
+    {
+        Weight    		= 0.3,
+        Type    		= Normal,
+        DisplayName         	= Box of Rubberbands,
+        icon 			= HCRubberbandbox,
+    }
+
+item HCTypewriter
+    {
+        Weight    		= 2,
+        Type    		= Normal,
+        DisplayName         	= Typewriter,
+        icon 			= HCTypewriter,
+    }
+
+item HCBinderclip
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Binder Clip,
+        icon 			= HCBinderclip,
+    }
+
+item HCBookend
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Bookend,
+        icon 			= HCBookend,
+    }
+
+item HCClipboard
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Clipboard,
+        icon 			= HCClipboard,
+    }
+
+item HCWhiteout
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Whiteout,
+        icon 			= HCWhiteout,
+    }
+
+item HCThumbtack
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Thumbtack,
+        icon 			= HCThumbtack,
+    }
+
+item HCHighlighter
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Highlighter,
+        icon 			= HCHighlighter,
+    }
+
+item HCRuler
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Ruler,
+        icon 			= HCRuler,
+    }
+
+item HCStapleremover
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Staple Remover,
+        icon 			= HCStapleremover,
+    }
+
+item HCTriangle
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Triangle,
+        icon 			= HCTriangle,
+    }
+
+item HCFolder
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Folder,
+        icon 			= HCFolder,
+    }
+
+item HCFolder2
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Folder,
+        icon 			= HCFolder2,
+    }
+
+/************************RECIPES************************/
+    
+
+recipe Box Pencils
+    {
+    Pencil=100,
+    Result:HCPencilbox,
+    Time:15,
+    }
+
+recipe Unbox Pencils
+    {
+    HCPencilbox,
+    Result:Pencil=100,
+    Time:15,
+    }
+
+recipe Box Pens
+    {
+    Pen=100,
+    Result:HCPenbox,
+    Time:15,
+    }
+
+recipe Unbox Pens
+    {
+    HCPenbox,
+    Result:Pen=100,
+    Time:15,
+    }   
+
+recipe Refill Stapler
+    {
+    HCStapler,
+    HCStaples=10,
+    Result:HCStaplerfull,
+    Time:15,
+    }
+
+recipe Box Staples
+    {
+    HCStaples=100,
+    Result:HCStaplesbox,
+    Time:15,
+    }
+
+recipe Unbox Staples
+    {
+    HCStaplesbox,
+    Result:HCStaples=100,
+    Time:15,
+    }   
+
+recipe Combine Post-It Notes
+    {
+    HCPostit=100,
+    Result:HCPostitpad,
+    Time:15,
+    }
+
+recipe Seperate Post-It Notes
+    {
+    HCPostitpad,
+    Result:HCPostit=100,
+    Time:15,
+    }  
+
+recipe Box Rubberbands
+    {
+    RubberBand=100,
+    Result:HCRubberbandbox,
+    Time:15,
+    }
+
+recipe Unbox Rubberbands
+    {
+    HCRubberbandbox,
+    Result:RubberBand=100,
+    Time:15,
+    }   	
+}

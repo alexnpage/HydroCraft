@@ -1,0 +1,54 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCRopethick
+    {
+        Weight    	=    0.9,
+        Type    	=    Normal,
+        DisplayName    	=    Thick Rope,
+        Icon    	=    HCRopethick,
+    }
+
+
+/************************RECIPES************************/
+    
+recipe Make Thread
+    {
+    HCFloss=3,
+    Result:Thread,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Rope
+    {
+    SheetRope=3,
+    Result:Rope,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Rope
+    {
+    HCRopethick,
+    Result:Rope=3,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Thick Rope
+    {
+    Rope=3,
+    Result:HCRopethick,
+    Time:15,
+    Category:Survivalist,
+    }
+	
+}

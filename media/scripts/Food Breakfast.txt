@@ -1,0 +1,113 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCUHTmilk
+    {
+	Type				=	Food,
+	DisplayName			=	Package of UHT Milk,
+	Weight				=	1.0,
+	ThirstChange 			=	-50,
+	HungerChange 			= 	-5,
+	DaysTotallyRotten		=	500,
+	DaysFresh 			=	250,
+	Icon				=	HCUHTmilk,
+    }
+
+item HCSoymilk
+    {
+	Type				=	Food,
+	DisplayName			=	Package of Soy Milk,
+	Weight				=	1.0,
+	ThirstChange 			=	-50,
+	HungerChange 			= 	-5,
+	DaysTotallyRotten		=	250,
+	DaysFresh 			=	150,
+	Icon				=	HCSoymilk,
+    }
+
+item HCBowlofcereal
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	-20,
+	UnhappyChange			=	-20,
+	Weight				=	0.3,
+	Type				=	Food,
+	DaysFresh 			= 	3,
+	DaysTotallyRotten		=	3,
+	DisplayName			=	Bowl of Cereal,
+	ReplaceOnUse			=	Bowl,
+	DaysFresh			=	1,
+	Icon				=	HCCerealbowl,	
+	}
+	
+item HCFriedegg
+	{
+	HungerChange			=	-20,
+	Type				=	Food,
+	DisplayName			=	Fried Egg,
+	MinutesToCook			=	10,
+	Weight				=	2,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	DaysTotallyRotten		=	4,
+	MinutesToBurn			=	20,
+	DaysFresh			=	2,
+	Icon				=	HCFriedegg,
+	EvolvedRecipe 			= 	Stir fry:10;Sandwich:10|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:10,	
+}
+
+item HCHardboiledegg
+	{
+	HungerChange			=	-20,
+	Type				=	Food,
+	DisplayName			=	Hard Boiled Egg,
+	Weight				=	.2,
+	DaysTotallyRotten		=	25,
+	MinutesToBurn			=	40,
+	DaysFresh			=	12,
+	Icon				=	Egg,
+	EvolvedRecipe 			= 	Stir fry:10;Sandwich:10|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:10,
+	}
+
+	
+/************************RECIPES************************/
+   
+
+recipe Make Bowl of Cereal
+	{
+		Cereal,
+		Milk/HCUHTmilk/HCSoymilk,
+		Bowl,
+		Result:HCBowlofcereal,
+		Time:50.0,
+	   	Category:Cooking,
+	}
+	
+recipe Fry Egg
+	{
+		keep Pan,
+		Egg,
+		Butter/HCCookingoil,
+		Result:HCFriedegg,
+		Time:45.0,
+	   	Category:Cooking,
+	}
+
+recipe Boil Egg
+	{
+		Egg,
+		Water,
+		keep Pot,
+		Result:HCHardboiledegg,
+		Time:50.0,
+	   	Category:Cooking,
+	}
+
+}

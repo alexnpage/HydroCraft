@@ -1,0 +1,435 @@
+module Hydrocraft
+{
+	imports
+	{
+		Base
+	}
+
+/************************ITEMS************************/
+
+	item HCDucttapefletching
+    	{
+        	DisplayName    	=    	Duct Tape Fletching,
+        	Icon        	=    	HCDucttapefletching,
+        	Type        	=    	Normal,
+        	Weight        	=    	0.1,
+    	}
+
+	item HCBonearrowhead
+    	{
+        	DisplayName    	=    	Bone Arrowhead,
+        	Icon        	=    	HCBonearrowhead,
+        	Type        	=    	Normal,
+        	Weight        	=    	0.1,
+    	}
+
+/************************WEAPONS************************/
+
+	item HCXbowbolt
+	{
+		Count		=	1,
+		DisplayName	=	Crossbow Bolts,
+		Icon		=	HCBolt,
+		Type		=	Ammo,
+		Weight		=	0.1,
+	}
+
+	item HCArrow
+	{
+		Count		=	1,
+		DisplayName	=	Arrows,
+		Icon		=	HCArrow,
+		Type		=	Ammo,
+		Weight		=	0.1,
+	}
+
+	item HCBB
+    	{
+        	Count        	=    	1,
+        	DisplayName    	=    	BBs,
+        	Icon        	=    	HCBB,
+        	Type        	=    	Ammo,
+        	Weight        	=    	0.1,
+    	}
+
+	item HCBBbox
+    	{
+        	DisplayName    	=    	Box of BBs,
+        	Icon        	=    	HCBBbox,
+        	Type        	=    	Normal,
+        	Weight        	=    	0.3,
+    	}
+
+
+	item HCCrossbow
+	{
+		AimingPerkCritModifier		=	10,
+		AimingPerkHitChanceModifier	=	15,
+		AImingPerkMinAngleModifier	=	0.05,
+		AimingPerkRangeModifier		=	1.5,
+		AimingTime			=	20,
+		AmmoType			=	Irrelevent,
+		ClipSize			=	1,
+		ConditionLowerChanceOneIn	=	60,
+		ConditionMax			=	10,
+		CriticalChance			=	15,
+		DisplayName			=	Crossbow,
+		DoorDamage			=	1,
+		HitChance			=	40,
+		Icon				=	HCCrossbow,
+		ImpactSound			=	null,
+		IsAimedFirearm			=	TRUE,
+		KnockBackOnNoDeath		=	TRUE,
+		KnockdownMod			=	0.3,
+		MaxDamage			=	1.6,
+		MinDamage			=	0.6,
+		MinAngle			=	0.95,
+		MaxRange			=	7,
+		MinRange			=	0.61,
+		MinimumSwingTime		=	1.5,
+		MaxHitCount			=	1,
+		MultipleHitConditionAffected	=	FALSE,
+		NPCSoundBosst			=	1.5,
+		ProjectileCount			=	1,
+		PushBackMod			=	0.45,
+		RecoilDelay			=	10,
+		ReloadTime			=	15,
+		RequiresEquippedBothHands	=	TRUE,
+		RunAnim				=	Run_weapon2,
+		Ranged				=	TRUE,
+		ShareDamage			=	FALSE,
+		SoundGain			=	1.5,
+		SoundRadius			=	5,
+		SoundVolume			=	75,
+		SplatBloodOnNoDeath		=	TRUE,
+		SplatNumber			=	1,
+		SplatSize			=	3,
+		SubCategory			=	Firearm,
+		SwingAnim			=	Rifle,
+		SwingTime			=	1.5,
+		SwingSound			=	Bow_fire,
+		SwingAmountBeforeImpact		=	0,
+		Type				=	Weapon,
+		ToHitModifier			=	1.5,
+		UseEndurance			=	FALSE,
+		WeaponSprite			=	Poolcue,
+		WeaponWeight			=	2,
+		Weight				=	2,
+	}
+
+	item HCLongbow
+	{
+		AimingPerkCritModifier		=	10,
+		AimingPerkHitChanceModifier	=	15,
+		AImingPerkMinAngleModifier	=	0.05,
+		AimingPerkRangeModifier		=	1.5,
+		AimingTime			=	20,
+		AmmoType			=	Irrelevent,
+		ClipSize			=	1,
+		ConditionLowerChanceOneIn	=	60,
+		ConditionMax			=	10,
+		CriticalChance			=	20,
+		DisplayName			=	Long Bow,
+		DoorDamage			=	5,
+		HitChance			=	40,
+		Icon				=	HCLongbow,
+		ImpactSound			=	null,
+		IsAimedFirearm			=	TRUE,
+		KnockBackOnNoDeath		=	TRUE,
+		KnockdownMod			=	0.3,
+		MaxDamage			=	1.6,
+		MinDamage			=	0.6,
+		MinAngle			=	0.95,
+		MaxRange			=	7,
+		MinRange			=	0.61,
+		MinimumSwingTime		=	1.5,
+		MaxHitCount			=	1,
+		MultipleHitConditionAffected	=	FALSE,
+		NPCSoundBosst			=	1.5,
+		ProjectileCount			=	1,
+		PushBackMod			=	0.2,
+		RecoilDelay			=	10,
+		ReloadTime			=	15,
+		RequiresEquippedBothHands	=	TRUE,
+		RunAnim				=	Run_weapon2,
+		Ranged				=	TRUE,
+		ShareDamage			=	FALSE,
+		SoundGain			=	1.5,
+		SoundRadius			=	5,
+		SoundVolume			=	75,
+		SplatBloodOnNoDeath		=	TRUE,
+		SplatNumber			=	1,
+		SplatSize			=	3,
+		SubCategory			=	Firearm,
+		SwingAnim			=	Rifle,
+		SwingTime			=	1.5,
+		SwingSound			=	Bow_fire,
+		SwingAmountBeforeImpact		=	0,
+		Type				=	Weapon,
+		ToHitModifier			=	1.5,
+		UseEndurance			=	FALSE,
+		WeaponSprite			=	Poolcue,
+		WeaponWeight			=	1,
+		Weight				=	1,
+	}
+
+	item HCPotatocannon
+    {
+        AmmoType 				= 	Potato,
+        ImpactSound    				=    	null,
+        MaxRange    				=    	18,
+        WeaponSprite    			=    	Shotgun,
+        SoundVolume    				=    	20,
+        MinAngle   				=    	0.5,
+        Type    				=    	Weapon,
+        MinimumSwingTime    			=    	2,
+        ToHitModifier    			=    	2.0,
+        NPCSoundBoost    			=    	1.5,
+        KnockBackOnNoDeath    			=    	TRUE,
+        Ranged    				=    	TRUE,
+        SwingAmountBeforeImpact    		=    	0,
+        ProjectileCount    			=    	1,
+        ConditionLowerChanceOneIn    		=    	60,
+        Weight    				=    	2,
+        SplatNumber    				=    	5,
+        PushBackMod    				=    	0.9,
+        MaxDamage    				=    	3,
+        SubCategory    				=    	Firearm,
+        AimingMod    				=    	2,
+        ConditionMax   				=    	10,
+        ShareDamage    				=    	FALSE,
+        MaxHitCount    				=    	1,
+        IsAimedHandWeapon    			=    	TRUE,
+        IsAimedFirearm    			=    	TRUE,
+        DoorDamage    				=    	10,
+        IdleAnim    				=    	Idle_Weapon2,
+        UseEndurance    			=    	FALSE,
+        SwingAnim    				=    	Rifle,
+        WeaponWeight    			=    	2,
+        DisplayName    				=    	Potato Cannon,
+        MinRange    				=    	0.61,
+        SwingTime    				=    	2,
+        AngleFalloff    			=    	TRUE,
+        MultipleHitConditionAffected    	=    	FALSE,
+        SwingSound    				=    	PotatoShot,
+        SoundRadius    				=    	25,
+        MinDamage    				=    	1.5,
+        SplatSize    				=    	3,
+        KnockdownMod    			=   	8,
+        SplatBloodOnNoDeath    			=    	TRUE,
+        Icon    				=    	HCPotatocannon,
+        RunAnim    				=    	Run_Weapon2,
+    }
+
+	item HCSlingshot
+    {
+        AimingPerkCritModifier         		=    	10,
+        AimingPerkHitChanceModifier 		=    	15,
+        AimingPerkMinAngleModifier     		=    	0.05,
+        AimingPerkRangeModifier    		=    	1.5,
+        AimingTime                     		=    	5,
+        AmmoType                    		=    	HCBB,
+        ClipSize                     		=    	1,
+        ConditionLowerChanceOneIn    		=    	60,
+        ConditionMax                		=    	10,
+        CriticalChance                 		=    	10,
+        DisplayName                    		=    	Slingshot,
+        DoorDamage                    		=    	5,
+        HitChance                     		=    	50,
+        Icon                        		=    	HCSlingshot,
+        ImpactSound                    		=    	null,
+        IsAimedFirearm                		=    	TRUE,
+        KnockBackOnNoDeath            		=    	TRUE,
+        KnockdownMod                		=    	2.5,
+        MaxDamage                    		=    	0.8,
+        MinDamage                    		=    	0.5,
+        MinAngle                    		=    	0.95,
+        MaxRange                    		=    	5,
+        MinRange                    		=    	0.61,
+        MinimumSwingTime            		=    	2.5,
+        MaxHitCount                    		=    	1,
+        MultipleHitConditionAffected    	=    	FALSE,
+        NPCSoundBoost                		=    	1.5,
+        ProjectileCount                		=    	1,
+        PushBackMod                    		=    	0.3,
+        RecoilDelay                 		=    	10,
+        ReloadTime                     		=    	8,
+        RunAnim                        		=    	Run_Weapon2,
+        Ranged                        		=    	TRUE,
+        ShareDamage                    		=    	FALSE,
+        SoundGain                     		=    	1.5,
+        SoundRadius                    		=    	2,
+        SoundVolume                    		=    	75,
+        SplatBloodOnNoDeath            		=    	FALSE,
+        SplatNumber                    		=    	1,
+        SplatSize                    		=    	1,
+        SubCategory                    		=    	Firearm,
+        SwingAnim                    		=    	Handgun,
+        SwingTime                    		=    	2.5,
+        SwingSound                    		=    	Bow_Dry,
+        SwingAmountBeforeImpact        		=    	0,
+        Type                        		=    	Weapon,
+        ToHitModifier                		=    	1.5,
+        UseEndurance                		=    	FALSE,
+        WeaponSprite                		=    	Slingshot,
+        WeaponWeight                		=    	0.5,
+        Weight                        		=    	0.5,
+        BreakSound                    		=    	PZ_MetalSnap,
+        IdleAnim                    		=    	Idle_Weapon2,
+        PiercingBullets                		=    	FALSE,
+        RequiresEquippedBothHands    		=    	FALSE,
+}
+
+
+/************************FIXING************************/
+
+	fixing Fix Longbow
+    {
+		Require : HCLongbow,
+
+		Fixer : Woodglue=1; Woodwork=2,
+		Fixer : DuctTape=1,
+		Fixer : Glue=2,
+		Fixer : Scotchtape=3,
+    }
+
+	fixing Fix Crossbow
+    {
+		Require : HCCrossbow,
+
+		Fixer : Woodglue=1; Woodwork=2,
+		Fixer : DuctTape=1,
+		Fixer : Glue=2,
+		Fixer : Scotchtape=3,
+    }
+
+/************************RECIPES************************/
+    
+
+recipe Make Duct Tape Fletching
+    {
+	DuctTape,
+    	Result:HCDucttapefletching,
+       	NeedToBeLearn:true,
+    	Time:25,
+       	Category:Engineer,
+    }
+
+recipe Make Bone Arrowhead
+    {
+    keep KitchenKnife/HuntingKnife/HCJackknife,
+    HCBone/HCZombiebones,
+    Result:HCBonearrowhead,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Survivalist,
+    }
+
+recipe Make Arrow
+    {
+    	HCWhitefeathers/HCStripedfeather/HCBluejayfeather/HCDucttapefletching,
+    	HCStonearrowhead/SharpedStone/HCBonearrowhead,
+	Woodglue/Glue/Scotchtape/DuctTape,
+    	WoodenStick/Twigs,
+       	NeedToBeLearn:true,
+    	Result:HCArrow,
+    	Time:25,
+    	Category:Survivalist,
+    }
+
+recipe Make Bolt
+    {
+    	HCWhitefeathers/HCStripedfeather/HCBluejayfeather/HCDucttapefletching,
+    	HCStonearrowhead/SharpedStone/HCBonearrowhead,
+	Woodglue/Glue/Scotchtape/DuctTape,
+    	WoodenStick/Twigs,
+    	Result:HCXbowbolt,
+       	NeedToBeLearn:true,
+    	Time:25,
+       	Category:Engineer,
+    }
+
+recipe Make Longbow
+    {
+	FishingLine/Twine/HCBungeecord,
+	Woodglue/Glue/Scotchtape/DuctTape,
+    	Plank/TreeBranch,
+    	keep Saw,
+    	Result:HCLongbow,
+       	NeedToBeLearn:true,
+    	Time:50,
+    	Category:Survivalist,
+	SkillRequired:Woodwork=1,
+	Sound:PZ_Saw,
+    }
+
+recipe Make Crossbow
+    {
+	FishingLine/Twine/HCBungeecord,
+	Woodglue/Glue/Scotchtape/DuctTape,
+    	Plank=3,
+    	keep Saw,
+    	HCIroningot,
+    	Result:HCCrossbow,
+       	NeedToBeLearn:true,
+    	Time:50,
+       	Category:Engineer,
+	SkillRequired:Woodwork=2,
+	Sound:PZ_Saw,
+    }
+
+recipe Craft Potato Cannon
+     {
+        HCPVCpipe,
+        PopBottleEmpty/WaterBottleEmpty,
+        Screws,
+        Lighter=32,
+        DuctTape=2,
+        keep Saw,
+        keep Screwdriver,
+        
+        Result:HCPotatocannon,
+       	NeedToBeLearn:true,
+        Time:400.0,
+       	Category:Engineer,
+     }
+
+recipe Craft Slingshot
+     {
+        HCBungeecord,
+        TreeBranch,
+	Woodglue/Glue/Scotchtape/DuctTape,
+        keep Saw,
+        
+        Result:HCSlingshot,
+        Time:50.0,
+       	Category:Engineer,
+     }
+
+recipe Craft Slingshot
+     {
+        RubberBand=4,
+        TreeBranch,
+	Woodglue/Glue/Scotchtape/DuctTape,
+        keep Saw,
+        
+        Result:HCSlingshot,
+        Time:50.0,
+       	Category:Engineer,
+     }
+
+recipe Box BBs
+    {
+    HCBB=100,
+    Result:HCBBbox,
+    Time:15,
+    }
+
+recipe Unbox BBs
+    {
+    HCBBbox,
+    Result:HCBB=100,
+    Time:15,
+    } 
+
+}

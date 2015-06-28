@@ -1,0 +1,703 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCRabbitmale
+	{
+	Weight 				= 	0.2,
+	Type 				= 	Normal,
+	DisplayName 			= 	Rabbit (Male),
+	Icon				=	HCRabbitmale,
+	}
+
+item HCRabbitfemale
+	{
+	Weight 				= 	0.2,
+	Type 				= 	Normal,
+	DisplayName 			= 	Rabbit (Female),
+	Icon				=	HCRabbitfemale,
+	}
+
+item HCAnimalcage
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Empty Animal Cage,
+        icon 			= HCAnimalcage,
+    }
+
+item HCAnimalcagerabbitmale
+    {
+        Weight    		= 1.2,
+        Type    		= Normal,
+        DisplayName         	= Animal Cage with Male Rabbit,
+        icon 			= HCAnimalcage,
+    }
+
+item HCAnimalcagerabbitfemale
+    {
+        Weight    		= 1.2,
+        Type    		= Normal,
+        DisplayName         	= Animal Cage with Female Rabbit,
+        icon 			= HCAnimalcage,
+    }
+
+item HCDogbowl
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Dog Bowl,
+        icon 			= HCDogbowl,
+    }
+
+item HCDogbiscuit
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Dog Biscuit,
+        icon 			= HCDogbiscuit,
+    }
+
+item HCDogkibble
+    {
+        Weight    		= 1,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.15,
+        DisplayName         	= Dog Kibble,
+        icon 			= HCDogkibble,
+    }
+
+item HCDogpoop
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Dog Poop,
+        icon 			= HCDogpoop,
+    }
+
+item HCFishtank
+    {
+        Weight    		= 	1.75,
+	CanStoreWater		= 	TRUE,
+        Type    		= 	Normal,
+        DisplayName         	= 	Empty Fish Tank,
+	ReplaceOnUseOn		= 	WaterSource-HCFishtankfull,
+        icon 			= 	HCFishtank,
+	ResizeWorldIcon 	= 	FALSE,
+    }
+
+item HCFishtankfull
+    {
+	IsWaterSource		=	TRUE,
+	Weight			=	35,
+	CanStoreWater		=	TRUE,
+	Type			=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta		=	0.02641,
+	DisplayName		=	Full Fish Tank,
+	ReplaceOnDeplete	=	HCFishtank,
+	ReplaceOnUseOn		=	WaterSource-HCFishtankfull,
+	Icon			=	HCFishtank,
+	ResizeWorldIcon 	= 	FALSE,
+    }
+
+item HCDogwhistle
+    {
+        Weight    		= 	0.1,
+	Type			= 	Drainable,
+	UseWhileEquipped	= 	FALSE,
+	UseDelta		= 	0.05,
+        DisplayName         	= 	Dog Whistle,
+        icon 			= 	HCDogwhistle,
+    }
+
+item HCCorgimale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Corgi (Male),
+	Icon				=	HCCorgimale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCCorgifemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Corgi (Female),
+	Icon				=	HCCorgifemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBordercolliemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Border Collie (Male),
+	Icon				=	HCBordercolliemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBordercolliefemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Border Collie (Female),
+	Icon				=	HCBordercolliefemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBoxermale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Boxer (Male),
+	Icon				=	HCBoxermale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBoxerfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Boxer (Female),
+	Icon				=	HCBoxerfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCColliemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Collie (Male),
+	Icon				=	HCColliemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCColliefemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Collie (Female),
+	Icon				=	HCColliefemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCDobermanmale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Doberman (Male),
+	Icon				=	HCDobermanmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCDobermanfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Doberman (Female),
+	Icon				=	HCDobermanfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCGermanshepherdmale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	German Shepherd (Male),
+	Icon				=	HCGermanshepherdmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCGermanshepherdfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	German Shepherd (Female),
+	Icon				=	HCGermanshepherdfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCHeelermale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Heeler (Male),
+	Icon				=	HCHeelermale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCHeelerfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Heeler (Female),
+	Icon				=	HCHeelerfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCHuskymale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Husky (Male),
+	Icon				=	HCHuskymale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCHuskyfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Husky (Female),
+	Icon				=	HCHuskyfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCLabradormale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Labrador (Male),
+	Icon				=	HCLabradormale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCLabradorfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Labrador (Female),
+	Icon				=	HCLabradorfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCRottweilermale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Rottweiler (Male),
+	Icon				=	HCRottweilermale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCRottweilerfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Rottweiler (Female),
+	Icon				=	HCRottweilerfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCShibainumale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Shiba Inu (Male),
+	Icon				=	HCShibainumale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCShibainufemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Shiba Inu (Female),
+	Icon				=	HCShibainufemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCGreatdanemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Great Dane (Male),
+	Icon				=	HCGreatdanemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCGreatdanefemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Great Dane (Female),
+	Icon				=	HCGreatdanefemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCPitbullmale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Pitbull (Male),
+	Icon				=	HCPitbullmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCPitbullfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Pitbull (Female),
+	Icon				=	HCPitbullfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBernesemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Bernese Mountain Dog (Male),
+	Icon				=	HCBernesemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBernesefemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Bernese Mountain Dog (Female),
+	Icon				=	HCBernesefemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCHuskymalepack
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 44,
+	DisplayName             	= Pack Husky (Male),
+	Icon				= HCHuskymalepack,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCHuskyfemalepack
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 44,
+	DisplayName             	= Pack Husky (Female),
+	Icon				= HCHuskyfemalepack,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCHuskymalepack2
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 50,
+	DisplayName             	= Pack Husky (Male),
+	Icon				= HCHuskymalepack2,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCHuskyfemalepack2
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 50,
+	DisplayName             	= Pack Husky (Female),
+	Icon				= HCHuskyfemalepack2,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCBernesemalepack
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 44,
+	DisplayName             	= Pack Bernese Mountain Dog (Male),
+	Icon				= HCBernesemalepack,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCBernesefemalepack
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 44,
+	DisplayName             	= Pack Bernese Mountain Dog (Female),
+	Icon				= HCBernesefemalepack,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCBernesemalepack2
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 50,
+	DisplayName             	= Pack Bernese Mountain Dog (Male),
+	Icon				= HCBernesemalepack2,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCBernesefemalepack2
+   {
+	WeightReduction        		= 100,
+	Weight             		= 0,
+	Type                		= Container,
+	Capacity             		= 50,
+	DisplayName             	= Pack Bernese Mountain Dog (Female),
+	Icon				= HCBernesefemalepack2,
+	ResizeWorldIcon 		= FALSE,
+   }
+
+item HCDeermale
+	{
+	Weight 				= 	10,
+	Type 				= 	Normal,
+	DisplayName 			= 	Deer (Male),
+	Icon				=	HCDeermale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCDeerfemale
+	{
+	Weight 				= 	10,
+	Type 				= 	Normal,
+	DisplayName 			= 	Deer (Female),
+	Icon				=	HCDeerfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCSheepmale
+	{
+	Weight 				= 	4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Sheep (Male),
+	Icon				=	HCSheepmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCSheepfemale
+	{
+	Weight 				= 	4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Sheep (Female),
+	Icon				=	HCSheepfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+		
+/************************RECIPES************************/
+    
+recipe Kill Rabbit
+    {
+    	HCRabbitmale/HCRabbitfemale,
+    	Result:DeadRabbit,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Feed Rabbit
+    {
+    	HCRabbitmale,
+	Carrots/Cabbage/Potato/Tomato/Corn/BellPepper/Lettuce/Banana/Peach/HCGrass,
+	Water,
+    	CanBeDoneFromFloor:true,
+    	Result:HCRabbitmale,
+    	OnCreate:HC_ToyStatModifier,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Feed Rabbit
+    {
+    	HCRabbitfemale,
+	Carrots/Cabbage/Potato/Tomato/Corn/BellPepper/Lettuce/Banana/Peach/HCGrass,
+	Water,
+    	CanBeDoneFromFloor:true,
+    	Result:HCRabbitfemale,
+    	Time:15.0,
+    	Category:Farming,
+    	OnCreate:HC_ToyStatModifier,
+    }	
+
+recipe Breed Rabbits
+    {
+    	keep HCRabbitmale,
+	keep HCRabbitfemale,
+	HCAnimalcage,
+    	Result:HCAnimalcage,
+       	NeedToBeLearn:true,
+    	Time:2000.0,
+    	Category:Farming,
+	OnCreate:HCRabbitGet,
+    }
+
+recipe Remove Male Rabbit from Cage
+    {
+    	HCAnimalcagerabbitmale,
+    	Result:HCRabbitmale,
+    	Time:15.0,
+    	Category:Farming,
+	OnCreate:recipe_hcanimalcage,
+    }	
+
+recipe Remove Female Rabbit from Cage
+    {
+    	HCAnimalcagerabbitfemale,
+    	Result:HCRabbitfemale,
+    	Time:15.0,
+    	Category:Farming,
+	OnCreate:recipe_hcanimalcage,
+    }	
+
+recipe Put Male Rabbit in Cage
+    {
+    	HCRabbitmale,
+    	HCAnimalcage,
+    	Result:HCAnimalcagerabbitmale,
+    	Time:15.0,
+    	Category:Farming,
+    }	
+
+recipe Put Female Rabbit in Cage
+    {
+    	HCRabbitfemale,
+    	HCAnimalcage,
+    	Result:HCAnimalcagerabbitfemale,
+    	Time:15.0,
+    	Category:Farming,
+    }	
+
+recipe Search for Stray Dogs
+    {
+	HCBinoculars,
+    	HCDogwhistle,
+    	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Farming,
+    	OnCreate:HCDogCall,
+    }
+
+recipe Feed Dog
+    {
+	keep HCDogbowl,
+	Water,
+	HCDogbiscuit/DogfoodOpen/HCDogkibble/Rabbitmeat/PorkChop/MuttonChop/Steak/Ham/MeatPatty/Bacon/Egg/BeefJerky/HCSimplejerky/HCTastyjerky/HCSimplerodentjerky/HCTastyrodentjerky/Apple/HCSlicedapple/Carrots/PeanutButter/CannedCornedBeefOpen/HCCannedspamopen,
+    	keep HCCorgimale/HCCorgifemale/HCBordercolliemale/HCBordercolliefemale/HCBoxermale/HCBoxerfemale/HCColliemale/HCColliefemale/HCDobermanmale/HCDobermanfemale/HCGreatdanemale/HCGreatdanefemale/HCGermanshepherdmale/HCGermanshepherdfemale/HCHeelermale/HCHeelerfemale/HCHuskymale/HCHuskyfemale/HCLabradormale/HCLabradorfemale/HCRottweilermale/HCRottweilerfemale/HCShibainumale/HCShibainufemale/HCPitbullmale/HCPitbullfemale/HCBernesemale/HCBernesefemale/HCBernesemalepack/HCBernesefemalepack/HCBernesemalepack2/HCBernesefemalepack2/HCHuskymalepack/HCHuskyfemalepack/HCHuskymalepack2/HCHuskyfemalepack2,
+    	CanBeDoneFromFloor:true,
+    	Result:HCDogpoop,
+    	Time:15.0,
+    	Category:Farming,
+    	OnCreate:HC_ToyStatModifier,
+    }
+
+recipe Track Deer
+    {
+	HCBinoculars,
+    	HCDeerpoop,
+    	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Survivalist,
+    	OnCreate:getDeer,
+    }
+
+recipe Track Lost Sheep
+    {
+	HCBinoculars,
+    	keep HCCorgimale/HCCorgifemale/HCBordercolliemale/HCBordercolliefemale/HCColliemale/HCColliefemale/HCHeelermale/HCHeelerfemale,
+    	Rope,
+	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Farming,
+    	OnCreate:getSheep,
+    }
+
+recipe Attach Bags to Dog
+    {
+	BigHikingBag=2,
+    	Rope,
+	HCHuskymale,
+    	Result:HCHuskymalepack,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	BigHikingBag=2,
+    	Rope,
+	HCHuskyfemale,
+    	Result:HCHuskyfemalepack,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	HCBighikingbagpouch=2,
+    	Rope,
+	HCHuskymale,
+    	Result:HCHuskymalepack2,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	HCBighikingbagpouch=2,
+    	Rope,
+	HCHuskyfemale,
+    	Result:HCHuskyfemalepack2,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	BigHikingBag=2,
+    	Rope,
+	HCBernesemale,
+    	Result:HCBernesemalepack,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	BigHikingBag=2,
+    	Rope,
+	HCBernesefemale,
+    	Result:HCBernesefemalepack,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	HCBighikingbagpouch=2,
+    	Rope,
+	HCBernesemale,
+    	Result:HCBernesemalepack2,
+    	Time:50.0,
+    	Category:Farming,
+    }
+
+recipe Attach Bags to Dog
+    {
+	HCBighikingbagpouch=2,
+    	Rope,
+	HCBernesefemale,
+    	Result:HCBernesefemalepack2,
+    	Time:50.0,
+    	Category:Farming,
+    }				
+}

@@ -1,0 +1,776 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base, camping
+
+    }
+
+/************************ITEMS************************/
+
+item HCAxehandle
+    {
+        Weight			= 1,
+        Type    		= Normal,
+        DisplayName         	= Axe Handle,
+        icon 			= HCAxehandle,
+    }
+
+item HCAxehead
+    {
+        Weight			= 2,
+        Type    		= Normal,
+        DisplayName         	= Axe Head,
+        icon 			= HCAxehead,
+    }
+
+item HCAxeheadworn
+    {
+        Weight			= 2,
+        Type    		= Normal,
+        DisplayName         	= Worn Axe Head,
+        icon 			= HCAxehead,
+    }
+
+item HCAxeheadblunt
+    {
+        Weight			= 2,
+        Type    		= Normal,
+        DisplayName         	= Blunt Axe Head,
+        icon 			= HCAxehead,
+    }
+
+/************************WEAPONS************************/
+
+	item HCMakeshiftaxe
+	{
+		MaxRange			=	1.5,
+		WeaponSprite			=	Fireaxe,
+		MinAngle			=	0.2,
+		Type				=	Weapon,
+		MinimumSwingTime		=	3.5,
+		KnockBackOnNoDeath		=	TRUE,
+		SwingAmountBeforeImpact		=	0.002,
+		Categories			=	Axe,
+		ConditionLowerChanceOneIn	=	30,
+		Weight				=	3,
+		SplatNumber			=	1,
+		PushBackMod			=	0.3,
+		MinDamage			=	1,
+		MaxDamage			=	2.5,
+		SubCategory			=	Swinging,
+		ConditionMax			=	10,
+		MaxHitCount			=	2,
+		DoorDamage			=	30,
+		IdleAnim			=	Idle_Weapon2,
+		SwingAnim			=	Bat,
+		CriticalChance			=	20,
+		WeaponWeight			=	3,
+		DisplayName			=	Makeshift Axe,
+		MinRange			=	0.61,
+		SwingTime			=	3.5,
+		HitAngleMod			=	-30,
+		SplatSize			=	5,
+		KnockdownMod			=	2,
+		SplatBloodOnNoDeath		=	TRUE,
+		Icon				=	Axe,
+		RunAnim				=	Run_Weapon2,
+       		TwoHandWeapon 			= 	TRUE,
+        	BreakSound  			=   	PZ_WoodSnap,
+        	TreeDamage  			=   	30,
+	}
+
+	item HCMakeshiftaxeworn
+	{
+		MaxRange			=	1.5,
+		WeaponSprite			=	Fireaxe,
+		MinAngle			=	0.2,
+		Type				=	Weapon,
+		MinimumSwingTime		=	3.5,
+		KnockBackOnNoDeath		=	TRUE,
+		SwingAmountBeforeImpact		=	0.002,
+		Categories			=	Axe,
+		ConditionLowerChanceOneIn	=	30,
+		Weight				=	3,
+		SplatNumber			=	1,
+		PushBackMod			=	0.3,
+		MinDamage			=	1,
+		MaxDamage			=	2,
+		SubCategory			=	Swinging,
+		ConditionMax			=	10,
+		MaxHitCount			=	2,
+		DoorDamage			=	25,
+		IdleAnim			=	Idle_Weapon2,
+		SwingAnim			=	Bat,
+		CriticalChance			=	20,
+		WeaponWeight			=	3,
+		DisplayName			=	Worn Makeshift Axe,
+		MinRange			=	0.61,
+		SwingTime			=	3.5,
+		HitAngleMod			=	-30,
+		SplatSize			=	5,
+		KnockdownMod			=	2,
+		SplatBloodOnNoDeath		=	TRUE,
+		Icon				=	Axe,
+		RunAnim				=	Run_Weapon2,
+       		TwoHandWeapon 			= 	TRUE,
+        	BreakSound  			=   	PZ_WoodSnap,
+        	TreeDamage  			=   	25,
+	}
+
+	item HCMakeshiftaxeblunt
+	{
+		MaxRange			=	1.5,
+		WeaponSprite			=	Fireaxe,
+		MinAngle			=	0.2,
+		Type				=	Weapon,
+		MinimumSwingTime		=	3.5,
+		KnockBackOnNoDeath		=	TRUE,
+		SwingAmountBeforeImpact		=	0.002,
+		Categories			=	Axe,
+		ConditionLowerChanceOneIn	=	30,
+		Weight				=	3,
+		SplatNumber			=	1,
+		PushBackMod			=	0.3,
+		MinDamage			=	1,
+		MaxDamage			=	2,
+		SubCategory			=	Swinging,
+		ConditionMax			=	10,
+		MaxHitCount			=	2,
+		DoorDamage			=	20,
+		IdleAnim			=	Idle_Weapon2,
+		SwingAnim			=	Bat,
+		CriticalChance			=	20,
+		WeaponWeight			=	3,
+		DisplayName			=	Blunt Makeshift Axe,
+		MinRange			=	0.61,
+		SwingTime			=	3.5,
+		HitAngleMod			=	-30,
+		SplatSize			=	5,
+		KnockdownMod			=	2,
+		SplatBloodOnNoDeath		=	TRUE,
+		Icon				=	Axe,
+		RunAnim				=	Run_Weapon2,
+       		TwoHandWeapon 			= 	TRUE,
+        	BreakSound  			=   	PZ_WoodSnap,
+        	TreeDamage  			=   	20,
+	}
+
+	item HCSurvivalaxe
+	{
+		DisplayName					=	Survival Axe,
+		Type						=	Weapon,
+		SubCategory					=	Swinging,
+		Categories					=	Axe,
+		WeaponSprite					=	Fireaxe,
+		SwingAnim					=	Bat,
+		RunAnim						=	Run_Weapon2,
+		IdleAnim					=	Idle_Weapon2,
+		Icon						=	HCSurvivalaxe,
+		Weight						=	1.25,
+		WeaponWeight					=	1,
+		MaxRange					=	1.25,
+		MinRange					=	0.61,
+		MaxDamage					=	.8,
+		MinDamage					=	.5,
+		CriticalChance					=	20,
+		DoorDamage					=	25,
+		MaxHitCount					=	1,
+		PushBackMod					=	0.45,
+		KnockBackOnNoDeath				=	TRUE,
+		KnockdownMod					=	1.5,
+		ConditionLowerChanceOneIn			=	40,
+		ConditionMax					=	10,
+		SplatNumber					=	1,
+		SplatSize					=	1,
+		SplatBloodOnNoDeath				=	TRUE,
+		SwingTime					=	2.55,
+		MinimumSwingTime				=	2.55,
+		SwingAmountBeforeImpact				=	0.002,
+		HitAngleMod					=	-30,
+		MinAngle					=	0.2,
+		TwoHandWeapon 					= 	FALSE,
+        	BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	25,
+	}
+
+	item HCHatchetsteel
+	{
+		DisplayName					=	Steel Hatchet,
+		Type						=	Weapon,
+		SubCategory					=	Swinging,
+		Categories					=	Axe,
+		WeaponSprite					=	Fireaxe,
+		SwingAnim					=	Bat,
+		RunAnim						=	Run_Weapon2,
+		IdleAnim					=	Idle_Weapon2,
+		Icon						=	HCHatchetsteel,
+		Weight						=	1.25,
+		WeaponWeight					=	1,
+		MaxRange					=	1.25,
+		MinRange					=	0.61,
+		MaxDamage					=	.8,
+		MinDamage					=	.5,
+		CriticalChance					=	20,
+		DoorDamage					=	25,
+		MaxHitCount					=	1,
+		PushBackMod					=	0.45,
+		KnockBackOnNoDeath				=	TRUE,
+		KnockdownMod					=	1.5,
+		ConditionLowerChanceOneIn			=	20,
+		ConditionMax					=	10,
+		SplatNumber					=	1,
+		SplatSize					=	1,
+		SplatBloodOnNoDeath				=	TRUE,
+		SwingTime					=	2.55,
+		MinimumSwingTime				=	2.55,
+		SwingAmountBeforeImpact				=	0.002,
+		HitAngleMod					=	-30,
+		MinAngle					=	0.2,
+		TwoHandWeapon 					= 	FALSE,
+        	BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	25,
+	}
+
+	item HCHatchetiron
+	{
+		DisplayName					=	Iron Hatchet,
+		Type						=	Weapon,
+		SubCategory					=	Swinging,
+		Categories					=	Axe,
+		WeaponSprite					=	Fireaxe,
+		SwingAnim					=	Bat,
+		RunAnim						=	Run_Weapon2,
+		IdleAnim					=	Idle_Weapon2,
+		Icon						=	HCHatchetiron,
+		Weight						=	1.25,
+		WeaponWeight					=	1,
+		MaxRange					=	1.25,
+		MinRange					=	0.61,
+		MaxDamage					=	.8,
+		MinDamage					=	.5,
+		CriticalChance					=	20,
+		DoorDamage					=	25,
+		MaxHitCount					=	1,
+		PushBackMod					=	0.45,
+		KnockBackOnNoDeath				=	TRUE,
+		KnockdownMod					=	1.5,
+		ConditionLowerChanceOneIn			=	15,
+		ConditionMax					=	10,
+		SplatNumber					=	1,
+		SplatSize					=	1,
+		SplatBloodOnNoDeath				=	TRUE,
+		SwingTime					=	2.55,
+		MinimumSwingTime				=	2.55,
+		SwingAmountBeforeImpact				=	0.002,
+		HitAngleMod					=	-30,
+		MinAngle					=	0.2,
+		TwoHandWeapon 					= 	FALSE,
+        	BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	25,
+	}
+
+	item HCHatchetbronze
+	{
+		DisplayName					=	Bronze Hatchet,
+		Type						=	Weapon,
+		SubCategory					=	Swinging,
+		Categories					=	Axe,
+		WeaponSprite					=	Fireaxe,
+		SwingAnim					=	Bat,
+		RunAnim						=	Run_Weapon2,
+		IdleAnim					=	Idle_Weapon2,
+		Icon						=	HCHatchetbronze,
+		Weight						=	1.25,
+		WeaponWeight					=	1,
+		MaxRange					=	1.25,
+		MinRange					=	0.61,
+		MaxDamage					=	.8,
+		MinDamage					=	.5,
+		CriticalChance					=	20,
+		DoorDamage					=	25,
+		MaxHitCount					=	1,
+		PushBackMod					=	0.45,
+		KnockBackOnNoDeath				=	TRUE,
+		KnockdownMod					=	1.5,
+		ConditionLowerChanceOneIn			=	10,
+		ConditionMax					=	10,
+		SplatNumber					=	1,
+		SplatSize					=	1,
+		SplatBloodOnNoDeath				=	TRUE,
+		SwingTime					=	2.55,
+		MinimumSwingTime				=	2.55,
+		SwingAmountBeforeImpact				=	0.002,
+		HitAngleMod					=	-30,
+		MinAngle					=	0.2,
+		TwoHandWeapon 					= 	FALSE,
+        	BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	25,
+	}
+
+	item HCHatchetcopper
+	{
+		DisplayName					=	Copper Hatchet,
+		Type						=	Weapon,
+		SubCategory					=	Swinging,
+		Categories					=	Axe,
+		WeaponSprite					=	Fireaxe,
+		SwingAnim					=	Bat,
+		RunAnim						=	Run_Weapon2,
+		IdleAnim					=	Idle_Weapon2,
+		Icon						=	HCHatchetcopper,
+		Weight						=	1.25,
+		WeaponWeight					=	1,
+		MaxRange					=	1.25,
+		MinRange					=	0.61,
+		MaxDamage					=	.8,
+		MinDamage					=	.5,
+		CriticalChance					=	20,
+		DoorDamage					=	25,
+		MaxHitCount					=	1,
+		PushBackMod					=	0.45,
+		KnockBackOnNoDeath				=	TRUE,
+		KnockdownMod					=	1.5,
+		ConditionLowerChanceOneIn			=	5,
+		ConditionMax					=	10,
+		SplatNumber					=	1,
+		SplatSize					=	1,
+		SplatBloodOnNoDeath				=	TRUE,
+		SwingTime					=	2.55,
+		MinimumSwingTime				=	2.55,
+		SwingAmountBeforeImpact				=	0.002,
+		HitAngleMod					=	-30,
+		MinAngle					=	0.2,
+		TwoHandWeapon 					= 	FALSE,
+        	BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	25,
+	}
+
+	item HCBattleaxesteel
+	{
+		MaxRange					=	1.5,
+		WeaponSprite					=	Fireaxe,
+		MinAngle					=	0.2,
+		Type						=	Weapon,
+		MinimumSwingTime				=	3.0,
+		KnockBackOnNoDeath				=	TRUE,
+		SwingAmountBeforeImpact				=	0.002,
+		Categories					=	Axe,
+		ConditionLowerChanceOneIn			=	20,
+		Weight						=	3,
+		SplatNumber					=	1,
+		PushBackMod					=	0.3,
+		MinDamage					=	1,
+		MaxDamage					=	2.5,
+		SubCategory					=	Swinging,
+		ConditionMax					=	15,
+		MaxHitCount					=	2,
+		DoorDamage					=	35,
+		IdleAnim					=	Idle_Weapon2,
+		SwingAnim					=	Bat,
+		CriticalChance					=	20,
+		WeaponWeight					=	3,
+		DisplayName					=	Steel Battleaxe,
+		MinRange					=	0.61,
+		SwingTime					=	3.0,
+		HitAngleMod					=	-30,
+		SplatSize					=	5,
+		KnockdownMod					=	2,
+		SplatBloodOnNoDeath				=	TRUE,
+		Icon						=	HCBattleaxesteel,
+		RunAnim						=	Run_Weapon2,
+        	TwoHandWeapon 					= 	TRUE,
+       		BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	35,
+		RequiresEquippedBothHands 			= 	true
+	}
+
+	item HCBattleaxeiron
+	{
+		MaxRange					=	1.5,
+		WeaponSprite					=	Fireaxe,
+		MinAngle					=	0.2,
+		Type						=	Weapon,
+		MinimumSwingTime				=	3.0,
+		KnockBackOnNoDeath				=	TRUE,
+		SwingAmountBeforeImpact				=	0.002,
+		Categories					=	Axe,
+		ConditionLowerChanceOneIn			=	15,
+		Weight						=	3,
+		SplatNumber					=	1,
+		PushBackMod					=	0.3,
+		MinDamage					=	1,
+		MaxDamage					=	2.5,
+		SubCategory					=	Swinging,
+		ConditionMax					=	15,
+		MaxHitCount					=	2,
+		DoorDamage					=	35,
+		IdleAnim					=	Idle_Weapon2,
+		SwingAnim					=	Bat,
+		CriticalChance					=	20,
+		WeaponWeight					=	3,
+		DisplayName					=	Iron Battleaxe,
+		MinRange					=	0.61,
+		SwingTime					=	3.0,
+		HitAngleMod					=	-30,
+		SplatSize					=	5,
+		KnockdownMod					=	2,
+		SplatBloodOnNoDeath				=	TRUE,
+		Icon						=	HCBattleaxeiron,
+		RunAnim						=	Run_Weapon2,
+        	TwoHandWeapon 					= 	TRUE,
+       		BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	35,
+		RequiresEquippedBothHands 			= 	true
+	}
+
+	item HCBattleaxebronze
+	{
+		MaxRange					=	1.5,
+		WeaponSprite					=	Fireaxe,
+		MinAngle					=	0.2,
+		Type						=	Weapon,
+		MinimumSwingTime				=	3.0,
+		KnockBackOnNoDeath				=	TRUE,
+		SwingAmountBeforeImpact				=	0.002,
+		Categories					=	Axe,
+		ConditionLowerChanceOneIn			=	10,
+		Weight						=	3,
+		SplatNumber					=	1,
+		PushBackMod					=	0.3,
+		MinDamage					=	1,
+		MaxDamage					=	2.5,
+		SubCategory					=	Swinging,
+		ConditionMax					=	15,
+		MaxHitCount					=	2,
+		DoorDamage					=	35,
+		IdleAnim					=	Idle_Weapon2,
+		SwingAnim					=	Bat,
+		CriticalChance					=	20,
+		WeaponWeight					=	3,
+		DisplayName					=	Bronze Battleaxe,
+		MinRange					=	0.61,
+		SwingTime					=	3.0,
+		HitAngleMod					=	-30,
+		SplatSize					=	5,
+		KnockdownMod					=	2,
+		SplatBloodOnNoDeath				=	TRUE,
+		Icon						=	HCBattleaxebronze,
+		RunAnim						=	Run_Weapon2,
+        	TwoHandWeapon 					= 	TRUE,
+       		BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	35,
+	}
+
+	item HCBattleaxecopper
+	{
+		MaxRange					=	1.5,
+		WeaponSprite					=	Fireaxe,
+		MinAngle					=	0.2,
+		Type						=	Weapon,
+		MinimumSwingTime				=	3.0,
+		KnockBackOnNoDeath				=	TRUE,
+		SwingAmountBeforeImpact				=	0.002,
+		Categories					=	Axe,
+		ConditionLowerChanceOneIn			=	5,
+		Weight						=	3,
+		SplatNumber					=	1,
+		PushBackMod					=	0.3,
+		MinDamage					=	1,
+		MaxDamage					=	2.5,
+		SubCategory					=	Swinging,
+		ConditionMax					=	15,
+		MaxHitCount					=	2,
+		DoorDamage					=	35,
+		IdleAnim					=	Idle_Weapon2,
+		SwingAnim					=	Bat,
+		CriticalChance					=	20,
+		WeaponWeight					=	3,
+		DisplayName					=	Copper Battleaxe,
+		MinRange					=	0.61,
+		SwingTime					=	3.0,
+		HitAngleMod					=	-30,
+		SplatSize					=	5,
+		KnockdownMod					=	2,
+		SplatBloodOnNoDeath				=	TRUE,
+		Icon						=	HCBattleaxecopper,
+		RunAnim						=	Run_Weapon2,
+        	TwoHandWeapon 					= 	TRUE,
+       		BreakSound  					=   	PZ_WoodSnap,
+        	TreeDamage  					=   	35,
+	}
+
+/************************RECIPES************************/	
+
+
+recipe Craft Axe Handle
+	{
+	   	Plank,
+	   	keep Saw,
+	   	Result:HCAxehandle,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Remove Axe Head
+	{
+	   	Axe,
+	   	keep Saw,
+	   	Result:HCAxehead,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Craft Makeshift Axe
+	{
+	   	HCAxehead,
+	   	HCAxehandle,
+	  	Nails,
+	   	keep Hammer,
+	   	Result:HCMakeshiftaxe,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Remove Axe Head
+	{
+	   	HCMakeshiftaxe,
+	   	keep Saw,
+	   	Result:HCAxeheadworn,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Craft Makeshift Axe
+	{
+	   	HCAxeheadworn,
+	   	HCAxehandle,
+	  	Nails,
+	   	keep Hammer,
+	   	Result:HCMakeshiftaxeworn,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Remove Axe Head
+	{
+	   	HCMakeshiftaxeworn,
+	   	keep Saw,
+	   	Result:HCAxeheadblunt,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+recipe Craft Makeshift Axe
+	{
+	   	HCAxeheadblunt,
+	   	HCAxehandle,
+	  	Nails,
+	   	keep Hammer,
+	   	Result:HCMakeshiftaxeblunt,
+	   	Time:150.0,
+    		Category:Carpentry,
+	}
+
+
+recipe Make Steel Hatchet
+	{
+	   	HCSteelingot=2,
+    		WoodenStick,
+    		keep HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCHatchetsteel,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Iron Hatchet
+	{
+	   	HCIroningot=2,
+    		WoodenStick,
+    		keep HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCHatchetiron,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Bronze Hatchet
+	{
+	   	HCBronzeingot=2,
+    		WoodenStick,
+    		keep HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCHatchetbronze,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Copper Hatchet
+	{
+	   	HCCopperingot=2,
+    		WoodenStick,
+    		keep HCSmithyhammercopper/HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCHatchetcopper,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Steel Battleaxe
+	{
+	   	HCSteelingot=3,
+    		WoodenStick,
+    		keep HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCBattleaxesteel,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Iron Battleaxe
+	{
+	   	HCIroningot=3,
+    		WoodenStick,
+    		keep HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCBattleaxeiron,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Bronze Battleaxe
+	{
+	   	HCBronzeingot=3,
+    		WoodenStick,
+    		keep HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCBattleaxebronze,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Copper Battleaxe
+	{
+	   	HCCopperingot=3,
+    		WoodenStick,
+    		keep HCSmithyhammercopper/HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCBattleaxecopper,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+/************************FIXING************************/
+
+	fixing Fix Makeshift Axe
+   {
+	   	Require : HCMakeshiftaxe,
+	   
+       		Fixer : Woodglue=2; Woodwork=2,
+       		Fixer : DuctTape=2,
+       		Fixer : Glue=2,
+       		Fixer : Scotchtape=4,
+    }
+
+	fixing Fix Worn Makeshift Axe
+   {
+	   	Require : HCMakeshiftaxeworn,
+	   
+       		Fixer : Woodglue=2; Woodwork=2,
+       		Fixer : DuctTape=2,
+       		Fixer : Glue=2,
+       		Fixer : Scotchtape=4,
+    }
+
+	fixing Fix Blunt Makeshift Axe
+   {
+	   	Require : HCMakeshiftaxeblunt,
+	   
+       		Fixer : Woodglue=2; Woodwork=2,
+       		Fixer : DuctTape=2,
+       		Fixer : Glue=2,
+       		Fixer : Scotchtape=4,
+    }
+
+	fixing Fix Steel Hatchet
+    {
+		Require : HCHatchetsteel,
+
+		Fixer : HCSteelingot,
+    }
+
+	fixing Fix Iron Hatchet
+    {
+		Require : HCHatchetiron,
+
+		Fixer : HCIroningot,
+    }
+
+	fixing Fix Bronze Hatchet
+    {
+		Require : HCHatchetbronze,
+
+		Fixer : HCBronzeingot,
+    }
+
+	fixing Fix Copper Hatchet
+    {
+		Require : HCHatchetcopper,
+
+		Fixer : HCCopperingot,
+    }
+
+	fixing Fix Steel Battleaxe
+    {
+		Require : HCBattleaxesteel,
+
+		Fixer : HCSteelingot,
+    }
+
+	fixing Fix Iron Battleaxe
+    {
+		Require : HCBattleaxeiron,
+
+		Fixer : HCIroningot,
+    }
+
+	fixing Fix Bronze Battleaxe
+    {
+		Require : HCBattleaxebronze,
+
+		Fixer : HCBronzeingot,
+    }
+
+	fixing Fix Copper Battleaxe
+    {
+		Require : HCBattleaxecopper,
+
+		Fixer : HCCopperingot,
+    }
+
+}

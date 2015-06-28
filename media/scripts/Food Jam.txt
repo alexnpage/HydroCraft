@@ -1,0 +1,892 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCJamgrape
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Grape Jam,
+	Icon				=	HCJamgrape,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamapple
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Apple Jam,
+	Icon				=	HCJamapple,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamorange
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Orange Jam,
+	Icon				=	HCJamorange,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJampeach
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Peach Jam,
+	Icon				=	HCJampeach,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJampear
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Pear Jam,
+	Icon				=	HCJampear,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamwatermelon
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Watermelon Jam,
+	Icon				=	HCJamwatermelon,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJampineapple
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Pineapple Jam,
+	Icon				=	HCJampineapple,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamcherry
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Cherry Jam,
+	Icon				=	HCJamcherry,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamstrawberry
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Strawberry Jam,
+	Icon				=	HCJamstrawberry,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamblueberry
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Blueberry Jam,
+	Icon				=	HCJamblueberry,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamblackberry
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Blackberry Jam,
+	Icon				=	HCJamblackberry,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamwildberry
+	{
+	HungerChange			=	-15,
+	ThirstChange			=	10,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Jar of Wild Berry Jam,
+	Icon				=	HCJamwildberry,
+	ReplaceOnUse			=	HCJar,
+	BoredomChange			=	-10,
+	}
+
+item HCJamstarter
+	{
+	HungerChange			=	-10,
+	ThirstChange			=	15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Sugar Water,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	DaysFresh 			= 	10,
+	DaysTotallyRotten		=	20,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamgrapepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Grape Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamgrapecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamgrapecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Grape Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+	
+item HCJamapplepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Apple Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamapplecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamapplecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Apple Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+
+item HCJamorangepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Orange Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamorangecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamorangecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Orange Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+item HCJampeachpot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Peach Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJampeachcooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJampeachcooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Peach Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJampearpot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Pear Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamcpearcooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJampearcooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Pear Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamwatermelonpot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Watermelon Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamwatermeloncooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamwatermeloncooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Watermelon Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJampineapplepot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Pineapple Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJampineapplecooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJampineapplecooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Pineapple Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+item HCJamcherrypot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cherry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamcherrycooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamcherrycooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Cherry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamstrawberrypot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Strawberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamstrawberrycooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamstrawberrycooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Strawberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamblueberrypot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Blueberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamblueberrycooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamblueberrycooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Blueberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamblackberrypot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Blackberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamblackberrycooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamblackberrycooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Blackberry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+item HCJamwildberrypot
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Wild Berry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,
+	IsCookable			=	TRUE,
+	MinutesToCook			=	90,
+	MinutesToBurn			=	140,
+	ReplaceOnCooked			=	Hydrocraft.HCJamwildberrycooked,
+	DaysFresh 			= 	4,
+	DaysTotallyRotten		=	6,     
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCJamwildberrycooked
+	{
+	HungerChange			=	-30,
+	ThirstChange			=	25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Pot of Cooked Wild Berry Jam,
+	Icon				=	PotFull,
+	ReplaceOnUse			=	Pot,  
+	CustomContextMenu 		= 	Eat,
+	}
+
+/************************RECIPES************************/
+    
+recipe Prepare Jam Pot
+	{
+        	SkillRequired:Cooking=4,
+		destroy WaterPot,
+		Sugar,
+		HCLemonjuicebowl/HCLemonjuicebottle,
+		Result:HCJamstarter,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Grape Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Grapes=4,
+		Result:HCJamgrapepot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Grape Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamgrapecooked,
+		Result: HCJamgrape=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Apple Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Apple=4,
+		Result:HCJamapplepot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Apple Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamapplecooked,
+		Result: HCJamapple=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Orange Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Orange=4,
+		Result:HCJamorangepot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Orange Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamorangecooked,
+		Result: HCJamorange=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Peach Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Peach=4,
+		Result:HCJampeachpot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Peach Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJampeachcooked,
+		Result: HCJampeach=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Pear Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Pear=4,
+		Result:HCJampearpot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Pear Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJampearcooked,
+		Result: HCJampear=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Watermelon Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Watermelon=2,
+		Result:HCJamwatermelonpot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Watermelon Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamwatermeloncooked,
+		Result: HCJamwatermelon=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Pineapple Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Pineapple=2,
+		Result:HCJampineapplepot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Pineapple Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJampineapplecooked,
+		Result: HCJampineapple=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Cherry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Cherry=8,
+		Result:HCJamcherrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Cherry Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamcherrycooked,
+		Result: HCJamcherry=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Strawberry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		Strewberrie=8,
+		Result:HCJamstrawberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Strawberry Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamstrawberrycooked,
+		Result: HCJamstrawberry=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Blueberry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryBlue=8,
+		Result:HCJamblueberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Blueberry Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamblueberrycooked,
+		Result: HCJamblueberry=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Blackbery Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryBlack=8,
+		Result:HCJamblackberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Blackberry Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamblackberrycooked,
+		Result: HCJamblackberry=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+
+recipe Prepare Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryGeneric1=8,
+		Result:HCJamwildberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryGeneric2=8,
+		Result:HCJamwildberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryGeneric3=8,
+		Result:HCJamwildberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryGeneric4=8,
+		Result:HCJamwildberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Prepare Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		destroy HCJamstarter,
+		BerryGeneric5=8,
+		Result:HCJamwildberrypot,
+		Time:90.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Jar of Wild Berry Jam
+	{
+        	SkillRequired:Cooking=4,
+		HCJar=2,
+		HCJamwildberrycooked,
+		Result: HCJamwildberry=2,
+		Time:25.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcpot,
+	}
+	
+}

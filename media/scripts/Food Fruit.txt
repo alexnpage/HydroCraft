@@ -1,0 +1,27 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCPear
+	{
+		HungerChange		=	-15,
+		Weight			=	0.2,
+		Type			=	Food,
+		DaysTotallyRotten	=	8,
+		DisplayName		=	Pear,
+		Icon			=	HCPear,
+		DaysFresh		=	5,
+		FoodType    		=  	Fruits,
+		EvolvedRecipe 		= 	Salad:8;Cake:8,
+	}
+
+/************************RECIPES************************/
+
+	
+}

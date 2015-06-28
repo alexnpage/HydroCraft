@@ -1,0 +1,199 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCLeather
+    {
+        Weight    		=    0.1,
+        Type   			=    Normal,
+        DisplayName   		=    Leather,
+        Icon    		=    HCLeather.png,
+    }
+
+item HCBlacksmithapron
+    {
+        Weight    		=    1,
+        Type    		=    Normal,
+        DisplayName    		=    Blacksmith Apron,
+        Icon    		=    HCBlacksmithapron.png,
+    }
+
+item HCAnimalfur
+	{
+		Type 		= 	Normal,
+        	DisplayName 	= 	Raw Fur,
+        	Weight 		= 	0.1,
+		Icon		=	HCAnimalfur,
+	}
+
+item HCAnimalfurdried
+	{
+		Type 		= 	Normal,
+        	DisplayName 	= 	Dried Fur,
+        	Weight 		= 	0.1,
+		Icon		=	HCAnimalfurdried,
+	}
+
+item HCFurcoat
+	{
+		Palettes	=	Shirt_White,
+		BodyLocation	=	Top,
+		PalettesStart	=	Shirt_,
+		Type		=	Clothing,
+		Temperature	=	23,
+		SpriteName	=	Shirt,
+		DisplayName	=	Fur Coat,
+		Icon		=	Sweater,
+	}
+	
+item HCFurpants
+	{
+		Palettes	=	Trousers_White,
+		BodyLocation	=	Bottoms,
+		PalettesStart	=	Trousers_,
+		Type		=	Clothing,
+		Temperature	=	15,
+		SpriteName	=	Trousers,
+		DisplayName	=	Fur Pants,
+		Icon		=	Trousers,
+	}
+
+item HCDryingframe
+    {
+        Weight    		= 0.7,
+        Type    		= Normal,
+        DisplayName         	= Drying Frame,
+        icon 			= HCDryingframe,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCWoodenbuckettan
+    {
+        Weight    		= 4,
+        Type    		= Normal,
+        DisplayName         	= Wooden Bucket with Tannin,
+        icon 			= HCWoodenbuckettan,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCLeatherboots
+	{
+		BodyLocation	=	Shoes,
+		Type		=	Clothing,
+		Temperature	=	5,
+		SpriteName	=	Shoes1,
+		DisplayName	=	Leather Boots,
+		Icon		=	HCLeatherboots,
+	}
+
+/************************RECIPES************************/
+    
+recipe Skin Rabbit
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        DeadRabbit,
+
+        Result:Rabbitmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal,
+    }
+
+recipe Skin Squirrel
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        DeadSquirrel,
+        Result:Smallanimalmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal,
+	}
+
+recipe Make Drying Frame
+    {
+    	WoodenStick=4,
+	Rope,
+   	Result:HCDryingframe,
+    	NeedToBeLearn:true,
+    	Time:15,
+    	Category:Survivalist,
+    }
+
+recipe Dry Fur
+    {
+        HCAnimalfur,
+        keep HCDryingframe,
+    	CanBeDoneFromFloor:true,
+        Result:HCAnimalfurdried,
+    	NeedToBeLearn:true,
+        Time:500.0,
+    	Category:Survivalist,
+    }
+
+recipe Stitch Fur Coat
+	{
+		keep Needle,
+		HCAnimalfurdried=12,
+		Thread=8,
+		
+		Result:HCFurcoat,
+    		NeedToBeLearn:true,
+		Time:420.0,
+    		Category:Survivalist,
+	}
+	
+recipe Stitch Fur Pants
+	{
+		keep Needle,
+		HCAnimalfurdried=9,
+		Thread=6,
+		
+		Result:HCFurpants,
+    		NeedToBeLearn:true,
+		Time:420.0,
+    		Category:Survivalist,
+	}
+	
+recipe Make Tannin
+    {
+    HCWoodenbucketwater,
+    HCBark,
+    CanBeDoneFromFloor:true,
+    Result:HCWoodenbuckettan,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Leather
+    {
+    HCWoodenbuckettan,
+    HCAnimalfurdried,
+    CanBeDoneFromFloor:true,
+    Result:HCLeather,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    OnCreate:recipe_hcwoodenbucket,
+    }
+
+recipe Make Leather Boots
+    {
+    HCLeather=2,
+    keep Needle,
+    Thread=2,
+    Result:HCLeather,
+    NeedToBeLearn:true,
+    Time:420.0,
+    Category:Survivalist,
+    }
+	
+}

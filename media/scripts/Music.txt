@@ -1,0 +1,207 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCVinylrecord1
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Vinyl Record,
+        icon 			= HCVinylrecord1,
+    }
+
+item HCVinylrecord2
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Vinyl Record,
+        icon 			= HCVinylrecord2,
+    }
+
+item HCVinylrecord3
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Vinyl Record,
+        icon 			= HCVinylrecord3,
+    }
+
+item HCVinylrecord4
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Vinyl Record,
+        icon 			= HCVinylrecord4,
+    }
+
+item HCVinylrecord5
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Vinyl Record,
+        icon 			= HCVinylrecord5,
+    }
+
+item HCDVD
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= DVD,
+        icon 			= HCDVD,
+    }
+
+item HCDVDCase
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Empty DVD Case,
+        icon 			= HCDVDCase,
+    }
+
+item HCDVDPlayer
+    {
+        Weight    		= 2.0,
+        Type    		= Normal,
+        DisplayName         	= DVD Player,
+        icon 			= HCDVDPlayer,
+    }
+
+item HCCDcase
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Empty CD Case,
+        icon 			= HCCDcase,
+    }
+
+item HCCDcasefull
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= CD Case with CD,
+        icon 			= HCCDcasefull,
+    }
+
+item HCHarmonica
+    {
+	Weight			=	0.3,
+	Type			=	Normal,
+	DisplayName		=	Harmonica,
+	Icon			=	HCHarmonica,
+   }
+
+item HCGuitar
+    {
+	Weight			=	1.0,
+	Type			=	Normal,
+	DisplayName		=	Guitar,
+	Icon			=	HCGuitar,
+	ResizeWorldIcon 	= 	FALSE,
+   }
+
+item HCElectricguitar
+    {
+	Weight			=	1.0,
+	Type			=	Normal,
+	DisplayName		=	Electric Guitar,
+	Icon			=	HCElectricguitar,
+	ResizeWorldIcon 	= 	FALSE,
+   }
+
+
+item HCUkulele
+    {
+	Weight			=	0.5,
+	Type			=	Normal,
+	DisplayName		=	Ukulele,
+	Icon			=	HCUkulele,
+   }
+
+item HCGuitarpick
+    {
+	Weight			=	0.1,
+	Type			=	Normal,
+	DisplayName		=	Guitar Pick,
+	Icon			=	HCGuitarpick,
+   }
+
+item HCAmp
+    {
+	Weight			=	1.5,
+	Type			=	Normal,
+	DisplayName		=	Amp,
+	Icon			=	HCAmp,
+	ResizeWorldIcon 	= 	FALSE,
+   }
+
+item HCGuitarcase
+    {
+        WeightReduction     	= 	60,
+        Weight              	= 	1.0,
+        Type                	= 	Container,
+        Capacity            	= 	10,
+        DisplayName         	= 	Guitar Case,
+        Icon                	= 	HCGuitarcase,
+	ResizeWorldIcon 	= 	FALSE,
+    }
+
+/************************WEAPONS************************/
+
+
+
+/************************RECIPES************************/	
+
+recipe Put CD in Case
+    {
+    Disc,
+    HCCDcase,
+    Result:HCCDcasefull,
+    Time:15,
+    }
+
+recipe Remove CD from Case
+    {
+    HCCDcasefull,
+    Result:Disc,
+    Time:15,
+    OnCreate:recipe_hccdcase,
+    } 
+
+recipe Play Music
+    {
+    
+    HCHarmonica,
+    Result:HCHarmonica,
+    NeedToBeLearn:true,
+    Time:500,
+    OnCreate:HC_ToyStatModifier,
+    }
+
+recipe Play Music
+    {
+    
+    HCGuitar,
+    Result:HCGuitar,
+    NeedToBeLearn:true,
+    Time:500,
+    OnCreate:HC_ToyStatModifier,
+    }
+
+recipe Play Music
+    {
+    
+    HCUkulele,
+    Result:HCUkulele,
+    NeedToBeLearn:true,
+    Time:500,
+    OnCreate:HC_ToyStatModifier,
+    }
+
+}

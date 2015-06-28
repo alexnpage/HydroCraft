@@ -1,0 +1,198 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCDrypasta
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Dry Pasta,
+	Icon				=	HCDrypasta,
+	}
+
+item HCSimplepastapot
+	{
+	HungerChange			=	-30,
+	Weight				=	6,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	UnhappyChange			=	10,
+	MinutesToBurn			=	140,
+	DisplayName			=	Uncooked Simple Pasta,
+	ReplaceOnUse			=	Pot,
+	ReplaceOnCooked			=	Hydrocraft.HCSimplepasta,
+	Icon				=	PotFull,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	70,
+	UnhappyChange			=	10,
+	BoredomChange			=	10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCTastypastapot
+	{
+	HungerChange			=	-40,
+	Weight				=	6,
+	Type				=	Food,
+	IsCookable			=	TRUE,
+	UnhappyChange			=	-45,
+	MinutesToBurn			=	140,
+	DisplayName			=	Uncooked Tasty Pasta,
+	ReplaceOnUse			=	Pot,
+	ReplaceOnCooked			=	Hydrocraft.HCTastypasta,
+	Icon				=	PotFull,
+	MinutesToCook			=	40,
+	UnhappyChange			=	10,
+	BoredomChange			=	15,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCSimplepasta
+	{
+	HungerChange			=	-60,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Cooked Simple Pasta,
+	ReplaceOnUse			=	Pot,
+	Icon				=	PotFull,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	70,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCTastypasta
+	{
+	HungerChange			=	-80,
+	Weight				=	6,
+	Type				=	Food,
+	DisplayName			=	Cooked Tasty Pasta,
+	ReplaceOnUse			=	Pot,
+	Icon				=	PotFull,
+	MinutesToCook			=	40,
+	BoredomChange			=	-15,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCSimplepastabowl
+	{
+	HungerChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Bowl of Simple Pasta,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCPastabowl,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCTastypastabowl
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	UnhappyChange			=	-15,
+	DisplayName			=	Bowl of Tasty Pasta,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCPastabowl,
+	BoredomChange			=	-10,
+	DaysTotallyRotten		=	6,
+	DaysFresh 			= 	3,
+	CustomContextMenu 		= 	Eat,
+	}
+
+item HCLasagna
+	{
+	HungerChange			=	-70,
+	Type				=	Food,
+	DisplayName			=	Lasagna,
+	MinutesToCook			=	40,
+	Weight				=	2,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	TRUE,
+	DaysTotallyRotten		=	4,
+	MinutesToBurn			=	80,
+	Icon				=	HCLasagna,
+	ReplaceOnUse			=	RoastingPan,
+	BoredomChange			=	-15,
+	DaysFresh			=	2,
+	}
+
+/************************RECIPES************************/
+   
+recipe Cook Simple Pasta
+	{
+       		SkillRequired:Cooking=4,
+		destroy WaterPot,
+		HCDrypasta,
+		HCTomatosaucebowl,
+		Result:HCSimplepastapot,
+		Time:90.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	} 
+
+recipe Cook Tasty Pasta
+	{
+       		SkillRequired:Cooking=5,
+		destroy WaterPot,
+		HCDrypasta,
+		HCTomatosaucebowl,
+		Broccoli/Eggplant/Ham/Steak/Chicken/Salmon/TunaTinOpen/Cheese/BellPepper,
+		Result:HCTastypastapot,
+		Time:90.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Make Bowl of Simple Pasta
+	{
+		HCSimplepasta,
+		Bowl=4,
+		Result:HCSimplepastabowl=4,
+		Time:20.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Bowl of Tasty Pasta
+	{
+		HCTastypasta,
+		Bowl=4,
+		Result:HCTastypastabowl=4,
+		Time:20.0,
+	   	Category:Cooking,
+	}
+
+recipe Bake Lasagna
+	{
+       		SkillRequired:Cooking=6,
+		destroy RoastingPan,
+		HCDrypasta,
+		HCTomatosaucebowl,
+		Broccoli/Eggplant/Ham/Steak/Chicken/Salmon/TunaTinOpen/Cheese/BellPepper,
+		Cheese,
+		Result:HCLasagna,
+		Time:100.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+	
+}

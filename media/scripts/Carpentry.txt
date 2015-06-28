@@ -1,0 +1,351 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCWoodblock
+    {
+        Weight    		= 1.0,
+        Type   			= Normal,
+        DisplayName         	= Wood Block,
+        icon 			= HCWoodblock,
+    }
+
+item HCWoodwheel
+    {
+        Weight    		= 1.0,
+        Type   			= Normal,
+        DisplayName         	= Wooden Wheel,
+        icon 			= HCWoodwheel,
+    }
+
+item HCChurn
+    {
+        Weight    		= 10,
+        Type    		= Normal,
+        DisplayName         	= Churn,
+        icon 			= HCChurn,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCWoodenbarrel
+    {
+        Weight    		= 10,
+        Type    		= Normal,
+        DisplayName         	= Wooden Barrel,
+        icon 			= HCWinebarrel,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCWoodenbucket
+    {
+        Weight    		= 1,
+	CanStoreWater		= TRUE,
+        Type    		= Normal,
+        DisplayName         	= Wooden Bucket,
+	ReplaceOnUseOn		= WaterSource-HCWoodenbucketwater,
+        icon 			= HCWoodenbucket,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCWoodenring
+    {
+        Weight    		= 0.5,
+        Type   			= Normal,
+        DisplayName         	= Wooden Ring,
+        icon 			= HCWoodenring,
+    }
+
+item HCWoodenbucketwater
+    {
+	IsWaterSource		=	TRUE,
+	Weight			=	4,
+	CanStoreWater		=	TRUE,
+	Type			=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	DisplayName		=	Wooden Bucket with Water,
+	ReplaceOnDeplete	=	HCWoodenbucket,
+	ReplaceOnUseOn		=	WaterSource-HCWoodenbucketwater,
+	Icon			=	HCWoodenbucketwater,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCLumberstack
+    {
+        Weight    		= 12.0,
+        Type   			= Normal,
+        DisplayName         	= Lumber Stack,
+        icon 			= HCLumberstack,
+    }
+
+item HCLumberbox
+    {
+        Weight    		= 12.0,
+        Type   			= Normal,
+        DisplayName         	= Crate of Lumber,
+        icon 			= HCLumberbox,
+	ResizeWorldIcon 	= FALSE
+    }
+
+item HCWoodwheel
+    {
+        Weight    		= 1.0,
+        Type   			= Normal,
+        DisplayName         	= Wooden Wheel,
+        icon 			= HCWoodwheel,
+    }
+
+item HCWoodenwheelbarrow
+   {
+	WeightReduction         = 50,
+	Weight             	= 40,
+	Type                	= Container,
+	Capacity             	= 200,
+	DisplayName             = Wooden Wheelbarrow,
+	Icon			= HCWoodenwheelbarrow,
+	ResizeWorldIcon 	= FALSE,
+	RequiresEquippedBothHands = true,
+    }
+
+item HCWoodshingles
+    {
+        Weight    		= 1,
+        Type   			= Normal,
+        DisplayName         	= Wood Shingles,
+        icon 			= HCWoodshingles,
+    }
+
+item HCCoffin
+    {
+        Weight    		= 10,
+        Type    		= Normal,
+        DisplayName         	= Empty Coffin,
+        icon 			= HCCoffin,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCoffinfull
+    {
+        Weight    		= 20,
+        Type    		= Normal,
+        DisplayName         	= Full Coffin,
+        icon 			= HCCoffin,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCWoodenladder
+    {
+        Weight    		= 36,
+        Type   			= Normal,
+        DisplayName         	= Wooden Ladder,
+        icon 			= HCWoodenladder,
+    }
+
+/************************RECIPES************************/
+    
+
+recipe Make Wood Block
+    {
+    Log,
+    keep Saw,
+    CanBeDoneFromFloor:true,
+    Result:HCWoodblock=9,
+    Sound:PZ_Saw,
+    Time:200,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Log,
+    keep HCKiln,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Wooden Ring
+    {
+    HCWoodblock,
+    keep Saw,
+    Result:HCWoodenring,
+    Time:15,
+    Category:Carpentry,
+    }
+
+recipe Make Churn
+    {
+    	WoodenStick,
+	HCWoodenring,
+	Plank=2,
+	Nails=4,
+    	keep Hammer,
+	keep Saw,
+   	 Result:HCChurn,
+	SkillRequired:Woodwork=6,
+    	Sound:PZ_Hammer,
+    	Time:100,
+    	Category:Carpentry,
+    }
+
+recipe Make Wooden Barrel
+    {
+	HCWoodenring=2,
+	Plank=2,
+	Nails=4,
+    	keep Hammer,
+	keep Saw,
+   	 Result:HCWoodenbarrel,
+	SkillRequired:Woodwork=6,
+    	Sound:PZ_Hammer,
+    	Time:100,
+    	Category:Carpentry,
+    }
+
+recipe Make Wooden Bucket
+    {
+	Plank=2,
+	Nails=2,
+	HCWoodenring,
+    	Rope,
+    	keep Hammer,
+	keep Saw,
+   	Result:HCWoodenbucket,
+	SkillRequired:Woodwork=1,
+	Sound:PZ_Hammer,
+    	Time:50,
+    	Category:Carpentry,
+    }
+
+recipe Make Wooden Tool Box
+    {
+	Plank=2,
+	Nails=2,
+    	keep Hammer,
+	keep Saw,
+   	 Result:HCWoodentoolbox,
+	SkillRequired:Woodwork=1,
+	Sound:PZ_Hammer,
+    	Time:50,
+    	Category:Carpentry,
+    }
+
+recipe Pack Lumber Stack
+    {
+    Plank=12,
+    Rope,
+    Result:HCLumberstack,
+    Time:40.0,
+    Category:Carpentry,
+    }
+
+recipe Unpack Lumber Stack
+    {
+    HCLumberstack,
+    Result:Plank=12,
+    Time:40.0,
+    Category:Carpentry,
+    OnCreate:recipe_hcrope,
+    }
+
+recipe Pack Crate of Lumber
+    {
+    HCLumberstack=3,
+    HCRopethick,
+    Result:HCLumberbox,
+    Time:20.0,
+    Category:Carpentry,
+    }
+
+recipe Unpack Crate of Lumber
+    {
+    HCLumberbox,
+    Result:HCLumberstack=3,
+    Time:20.0,
+    Category:Carpentry,
+    OnCreate:recipe_hcropethick,
+    }
+
+recipe Make Wooden Wheel
+    {
+	HCWoodenring,
+	Woodglue=6,
+    	WoodenStick=3,
+    	keep Hammer,
+	keep Saw,
+   	Result:HCWoodwheel,
+	SkillRequired:Woodwork=7,
+    	Sound:PZ_Hammer,
+    	Time:100,
+    	Category:Carpentry,
+    }
+
+recipe Make Wooden Wheelbarrow
+    {
+	Plank=4,
+	Nails=8,
+	HCWoodwheel,
+    	keep Hammer,
+	keep Saw,
+   	Result:HCWoodenwheelbarrow,
+	SkillRequired:Woodwork=7,
+    	Sound:PZ_Hammer,
+    	Time:200,
+    	Category:Carpentry,
+    }
+
+recipe Make Wood Shingles
+    {
+	Plank,
+	keep Saw,
+   	Result:HCWoodshingles=3,
+	SkillRequired:Woodwork=1,
+	Sound:PZ_Saw,
+    	Time:50,
+    	Category:Carpentry,
+    }
+
+recipe Make Coffin
+    {
+	Plank=3,
+	Nails=3,
+    	keep Hammer,
+	keep Saw,
+   	Result:HCCoffin,
+	SkillRequired:Woodwork=3,
+    	Sound:PZ_Hammer,
+    	Time:50,
+    	Category:Carpentry,
+    }
+
+recipe Put Corpse in Coffin
+    {
+	HCCoffin,
+    	CorpseMale/CorpseFemale,
+   	Result:HCCoffinfull,
+    	Time:15,
+    }
+
+recipe Build Wooden Ladder
+    {
+	Log=2,
+	Plank=6,
+	Nails=6,
+    	keep Hammer,
+	keep Saw,
+   	Result:HCWoodenladder,
+	SkillRequired:Woodwork=6,
+    	Sound:PZ_Hammer,
+    	Time:100,
+    	Category:Carpentry,
+    }
+
+
+
+}

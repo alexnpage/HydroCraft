@@ -1,0 +1,163 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCGlassingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Glass Ingot,
+        icon 			= HCGlassingot,
+    }   
+
+item HCIronblowpipe
+    {
+        Weight    		= 2,
+        Type    		= Normal,
+        DisplayName         	= Iron Blowpipe,
+        icon 			= HCIronblowpipe,
+    }
+
+item HCWineglass
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Wine Glass,
+        icon 			= HCWineglass,
+    }   
+
+/************************RECIPES************************/
+    
+recipe Make Iron Blowpipe
+	{
+	HCIroningot=2,
+    	keep HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    	keep HCTongs,
+    	keep HCWorkgloves/HCOvenmitts,
+	keep HCAnvil,
+    	CanBeDoneFromFloor:true,
+	Result:HCIronblowpipe,
+	Time:150.0,
+    	Category:Engineer,
+	}
+
+recipe Create Glass from Sand
+    {
+    Sandbag,
+    Log,
+    HCIngotmold=2,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:HCGlassingot=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Flask
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:HCGlassflask,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Jar
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:EmptyJar,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Whiskey Bottle
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:WhiskeyEmpty,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Wine Bottle
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:WineEmpty,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Graduated Cylinder
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:HCGlassgraduatedcylinder,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Glass Test Tube
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:HCGlasstesttube,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Create Wine Glass
+    {
+    HCGlassingot,
+    Log,
+    keep HCTongs,
+    keep HCIronblowpipe,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    Result:HCWineglass,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+}

@@ -1,0 +1,45 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCMRE
+	{
+		DisplayName		=	MRE,
+		HungerChange		=	-50,
+		Weight			=	0.5,
+		Type			=	Food,
+		Icon			=	HCMRE,
+	}
+
+item HCMREbox
+	{
+		Weight			=	2,
+		Icon			=	HCMREbox,
+		DisplayName		=	Box of MREs,
+	}
+		
+/************************RECIPES************************/
+    
+recipe Box MREs
+    	{
+       	HCMRE=20,
+       	Result:HCMREbox,
+        Time:15.0,
+	Category:Cooking,
+    	}
+
+recipe Unbox MREs
+    	{
+	HCMREbox,
+	Result:HCMRE=20,
+	Time:15.0,
+	Category:Cooking,
+    	}	
+			
+}

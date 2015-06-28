@@ -1,0 +1,569 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCSlicedapple
+	{
+	HungerChange			=	-4,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Sliced Apple,
+	Icon				=	HCSlicedapple,
+	DaysFresh			=	5,
+	DaysTotallyRotten		=	8,
+	EvolvedRecipe 			= 	Salad:5;Cake:4,
+	}
+
+item HCSlicedorange
+	{
+	HungerChange			=	-4,
+	ThirstChange			=	-5,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Sliced Orange,
+	Icon				=	HCSlicedorange,
+	DaysFresh			=	5,
+	DaysTotallyRotten		=	8,
+	EvolvedRecipe 			= 	Salad:5;Cake:4,
+	}	
+
+item HCLemonjuicebowl
+	{
+	HungerChange			=	-5,
+	ThirstChange			=	-15,
+	Weight				=	0.1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Lemon Juice,
+	Icon				=	HCLemonjuicebowl,
+	ReplaceOnUse			=	Bowl,
+	DaysFresh			=	5,
+	DaysTotallyRotten		=	8,
+	}
+
+item HCLemonjuicebottle
+	{
+	Weight				=	0.1,
+	Type 				= 	Drainable,
+	UseDelta 			= 	0.25,
+	DisplayName			=	Bottle of Lemon Juice,
+	Icon				=	HCLemonjuicebottle,
+	}	
+		
+item HCDryingappleslices
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Apple Slices,
+	Icon				=	HCDryingapple,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedapples,
+	}	
+
+item HCDriedapples
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Apple Slices,
+	Icon				=	HCDriedapple,
+	}	
+	
+item HCDriedapplesbag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Apple Slices,
+	Icon				=	HCDriedapplebag,
+	}
+	
+item HCDryingpeachslices
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Peach Slices,
+	Icon				=	HCDryingpeach,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedpeach,
+	}	
+
+item HCDriedpeach
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Peach Slices,
+	Icon				=	HCDriedpeach,
+	}	
+	
+item HCDriedpeachbag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Peach Slices,
+	Icon				=	HCDriedpeachbag,
+	}
+
+item HCDryingorangeslices
+	{
+	HungerChange			=	-20,
+	ThirstChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Orange Slices,
+	Icon				=	HCDryingorange,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedorange,
+	}	
+
+item HCDriedorange
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Orange Slices,
+	Icon				=	HCDriedorange,
+	}	
+	
+item HCDriedorangebag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	Zipperbagempty,
+	DisplayName			=	Bag of Dried Orange Slices,
+	Icon				=	HCDriedorangebag,
+	}	
+
+item HCDryingbananachips
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Banana Chips,
+	Icon				=	HCDryingbananachips,
+	DaysFresh			=	2,
+	DaysTotallyRotten		=	6,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedbananachips,
+	}	
+
+item HCDriedbananachips
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Banana Chips,
+	Icon				=	HCDriedbananachips,
+	}	
+	
+item HCDriedbananachipsbag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Banana Chips,
+	Icon				=	HCDriedbananachipsbag,
+	}
+	
+item HCDryingstrawberryslices
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Strawberry Slices,
+	Icon				=	HCDryingstrawberry,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedstrawberryslices,
+	}	
+
+item HCDriedstrawberryslices
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Strawberry Slices,
+	Icon				=	HCDriedstrawberry,
+	}	
+	
+item HCDriedstrawberryslicesbag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Strawberry Slices,
+	Icon				=	HCDriedstrawberrybag,
+	}	
+
+item HCDryingberries
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Berries,
+	Icon				=	HCDriedberries,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedberries,
+	}	
+
+item HCDriedberries
+	{
+	HungerChange			=	-30,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Berries,
+	Icon				=	HCDriedberries,
+	}	
+	
+item HCDriedberriesbag
+	{
+	HungerChange			=	-30,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Berries,
+	Icon				=	HCDriedberriesbag,
+	}	
+	
+item HCDryingtomatoslices
+	{
+	HungerChange			=	-20,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Drying Tomato Slices,
+	Icon				=	HCDryingtomato,
+	DaysFresh			=	1,
+	DaysTotallyRotten		=	1,
+	IsCookable			=	TRUE,
+	DangerousUncooked		=	FALSE,
+	MinutesToCook			=	40,
+	MinutesToBurn			=	60,
+	ReplaceOnUse			=	BakingTray,
+	ReplaceOnCooked			= 	Hydrocraft.HCDriedtomato,
+	}	
+
+item HCDriedtomato
+	{
+	HungerChange			=	-25,
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	BakingTray,
+	DisplayName			=	Dried Tomato Slices,
+	Icon				=	HCDriedtomato,
+	}	
+	
+item HCDriedtomatobag
+	{
+	HungerChange			=	-25,	
+	BoredomChange			=	-10,
+	UnhappyChange			=	-15,
+	Weight				=	0.5,
+	Type				=	Food,
+	ReplaceOnUse			=	HCZipperbag,
+	DisplayName			=	Bag of Dried Tomatoes,
+	Icon				=	HCDriedtomatobag,
+	}	
+
+
+/************************RECIPES************************/
+
+recipe Slice Apple
+	{
+		Apple,
+		keep KitchenKnife,	
+		Result:HCSlicedapple = 4,
+		Time:35.0,
+	   	Category:Cooking,
+	}
+
+recipe Slice Orange
+	{
+		Orange,
+		keep KitchenKnife,	
+		Result:HCSlicedorange = 4,
+		Time:35.0,
+	   	Category:Cooking,
+	}
+	
+recipe Make Lemon Juice
+	{
+       		SkillRequired:Cooking=2,
+		keep KitchenKnife,
+		keep HCJuicer/HCJuicer2,
+		Lemon,
+		destroy Bowl,	
+		Result:HCLemonjuicebowl,
+		Time:40.0,
+	   	Category:Cooking,
+	}
+
+recipe Dry Some Apple Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
+		HCSlicedapple = 4,	
+		Result:HCDryingappleslices,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+	
+recipe Dry Some Apple Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
+		Apple,	
+		Result:HCDryingappleslices,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+	
+recipe Store Dried Apple Slices in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedapples,
+		Result:HCDriedapplesbag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Dry Some Peach Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
+		Peach,	
+		Result:HCDryingpeachslices,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+		
+	
+recipe Store Dried Peach Slices in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedpeach,
+		Result:HCDriedpeachbag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}		
+	
+recipe Dry Some Orange Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		HCSlicedorange = 4,	
+		Result:HCDryingorangeslices,
+		Time:75.0,
+	   	Category:Cooking,
+	}	
+	
+recipe Dry Some Orange Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		Orange,	
+		Result:HCDryingorangeslices,
+		Time:75.0,
+	   	Category:Cooking,
+	}	
+	
+recipe Store Dried Orange Slices in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedorange,
+		Result:HCDriedorangebag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Dry Some Banana Chips
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		Banana,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,	
+		Result:HCDryingbananachips,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+		
+recipe Store Dried Banana Chips in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedbananachips,
+		Result:HCDriedbananachipsbag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}	
+		
+recipe Dry Some Strawberry Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
+		Strewberrie/Strawberry,	
+		Result:HCDryingstrawberryslices,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+	
+recipe Store Dried Strawberry Slices in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedstrawberryslices,
+		Result:HCDriedstrawberryslicesbag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+		
+recipe Dry Some Berries
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
+		HCBunchOfberries,	
+		Result:HCDryingberries,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}	
+	
+recipe Store Dried Berries in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedberries,
+		Result:HCDriedberriesbag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}	
+recipe Dry Some Tomato Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		Salt;1,
+		HCSlicedtomato = 4,	
+		Result:HCDryingtomatoslices,
+		Time:75.0,
+	   	Category:Cooking,
+	}	
+	
+recipe Dry Some Tomato Slices
+	{
+        	SkillRequired:Cooking=3,
+		BakingTray,
+		keep KitchenKnife,
+		Salt;1,
+		Tomato,	
+		Result:HCDryingtomatoslices,
+		Time:75.0,
+	   	Category:Cooking,
+	}	
+	
+recipe Store Dried Tomato Slices in Bag
+	{
+		HCZipperbag/Zipperbagempty,
+		HCDriedtomato,
+		Result:HCDriedtomatobag,
+		Time:30.0,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+    	
+}

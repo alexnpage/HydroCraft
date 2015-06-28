@@ -1,0 +1,78 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCStraw
+    {
+        Weight    = 0.1,
+        Type    = Normal,
+        DisplayName         = Straw,
+        icon = HCStraw,
+    }
+
+    item HCWickerbasket
+    {
+        WeightReduction     = 10,
+        Weight              = 0.2,
+        Type                = Container,
+        Capacity            = 6,
+        DisplayName         = Wicker Basket,
+        Icon                = HCWickerbasket,
+    }
+
+    item HCBirchbarkbasket
+    {
+        WeightReduction     = 10,
+        Weight              = 0.2,
+        Type                = Container,
+        Capacity            = 9,
+        DisplayName         = Birch Bark Basket,
+        Icon                = HCBirchbarkbasket,
+    }
+
+    item HCStrawbasket
+    {
+        WeightReduction     = 10,
+        Weight              = 0.2,
+        Type                = Container,
+        Capacity            = 16,
+        DisplayName         = Straw Basket,
+        Icon                = HCBirchbarkbasket,
+    }
+
+/************************RECIPES************************/
+    
+recipe Make Wicker Basket
+    {
+    Twigs=10,
+    Result:HCWickerbasket,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Birch Bark Basket
+    {
+    HCBirchbark=5,
+    Result:HCBirchbarkbasket,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Straw Basket
+    {
+    HCStraw=10,
+    Result:HCStrawbasket,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+	
+}

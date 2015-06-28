@@ -1,0 +1,105 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCPickledeggs
+	{
+	HungerChange			=	-35,	
+	BoredomChange			=	-5,
+	UnhappyChange			=	-5,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	HCJar,
+	DisplayName			=	Jar of Pickled Eggs,
+	Icon				=	HCPickledeggs,
+	}
+	
+item HCSpicypaste
+	{
+	HungerChange			=	-10,
+	Weight				=	1,
+	Type				=	Food,
+	DisplayName			=	Bowl of Spicy Paste,
+	ReplaceOnUse			=	Bowl,
+	Icon				=	HCTomatosaucebowl,
+	DaysTotallyRotten		=	8,
+	DaysFresh 			= 	5,
+	CustomContextMenu 		= 	Eat,
+        Spice   			=   	true,
+        EvolvedRecipe 			= 	Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Roasted Vegetables:1,
+	}
+	
+item HCKimchi
+	{
+	HungerChange			=	-35,	
+	BoredomChange			=	-5,
+	UnhappyChange			=	-5,
+	Weight				=	1,
+	Type				=	Food,
+	ReplaceOnUse			=	HCJar,
+	DisplayName			=	Jar of Kimchi,
+	Icon				=	HCPickledkimchi,
+	}
+
+item HCJarpickles
+	{
+	Weight				=	1,
+	Type				=	Normal,
+	DisplayName			=	Jar of Pickles,
+	Icon				=	HCJarpickles,
+	}
+
+/************************RECIPES************************/
+    
+recipe Make Pickled Eggs
+	{
+        	SkillRequired:Cooking=4,
+		HCJar,
+		Vinegar,
+		Salt;1,	
+		HCHardboiledegg=2,	
+		Result:HCPickledeggs,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Spicy Paste
+	{
+		Bowl,
+		Pepper;1,
+		RedRadish,
+		Tomato,	
+		Result:HCSpicypaste,
+		Time:75.0,
+	   	Category:Cooking,
+	}
+
+recipe Make Kimchi
+	{
+        	SkillRequired:Cooking=4,
+		HCJar,
+		Salt;1,	
+		Cabbage,
+		HCSpicypaste,	
+		Result:HCKimchi,
+		Time:75.0,
+	   	Category:Cooking,
+		OnCreate:HCRecipeBowls,
+	}
+
+recipe Open Jar of Pickles
+	{
+		HCJarpickles,	
+		Result:Pickles=10,
+		Time:25.0,
+	   	Category:Cooking,
+		OnCreate:recipe_hcjar,
+	}
+	
+}

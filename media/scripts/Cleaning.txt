@@ -1,0 +1,157 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCFeatherduster
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Feather Duster,
+        icon 			= HCFeatherduster,
+    }
+
+item HCShopvac
+    {
+        Weight    		= 5,
+        Type    		= Normal,
+        DisplayName         	= Shop Vac,
+        icon 			= HCShopvac,
+    }
+
+
+item HCVacuum
+    {
+        Weight    		= 3,
+        Type    		= Normal,
+        DisplayName         	= Vacuum Cleaner,
+        icon 			= HCVacuum,
+    }
+
+item HCVac
+    {
+        Weight    		= 3,
+        Type    		= Normal,
+        DisplayName         	= Vacuum Cleaner,
+        icon 			= HCVac,
+    }
+
+item HCHandvac
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Hand Vacuum,
+        icon 			= HCHandvac,
+    }
+
+item HCDustpan
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Dust Pan,
+        icon 			= HCDustpan,
+    }
+
+item HCWindowcleaner
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Window Cleaner,
+        icon 			= HCWindowcleaner,
+    }
+
+item HCCleanser
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Cleanser,
+        icon 			= HCCleanser,
+    }
+
+
+/************************WEAPONS************************/
+
+item HCBroom
+    {
+        MaxRange                 =    1.5,
+        WeaponSprite               =    Shovel,
+        MinAngle                    =    0.2,
+        Type                        =    Weapon,
+        MinimumSwingTime            =    1.5,
+        KnockBackOnNoDeath            =    TRUE,
+        SwingAmountBeforeImpact        =    0.02,
+        Categories                    =    Blunt,
+        ConditionLowerChanceOneIn        =    10,
+        Weight                =    1,
+        SplatNumber            =    1,
+        PushBackMod            =    0.25,
+        MaxDamage            =    0.5,
+        SubCategory            =    Swinging,
+        ConditionMax            =    15,
+        MaxHitCount            =    2,
+        DoorDamage            =    1,
+        IdleAnim                =    Idle_Weapon2,
+        SwingAnim                =    Bat,
+        CriticalChance            =    5,
+        WeaponWeight            =    0.5,
+        DisplayName            =    Broom,
+        MinRange                =    0.61,
+        SwingTime                =    2,
+        HitAngleMod            =    -30,
+        MinDamage                =    0.8,
+        KnockdownMod            =    0.5,
+        SplatBloodOnNoDeath        =    FALSE,
+        Icon                    =    HCBroom,
+        RunAnim                =    Run_Weapon2,
+      TwoHandWeapon             =     TRUE,
+            BreakSound             =       PZ_WoodSnap,
+        TreeDamage             =       1,
+    }
+
+item HCPushbroom
+    {
+        MaxRange                 =    1.8,
+        WeaponSprite               =    Shovel,
+        MinAngle                    =    0.2,
+        Type                        =    Weapon,
+        MinimumSwingTime            =    1.5,
+        KnockBackOnNoDeath            =    TRUE,
+        SwingAmountBeforeImpact        =    0.02,
+        Categories                    =    Blunt,
+        ConditionLowerChanceOneIn        =    10,
+        Weight                =    2,
+        SplatNumber            =    1,
+        PushBackMod            =    0.25,
+        MaxDamage            =    0.5,
+        SubCategory            =    Swinging,
+        ConditionMax            =    15,
+        MaxHitCount            =    2,
+        DoorDamage            =    1,
+        IdleAnim                =    Idle_Weapon2,
+        SwingAnim                =    Bat,
+        CriticalChance            =    5,
+        WeaponWeight            =    0.5,
+        DisplayName            =    Push Broom,
+        MinRange                =    0.61,
+        SwingTime                =    2,
+        HitAngleMod            =    -30,
+        MinDamage                =    0.8,
+        KnockdownMod            =    0.5,
+        SplatBloodOnNoDeath        =    FALSE,
+        Icon                    =    HCPushbroom,
+        RunAnim                =    Run_Weapon2,
+      TwoHandWeapon             =     TRUE,
+            BreakSound             =       PZ_WoodSnap,
+        TreeDamage             =       1,
+    }
+
+
+/************************RECIPES************************/
+    
+}

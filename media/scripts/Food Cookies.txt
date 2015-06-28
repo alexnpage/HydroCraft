@@ -1,0 +1,500 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCCookiedough
+	{
+	Type				=	Food,
+	DisplayName			=	Cookie Dough,
+	Icon				=	HCCookiedough,
+	Weight				=	0.3,
+	HungerChange			=	-15,
+	}
+
+item HCCookie
+	{
+	HungerChange			=	-12,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCCookiebakedtray,
+	DisplayName			=	Uncooked Tray of Cookies,
+	Icon				=	HCCookie,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiebakedtray
+	{
+	HungerChange			=	-12,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Cooked Tray of Cookies,
+	Icon				=	HCCookiebaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiebaked
+	{
+	HungerChange			=	-2,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Cookie,
+	Icon				=	HCCookiebaked,
+	}
+
+item HCChipcookie
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCChipcookiebakedtray,
+	DisplayName			=	Uncooked Tray of Chocolate Chip Cookies,
+	Icon				=	HCChipcookie,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCChipcookiebakedtray
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Tray of Chocolate Chip Cookies,
+	Icon				=	HCChipcookiebaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCChipcookiebaked
+	{
+	HungerChange			=	-3,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Chocolate Chip Cookie,
+	Icon				=	HCChipcookiebaked,
+	}
+
+item HCCookiewhite
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCCookiewhitebakedtray,
+	DisplayName			=	Uncooked Tray of White Chocolate Chip Cookies,
+	Icon				=	HCCookiewhite,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiewhitebakedtray
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Tray of White Chocolate Chip Cookies,
+	Icon				=	HCCookiewhitebaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiewhitebaked
+	{
+	HungerChange			=	-3,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	White Chocolate Chip Cookie,
+	Icon				=	HCCookiewhitebaked,
+	}
+
+item HCCookiepeanutbutter
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCCookiepeanutbutterbakedtray,
+	DisplayName			=	Uncooked Tray of Peanutbutter Cookies,
+	Icon				=	HCCookiepeanutbutter,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiepeanutbutterbakedtray
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Tray of Peanutbutter Cookies,
+	Icon				=	HCCookiepeanutbutterbaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCCookiepeanutbutterbaked
+	{
+	HungerChange			=	-3,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Peanutbutter Cookie,
+	Icon				=	HCCookiepeanutbutterbaked,
+	}
+
+item HCChocolatecookie
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCChocolatecookiebakedtray,
+	DisplayName			=	Uncooked Tray of Chocolate Cookies,
+	Icon				=	HCChocolatecookie,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCChocolatecookiebakedtray
+	{
+	HungerChange			=	-18,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Tray of Chocolate Cookies,
+	Icon				=	HCChocolatecookiebaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCChocolatecookiebaked
+	{
+	HungerChange			=	-3,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Chocolate Cookie,
+	Icon				=	HCChocolatecookiebaked,
+	}
+
+item HCDoublechocolatecookie
+	{
+	HungerChange			=	-30,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCDoublechocolatecookiebakedtray,
+	DisplayName			=	Uncooked Tray of Double Chocolate Chip Cookies,
+	Icon				=	HCDoublechocolatecookie,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCDoublechocolatecookiebakedtray
+	{
+	HungerChange			=	-30,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-20,
+	DisplayName			=	Tray of Double Chocolate Chip Cookies,
+	Icon				=	HCDoublechocolatecookiebaked,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCDoublechocolatecookiebaked
+	{
+	HungerChange			=	-5,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-30,
+	BoredomChange			=	-20,
+	DisplayName			=	Double Chocolate Chip Cookie,
+	Icon				=	HCDoublechocolatecookiebaked,
+	}
+
+item HCFortunecookie
+    	{
+        Weight    			= 0.1,
+        Type   				= Normal,
+        DisplayName         		= Fortune Cookie,
+        icon 				= HCFortunecookie,
+    	}
+
+item HCFortunecookiebroken
+	{
+	HungerChange			=	-10,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Broken Fortune Cookie,
+	Icon				=	HCFortunecookiebroken,
+	}
+
+item HCFortune
+    	{
+        Weight    			= 0.1,
+        Type   				= Normal,
+        DisplayName         		= Paper Fortune,
+        icon 				= HCFortune,
+    	}
+
+item HCCookiecutter
+	{
+	    	Weight 			= 0.1,
+        	Type 			= Normal,
+        	DisplayName 		= Cookiecutter,
+        	Icon 			= HCCookiecutter,
+	}
+
+item HCGinerbreadman
+	{
+	HungerChange			=	-12,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	5,
+	BoredomChange			=	5,
+	IsCookable			=	TRUE,
+    	MinutesToCook			=	30,
+	MinutesToBurn			=	60,
+	ReplaceOnCooked			=	Hydrocraft.HCGinerbreadmanbakedtray,
+	DisplayName			=	Uncooked Tray of Ginerbread Man Cookies,
+	Icon				=	HCGinerbreadman,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCGinerbreadmanbakedtray
+	{
+	HungerChange			=	-12,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Cooked Tray of Ginerbread Man Cookies,
+	Icon				=	HCGinerbreadman,
+	ReplaceOnUse			=	BakingTray,
+	}
+
+item HCGinerbreadmanbaked
+	{
+	HungerChange			=	-2,
+	Weight				=	0.1,
+	Type				=	Food,
+	UnhappyChange			=	-20,
+	BoredomChange			=	-15,
+	DisplayName			=	Ginerbread Man Cookie,
+	Icon				=	HCGinerbreadman,
+	}
+
+	
+/************************RECIPES************************/
+   
+recipe Make Cookie Dough
+	{
+       		SkillRequired:Cooking=3,
+		Water = 2,
+		Flour/HCPotatoflour,		
+		Sugar,
+		Result:HCCookiedough,
+		Time:90.0,
+	   	Category:Cooking,
+	} 
+
+recipe Make Cookie
+	{
+       		SkillRequired:Cooking=3,
+		BakingTray,
+		HCCookiedough,
+		Result:HCCookie=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+	
+recipe Make Chocolate Chip Cookie
+	{
+       		SkillRequired:Cooking=4,
+		BakingTray,
+		HCCookiedough,
+		Chocolate/HCChocolatedark,
+		Result:HCChipcookie=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Make White Chocolate Chip Cookie
+	{
+       		SkillRequired:Cooking=4,
+		BakingTray,
+		HCCookiedough,
+		HCChocolatewhite,
+		Result:HCCookiewhite=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Make Peanutbutter Cookie
+	{
+       		SkillRequired:Cooking=4,
+		BakingTray,
+		HCCookiedough,
+		PeanutButter,
+		Result:HCCookiepeanutbutter=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Make Chocolate Cookie
+	{
+       		SkillRequired:Cooking=4,
+		BakingTray,
+		HCCookiedough,
+		Chocolate/HCChocolatewhite/HCChocolatedark,
+		Result:HCChocolatecookie=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Make Double Chocolate Chip Cookie
+	{
+       		SkillRequired:Cooking=5,
+		BakingTray,
+		HCCookiedough,
+		Chocolate/HCChocolatewhite/HCChocolatedark,
+		Chocolate/HCChocolatewhite/HCChocolatedark,
+		Result:HCDoublechocolatecookie=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Make Ginerbread Man Cookie
+	{
+       		SkillRequired:Cooking=5,
+		BakingTray,
+		keep HCCookiecutter,
+		HCCookiedough,
+		Result:HCGinerbreadman=6,
+		Time:50,
+	   	Category:Cooking,
+	}
+
+recipe Remove Cookies from Tray
+	{
+		HCCookiebakedtray,
+		Result:HCCookiebaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Remove Chocolate Chip Cookies from Tray
+	{
+		HCChipcookiebakedtray,
+		Result:HCChipcookiebaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Remove White Chocolate Chip Cookies from Tray
+	{
+		HCCookiewhitebakedtray,
+		Result:HCCookiewhitebaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}	
+
+recipe Remove Peanutbutter Cookies from Tray
+	{
+		HCCookiepeanutbutterbakedtray,
+		Result:HCCookiepeanutbutterbaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Remove Chocolate Cookies from Tray
+	{
+		HCChocolatecookiebakedtray,
+		Result:HCChocolatecookiebaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Remove Double Chocolate Chip Cookies from Tray
+	{
+		HCDoublechocolatecookiebakedtray,
+		Result:HCDoublechocolatecookiebaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Remove Ginerbread Man Cookies from Tray
+	{
+		HCGinerbreadmanbakedtray,
+		Result:HCGinerbreadmanbaked=6,
+		Time:15,
+	   	Category:Cooking,
+    		OnCreate:recipe_hcbakingtray,
+	}
+
+recipe Open Cookie Jar
+    {
+    HCCookiejar,
+    Result:HCJunk,
+    Time:15,
+    Category:Cooking,
+    OnCreate:HCJarCookies,
+    }
+
+recipe Open Fortune Cookie
+    {
+    HCFortunecookie,
+    Result:HCFortunecookiebroken,
+    Time:15,
+    Category:Cooking,
+    OnCreate:recipe_hcfortune,
+    } 
+
+}

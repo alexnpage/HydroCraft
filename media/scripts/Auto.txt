@@ -1,0 +1,426 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCHubcap
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Hubcap,
+        icon 			= HCHubcap,
+    }
+
+item HCAirfreshener
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Air Freshener,
+        icon 			= HCAirfreshener,
+    }
+
+item HCTruck
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Truck,
+        icon 			= HCTruck,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTruckDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Truck,
+        icon 			= HCTruckDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTruck2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Truck,
+        icon 			= HCTruck2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTruckDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Truck,
+        icon 			= HCTruckDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCAmbulance
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Ambulance,
+        icon 			= HCAmbulance,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCAmbulancedirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Ambulance,
+        icon 			= HCAmbulancedirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCAmbulance2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Ambulance,
+        icon 			= HCAmbulance2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCAmbulancedirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Ambulance,
+        icon 			= HCAmbulancedirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCPolicecar
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Police Car,
+        icon 			= HCPolicecar,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCPolicecardirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Police Car,
+        icon 			= HCPolicecardirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCPolicecar2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Police Car,
+        icon 			= HCPolicecar2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCPolicecardirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Police Car,
+        icon 			= HCPolicecardirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCFiretruck
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Fire Truck,
+        icon 			= HCFiretruck,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCFiretruckdirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Fire Truck,
+        icon 			= HCFiretruckdirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCFiretruck2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Fire Truck,
+        icon 			= HCFiretruck2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCFiretruckdirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Fire Truck,
+        icon 			= HCFiretruckdirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSchoolbus
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= School Bus,
+        icon 			= HCSchoolbus,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSchoolbusdirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= School Bus,
+        icon 			= HCSchoolbusdirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSchoolbus2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= School Bus,
+        icon 			= HCSchoolbus2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSchoolbusdirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= School Bus,
+        icon 			= HCSchoolbusdirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCar
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Car,
+        icon 			= HCCar,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCarDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Car,
+        icon 			= HCCarDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCar2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Car,
+        icon 			= HCCar2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCarDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Car,
+        icon 			= HCCarDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSportscar
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Sports Car,
+        icon 			= HCSportscar,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSportscarDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Sports Car,
+        icon 			= HCSportscarDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSportscar2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Sports Car,
+        icon 			= HCSportscar2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCSportscarDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Sports Car,
+        icon 			= HCSportscarDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMotorhome
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Motor Home,
+        icon 			= HCMotorhome,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMotorhomeDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Motor Home,
+        icon 			= HCMotorhomeDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMotorhome2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Motor Home,
+        icon 			= HCMotorhome2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMotorhomeDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Motor Home,
+        icon 			= HCMotorhomeDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTowtruck
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Tow Truck,
+        icon 			= HCTowtruck,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTowtruckDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Tow Truck,
+        icon 			= HCTowtruckDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTowtruck2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Tow Truck,
+        icon 			= HCTowtruck2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCTowtruckDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Tow Truck,
+        icon 			= HCTowtruckDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMixertruck
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Mixer Truck,
+        icon 			= HCMixertruck,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMixertruckDirty
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Mixer Truck,
+        icon 			= HCMixertruckDirty,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMixertruck2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Mixer Truck,
+        icon 			= HCMixertruck2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCMixertruckDirty2
+    {
+        Weight    		= 50,
+        Type    		= Normal,
+        DisplayName         	= Mixer Truck,
+        icon 			= HCMixertruckDirty2,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+/************************WEAPONS************************/
+
+	item HCTireiron
+	{
+		MaxRange	=	1.2,
+		WeaponSprite	=	Baseballbat,
+		MinAngle	=	0,
+		Type	=	Weapon,
+		MinimumSwingTime	=	3,
+		KnockBackOnNoDeath = TRUE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	Blunt,
+		Weight	=	3,
+		ConditionLowerChanceOneIn	=	70,
+		PushBackMod	=	0.5,
+		MinDamage	=	0.6,
+		MaxDamage	=	1.1,
+		SubCategory	=	Swinging,
+		ConditionMax	=	15,
+		MaxHitCount	=	1,
+		DoorDamage	=	8,
+		IdleAnim	=	Idle_Weapon2,
+		SwingAnim	=	Bat,
+		CriticalChance	=	10,
+		WeaponWeight	=	4,
+		DisplayName	=	Tire Iron,
+		MinRange	=	0.61,
+		SwingTime	=	3,
+		HitAngleMod	=	-30,
+		KnockdownMod	=	0,
+		Icon	=	HCTireiron,
+		RunAnim	=	Run_Weapon2,
+		BreakSound  =   PZ_MetalSnap,
+		TreeDamage  =   1,
+	}
+
+/************************RECIPES************************/	
+
+}

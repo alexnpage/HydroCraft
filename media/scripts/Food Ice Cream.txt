@@ -1,0 +1,104 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCIcecreamsandwich
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Ice Cream Sandwich,
+	Icon				=	HCIcecreamsandwich,
+	}
+
+item HCIcecreamsoft
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Soft Serve Ice Cream,
+	Icon				=	HCIcecreamsoft,
+	}
+
+item HCPopsicle1
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Blueberry Popsicle,
+	Icon				=	HCPopsicle1,
+	}
+
+item HCPopsicle2
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Chocolate Popsicle,
+	Icon				=	HCPopsicle2,
+	}
+
+item HCPopsicle3
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Strawberry Popsicle,
+	Icon				=	HCPopsicle3,
+	}
+
+item HCPopsicle4
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Grape Popsicle,
+	Icon				=	HCPopsicle4,
+	}
+
+item HCPopsicle5
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Lime Popsicle,
+	Icon				=	HCPopsicle5,
+	}
+
+item HCPopsicle6
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Lemon Popsicle,
+	Icon				=	HCPopsicle6,
+	}
+
+item HCPopsicle7
+	{
+	HungerChange			=	-10,
+	Weight				=	0.2,
+	Type				=	Food,
+	UnhappyChange			=	-10,
+	DisplayName			=	Cherry Popsicle,
+	Icon				=	HCPopsicle7,
+	}
+
+/************************RECIPES************************/
+
+
+}

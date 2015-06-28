@@ -1,0 +1,72 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCMortarandpestle
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Mortar and Pestle,
+        icon 			= HCMortarandpestle,
+    }  
+
+item HCChisel
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Chisel,
+        icon 			= HCChisel,
+    }
+
+item HCTombstone
+    {
+        Weight    		= 10,
+        Type    		= Normal,
+        DisplayName         	= Tombstone,
+        icon 			= HCTombstone,
+	ResizeWorldIcon 	= FALSE,
+    } 
+
+item HCGrave
+    {
+        Weight    		= 30,
+        Type    		= Normal,
+        DisplayName         	= Grave,
+        icon 			= HCTombstone,
+	ResizeWorldIcon 	= FALSE,
+    } 
+
+/************************RECIPES************************/
+    
+recipe Make Mortar and Pestle
+    {
+    Stone=2,
+    Result:HCMortarandpestle,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Tombstone 
+    {
+    Stone,
+    keep HCChisel,
+    Result:HCTombstone,
+    Time:50,
+    }
+
+recipe Make Grave
+    {
+    HCTombstone,
+    HCCoffinfull,
+    keep Shovel,
+    Result:HCGrave,
+    Time:50,
+    }
+
+}

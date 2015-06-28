@@ -1,0 +1,404 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCWorkgloves
+    {
+        Weight    		= 0.25,
+        Type    		= Normal,
+        DisplayName         	= Work Gloves,
+        icon 			= HCWorkgloves,
+    }
+
+item HCTongs
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Tongs,
+        icon 			= HCTongs,
+    }
+
+item HCSmelter
+    {
+        Weight    		= 20.0,
+        Type    		= Normal,
+        DisplayName         	= Smelter,
+        icon 			= HCSmelter,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCCopperingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Copper Ingot,
+        icon 			= HCCopperingot,
+    }
+
+item HCTiningot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Tin Ingot,
+        icon 			= HCTiningot,
+    }     
+
+item HCBronzeingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Bronze Ingot,
+        icon 			= HCBronzeingot,
+    }
+
+item HCIroningot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Iron Ingot,
+        icon 			= HCIroningot,
+    }     
+
+item HCSteelingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Steel Ingot,
+        icon 			= HCSteelingot,
+    }    
+
+item HCLeadingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Lead Ingot,
+        icon 			= HCLeadingot,
+    }     
+
+item HCAluminumingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Aluminum Ingot,
+        icon 			= HCAluminumingot,
+    }
+
+item HCSilveringot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Silver Ingot,
+        icon 			= HCSilveringot,
+    }     
+
+item HCGoldingot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Gold Ingot,
+        icon 			= HCGoldingot,
+    }
+
+item HCAnvil
+    {
+        Weight    		= 20,
+        Type    		= Normal,
+        DisplayName         	= Anvil,
+        icon 			= HCAnvil,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+item HCBulletcasings
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Bullet Casings,
+        icon 			= HCBulletcasings,
+    }
+
+item HCBullettips
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Bullet Tips,
+        icon 			= HCBullettips,
+    }
+
+item HCBuckshot
+    {
+        Weight    		= 0.5,
+        Type    		= Normal,
+        DisplayName         	= Buckshot,
+        icon 			= HCBuckshot,
+    }
+
+/************************RECIPES************************/	
+
+recipe Make Smelter
+    {
+    HCGreybrick=20,
+    HCGreyclay=10,
+    keep HCMasontrowel,
+    Result:HCSmelter,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Smelter
+    {
+    HCRedbrick=20,
+    HCRedclay=10,
+    keep HCMasontrowel,
+    Result:HCSmelter,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Copper Ingot
+    {
+    HCCopperore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Tin Ingot
+    {
+    HCTinore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCTiningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+
+recipe Make Bronze Ingot
+    {
+    HCCopperingot,
+    HCTiningot,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBronzeingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Iron Ingot
+    {
+    HCIronore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCIroningot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Lead Ingot
+    {
+    HCLeadore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCLeadingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Silver Ingot
+    {
+    HCSilverore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSilveringot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Gold Ingot
+    {
+    HCGoldore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCGoldingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Steel Ingot
+    {
+    HCIroningot,
+    HCCoal/Charcoal,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCSteelingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Aluminum Ingot
+    {
+    HCBauxiteore,
+    Log,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAluminumingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Nails
+    {
+    HCIroningot,
+    Log,
+    HCNailmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:Nails=2,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Anvil
+    {
+    HCIroningot=20,
+    Log,
+    HCAnvilmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCAnvil,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Bronze Bullet Casings
+    {
+    HCBronzeingot,
+    Log,
+    HCBulletcasingmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBulletcasings,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Lead Bullet Tips
+    {
+    HCLeadingot,
+    Log,
+    HCBullettipmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBullettips,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Lead Buckshot
+    {
+    HCLeadingot,
+    Log,
+    HCBuckshotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBuckshot=8,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Make Steel BBs
+    {
+    HCSteelingot,
+    Log,
+    HCBuckshotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCBB=8,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
+recipe Cut Steel Pipe
+    {
+    keep HCWeldingmask,
+    keep HCWorkgloves,
+    HCSteelpipe,
+    HCWeldingset,
+    Result:Pipe=5,
+    NeedToBeLearn:true,
+    Time:50,
+    Category:Engineer,
+    }
+
+}

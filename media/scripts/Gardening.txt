@@ -1,0 +1,1105 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base, farming
+
+    }
+
+/************************ITEMS************************/
+
+  item HCCompostbin
+    {
+    Weight        	= 20.0,
+    Type        	= Normal,
+    DisplayName    	= Compost Bin,
+    icon        	= HCCompostbin,
+    ResizeWorldIcon 	= FALSE,
+    }
+
+  item HCCompost
+    {
+    Weight        	= 0.2,
+    Type        	= Normal,
+    DisplayName    	= Compost,
+    icon        	= HCCompost,
+    }
+
+  item HCClayflowerpotwithdirt
+    {
+        Weight    	= 1,
+        Type    	= Normal,
+        DisplayName 	= Clay Flowerpot with Dirt,
+        icon 		= HCClayflowerpotwithdirt,
+	ResizeWorldIcon = FALSE,
+    }
+
+   item HCPottedappletree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Apple Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedappletree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedbananatree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Banana Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedbananatree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedblackberrybush
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Blackberry Bush,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedblackberrybush,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedblueberrybush
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Blueberry Bush,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedblueberrybush,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedgrapevine
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Grape Vine,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedgrapevine,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedlemontree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Lemon Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedlemontree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedorangetree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Orange Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedorangetree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpeachtree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Peach Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpeachtree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedstrawberrybush
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Strawberry Bush,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedstrawberrybush,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedwatermelon
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Watermelon,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedwatermelon,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedbellpepper
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Bell Pepper,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedbellpepper,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedbroccoli
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Broccoli,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedbroccoli,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedcabbage
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Cabbage,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedcabbage,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedcarrots
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Carrots,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedcarrots,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedcornstalk
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Corn Stalk,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedcornstalk,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedeggplant
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Eggplant,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedeggplant,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedleek
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Leek,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedleek,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedlettuce
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Lettuce,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedlettuce,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedonion
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Onion,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedonion,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpeaplant
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Pea Plant,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpeaplant,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpotato
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Potato,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpotato,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+
+    item HCPottedpumpkin
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Pumpkin,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpumpkin,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedradish
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Radish,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedradish,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedtomato
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Tomato,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedtomato,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpeanutplant
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Peanut Plant,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpeanutplant,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedavocadotree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Avocado Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedavocadotree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedcherrytree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Cherry Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedcherrytree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpeartree
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 0.05,
+        DisplayName 		= Potted Pear Tree,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpeartree,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedpineapple
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Pineapple,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedpineapple,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+    item HCPottedzucchini
+    {
+        Weight      		= 5,
+	Type			= Drainable,
+	UseWhileEquipped	= FALSE,
+	UseDelta		= 1.0,
+        DisplayName 		= Potted Zucchini,
+	ReplaceOnDeplete	= HCClayflowerpot,
+        icon        		= HCPottedzucchini,
+	ResizeWorldIcon 	= FALSE,
+    }
+
+/************************RECIPES************************/	
+
+    recipe Fill Clay Pot with Dirt
+    {
+    HCClayflowerpot,
+    Dirtbag,
+    Result:HCClayflowerpotwithdirt,
+    Time:15,
+    Category:Farming,
+    }
+
+	
+    recipe Plant Apple Seeds
+    {
+        SkillRequired:Farming=10,
+        Apple,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedappletree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Banana Seeds
+    {
+        SkillRequired:Farming=10,
+        Banana,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedbananatree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Blackberry Seeds
+    {
+        SkillRequired:Farming=10,
+        BerryBlack,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedblackberrybush,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Blueberry Seeds
+    {
+        SkillRequired:Farming=10,
+        BerryBlue,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedblueberrybush,
+        Time:15,
+	Category:Farming,
+    }
+
+
+    recipe Plant Grape Seeds
+    {
+        SkillRequired:Farming=10,
+        Grapes,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedgrapevine,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Lemon Seeds
+    {
+        SkillRequired:Farming=10,
+        Lemon,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedlemontree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Orange Seeds
+    {
+        SkillRequired:Farming=10,
+        Orange,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedorangetree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Peach Pit
+    {
+        SkillRequired:Farming=10,
+        Peach,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpeachtree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Strawberry Seeds
+    {
+        SkillRequired:Farming=10,
+        Strewberrie/StrewberrieSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedstrawberrybush,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Watermelon Seeds
+    {
+        SkillRequired:Farming=10,
+        Watermelon/WatermelonSmashed/WatermelonSliced,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedwatermelon,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Bell Pepper Seeds
+    {
+        SkillRequired:Farming=10,
+        BellPepper,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedbellpepper,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Broccoli Seeds
+    {
+        SkillRequired:Farming=10,
+        Broccoli/BroccoliSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedbroccoli,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Cabbage Seeds
+    {
+        SkillRequired:Farming=10,
+        Cabbage/CabbageSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedcabbage,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Carrot Seeds
+    {
+        SkillRequired:Farming=10,
+        Carrots/CarrotSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedcarrots,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Corn Seeds
+    {
+        SkillRequired:Farming=10,
+        Corn,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedcornstalk,
+        Time:15,
+	Category:Farming,
+    }
+
+
+    recipe Plant Eggplant Seeds
+    {
+        SkillRequired:Farming=10,
+        Eggplant,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedeggplant,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Leek Seeds
+    {
+        SkillRequired:Farming=10,
+        Leek,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedleek,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Lettuce Seeds
+    {
+        SkillRequired:Farming=10,
+        Lettuce,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedlettuce,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Onion Seeds
+    {
+        SkillRequired:Farming=10,
+        Onion,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedonion,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Peas
+    {
+        SkillRequired:Farming=10,
+        Peas,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpeaplant,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Potato Tubers
+    {
+        SkillRequired:Farming=10,
+        Potato/PotatoSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpotato,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Pumpkin Seeds
+    {
+        SkillRequired:Farming=10,
+        Pumpkin,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpumpkin,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Radish Seeds
+    {
+        SkillRequired:Farming=10,
+        RedRadish/RedRadishSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedradish,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Tomato Seeds
+    {
+        SkillRequired:Farming=10,
+        Tomato/TomatoSeed,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedtomato,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Peanuts
+    {
+        SkillRequired:Farming=10,
+        Peanuts,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpeanutplant,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Avocado Pit
+    {
+        SkillRequired:Farming=10,
+        Avocado,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedavocadotree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Cherry Pits
+    {
+        SkillRequired:Farming=10,
+        Cherry,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedcherrytree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Pear Seeds
+    {
+        SkillRequired:Farming=10,
+        HCPear,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpeartree,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Pineapple
+    {
+        SkillRequired:Farming=10,
+        Pineapple,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpineapple,
+        Time:15,
+	Category:Farming,
+    }
+
+    recipe Plant Zucchini Seeds
+    {
+        SkillRequired:Farming=10,
+        Zucchini,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedzucchini,
+        Time:15,
+	Category:Farming,
+    }
+
+recipe Build Compost Bin
+    {
+    SkillRequired:Woodwork=5;Farming=5;,
+    keep Hammer,
+    Nails=2,
+    Plank=2,
+    Worm=5,
+    Result:HCCompostbin,
+    Sound:PZ_Hammer,
+    Time:250.0,
+    Category:Farming,
+    }
+
+recipe Make Compost
+    {
+    keep HCCompostbin,
+    DeadRat/DeadMouse/DeadRabbit/DeadSquirrel/DeadBird/Catfish/Bass/Perch/Crappie/Panfish/Pike/Trout/BaitFish/BreadDough/CakeSlice/Lettuce/BellPepper/Processedcheese/Peach/Corndog/BreadSlices/Sandwich/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryPoisonIvy/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/DogfoodOpen/Lemon/Burger/BurgerRecipe/Pizza/Fries/Pancakes/Waffles/MeatPatty/Onion/FishFillet/Hotdog/MuttonChop/PorkChop/Rabbitmeat/Smallanimalmeat/Smallbirdmeat/Ham/Corn/Eggplant/Leek/Grapes/Dough/Apple/Banana/Bread/Broccoli/Carrots/Cheese/CheeseSandwich/Chicken/Egg/GrilledCheese/OpenBeans/Orange/Peas/Salmon/Steak/TunaTinOpen/Watermelon/WatermelonSliced/WatermelonSmashed/BloomingBroccoli/RedRadish/Strewberrie/Tomato/Potato/Cabbage/Bacon/BaconRashers/BaconBits/HCPear/Pineapple/Avocado/Zucchini/CannedCornedBeefOpen/CannedSardinesOpen/HCFriedherring/HCBBQsalmon/HCBBQsteak/HCBBQchicken/HCBBQrat/HCFriedegg/HCHardboiledegg/HCDogpoop/HCDeerpoop/HCCowpoop/HCSweetpotato/HCChinesecabbage/HCCucumber/HCCauliflower/HCBellpeppergreen/HCBellpepperyellow/HCOniongreen/HCGarlic/HCGinger/HCMushroom/HCShiitake/HCCrab,
+    CanBeDoneFromFloor:true,
+    Result:HCCompost,
+    Time:1000.0,
+    Category:Farming,
+    }
+
+recipe Fill Bag With Compost
+    {
+    HCCompost=10,
+    EmptySandbag/FerilizerEmpty,
+    Result:Fertilizer,
+    Sound:shoveling
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Apples
+    {
+    keep HCPottedappletree,
+    Fertilizer,
+    Water,
+    Result:Apple=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Bananas
+    {
+    keep HCPottedbananatree,
+    Fertilizer,
+    Water,
+    Result:Banana=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Blackberries
+    {
+    keep HCPottedblackberrybush,
+    Fertilizer,
+    Water,
+    Result:BerryBlack=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Bluberries
+    {
+    keep HCPottedblueberrybush,
+    Fertilizer,
+    Water,
+    Result:BerryBlue=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Grapes
+    {
+    keep HCPottedgrapevine,
+    Fertilizer,
+    Water,
+    Result:Grapes=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Lemons
+    {
+    keep HCPottedlemontree,
+    Fertilizer,
+    Water,
+    Result:Lemon=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Oranges
+    {
+    keep HCPottedorangetree,
+    Fertilizer,
+    Water,
+    Result:Orange=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Peaches
+    {
+    keep HCPottedpeachtree,
+    Fertilizer,
+    Water,
+    Result:Peach=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Strawberries
+    {
+    keep HCPottedstrawberrybush,
+    Fertilizer,
+    Water,
+    Result:Strewberrie=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Watermelon
+    {
+    keep HCPottedwatermelon,
+    Fertilizer,
+    Water,
+    Result:Watermelon,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Bell Peppers
+    {
+    keep HCPottedbellpepper,
+    Fertilizer,
+    Water,
+    Result:BellPepper=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Broccoli
+    {
+    keep HCPottedbroccoli,
+    Fertilizer,
+    Water,
+    Result:Broccoli=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Cabbage
+    {
+    keep HCPottedcabbage,
+    Fertilizer,
+    Water,
+    Result:Cabbage,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Carrots
+    {
+    keep HCPottedcarrots,
+    Fertilizer,
+    Water,
+    Result:Carrots=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Corn
+    {
+    keep HCPottedcornstalk,
+    Fertilizer,
+    Water,
+    Result:Corn=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Eggplants
+    {
+    keep HCPottedeggplant,
+    Fertilizer,
+    Water,
+    Result:Eggplant=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Leeks
+    {
+    keep HCPottedleek,
+    Fertilizer,
+    Water,
+    Result:Leek=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Lettuce
+    {
+    keep HCPottedlettuce,
+    Fertilizer,
+    Water,
+    Result:Lettuce,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Onions
+    {
+    keep HCPottedonion,
+    Fertilizer,
+    Water,
+    Result:Onion=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Peas
+    {
+    keep HCPottedpeaplant,
+    Fertilizer,
+    Water,
+    Result:HCPeapod=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Potatoes
+    {
+    keep HCPottedpotato,
+    Fertilizer,
+    Water,
+    Result:Potato=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Pumpkin
+    {
+    keep HCPottedpumpkin,
+    Fertilizer,
+    Water,
+    Result:Pumpkin=2,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Radishes
+    {
+    keep HCPottedradish,
+    Fertilizer,
+    Water,
+    Result:RedRadish=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Tomatoes
+    {
+    keep HCPottedtomato,
+    Fertilizer,
+    Water,
+    Result:Tomato=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Peanuts
+    {
+    keep HCPottedpeanutplant,
+    Fertilizer,
+    Water,
+    Result:Peanuts=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Avocados
+    {
+    keep HCPottedavocadotree,
+    Fertilizer,
+    Water,
+    Result:Avocado=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Cherries
+    {
+    keep HCPottedcherrytree,
+    Fertilizer,
+    Water,
+    Result:Cherry=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Pears
+    {
+    keep HCPottedpeartree,
+    Fertilizer,
+    Water,
+    Result:HCPear=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Pineapple
+    {
+    keep HCPottedpineapple,
+    Fertilizer,
+    Water,
+    Result:Pineapple=2,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+
+recipe Harvest Zucchini
+    {
+    keep HCPottedzucchini,
+    Fertilizer,
+    Water,
+    Result:Zucchini=5,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
+    
+}

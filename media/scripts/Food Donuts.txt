@@ -1,0 +1,195 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+	item HCCruller
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Cruller,
+		Icon			=	HCCruller,
+	}
+
+	item HCCruller2
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Chocolate Cruller,
+		Icon			=	HCCruller2,
+	}
+
+	item HCCruller3
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Mocha Cruller,
+		Icon			=	HCCruller3,
+	}
+
+	item HCDoughnutcake
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Traditional Cake Donut,
+		Icon			=	HCDoughnutcake,
+	}
+
+	item HCDoughnutchocolate
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Chocolate Donut,
+		Icon			=	HCDoughnutchocolate,
+	}
+
+	item HCDoughnutchocolate2
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Chocolate Glazed Donut,
+		Icon			=	HCDoughnutchocolate2,
+	}
+
+	item HCDoughnutcinnamon
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Cinnamon Donut,
+		Icon			=	HCDoughnutcinnamon,
+	}
+
+	item HCDoughnutfilled
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Strawberry Filled Donut,
+		Icon			=	HCDoughnutfilled,
+	}
+
+	item HCDoughnutfilled2
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Chocolate Filled Donut,
+		Icon			=	HCDoughnutfilled2,
+	}
+
+	item HCDoughnutfilled3
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Lemon Filled Donut,
+		Icon			=	HCDoughnutfilled3,
+	}
+
+	item HCDoughnutglazed
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Glazed Donut,
+		Icon			=	HCDoughnutglazed,
+	}
+
+	item HCDoughnutmaple
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Maple Glazed Donut,
+		Icon			=	HCDoughnutmaple,
+	}
+
+	item HCDoughnutoldfashioned
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Old Fashioned Donut,
+		Icon			=	HCDoughnutoldfashioned,
+	}
+
+	item HCDoughnutpink
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Strawberry Glazed Chocolate Donut,
+		Icon			=	HCDoughnutpink,
+	}
+
+	item HCDoughnutplain
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Plain Donut,
+		Icon			=	HCDoughnutplain,
+	}
+
+	item HCDoughnutpowdered
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Powdered Donut,
+		Icon			=	HCDoughnutpowdered,
+	}
+
+	item HCDoughnutsprinkle
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Sprinkled Donut,
+		Icon			=	HCDoughnutsprinkle,
+	}
+
+	item HCDoughnuttwist
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Twist Donut,
+		Icon			=	HCDoughnuttwist,
+	}
+
+	item HCDoughnuttwist2
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Chocolate Twist Donut,
+		Icon			=	HCDoughnuttwist2,
+	}
+
+	item HCDoughnuttwist3
+	{
+		HungerChange		=	-20,
+		Weight			=	0.2,
+		Type			=	Food,
+		DisplayName		=	Maple Twist Donut,
+		Icon			=	HCDoughnuttwist3,
+	}
+	
+/************************RECIPES************************/
+   
+
+}

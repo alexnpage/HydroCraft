@@ -1,0 +1,263 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCCuringsalt
+	{
+		HungerChange		=	-2,
+		BoredomChange		=	0,
+		UnhappyChange		=	10,
+		StressChange		=	10,
+		ThirstChange		=	100,
+		Weight			=	1.0,
+		Type			=	Drainable,
+		UseDelta 		= 	0.05,
+		DisplayName		=	Curing Salt,
+		ReplaceOnDeplete 	= 	HCCuringsaltempty,
+		Icon			=	HCCuringsalt,
+	}
+	
+item HCCuringsaltempty
+	{
+		Weight			=	0.1,
+		Type			=	Normal,
+		DisplayName		=	Empty Curing Salt Bag,
+		Icon			=	HCCuringsaltempty,
+	}
+	
+item HCSaltedfishfillet
+	{
+		HungerChange		=	-20,
+		BoredomChange		=	-5,
+		UnhappyChange		=	-8,
+		StressChange		=	0,
+		ThirstChange		=	15,
+		Weight			=	0.3,
+		Type			=	Food,
+		DisplayName		=	Salted Fish Fillet,
+		Icon			=	HCSaltedfishfillet,
+		DaysTotallyRotten	=	200,
+		DaysFresh		=	120,
+	}
+	
+item HCSaltedham
+	{
+		HungerChange		=	-20,
+		BoredomChange		=	-5,
+		UnhappyChange		=	-8,
+		StressChange		=	0,
+		ThirstChange		=	15,
+		Weight			=	0.3,
+		Type			=	Food,
+		DisplayName		=	Salted Ham,
+		Icon			=	HCSaltedham,
+		DaysTotallyRotten	=	200,
+		DaysFresh		=	120,
+	}
+
+	
+item HCSaltedmutton
+	{
+		HungerChange		=	-20,
+		BoredomChange		=	0,
+		UnhappyChange		=	0,
+		StressChange		=	0,
+		ThirstChange		=	10,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Mutton,
+		Icon			=	HCSaltedmutton,
+		DaysTotallyRotten	=	120,
+		DaysFresh		=	80,
+	}
+	
+item HCSaltedpork
+	{
+		HungerChange		=	-40,
+		BoredomChange		=	-10,
+		UnhappyChange		=	-17,
+		StressChange		=	0,
+		ThirstChange		=	15,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Pork,
+		Icon			=	HCSaltedpork,
+		DaysTotallyRotten	=	200,
+		DaysFresh		=	120,
+	}
+
+item HCSaltedbeef
+	{
+		HungerChange		=	-50,
+		BoredomChange		=	-15,
+		UnhappyChange		=	-22,
+		StressChange		=	-10,
+		ThirstChange		=	15,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Beef,
+		Icon			=	HCSaltedbeef,
+		DaysTotallyRotten	=	400,
+		DaysFresh		=	300,
+	}
+	
+item HCSaltedrabbit
+	{
+		HungerChange		=	-25,
+		BoredomChange		=	0,
+		UnhappyChange		=	0,
+		StressChange		=	0,
+		ThirstChange		=	10,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Rabbit,
+		Icon			=	HCSaltedrabbit,
+		DaysTotallyRotten	=	120,
+		DaysFresh		=	80,
+	}
+	
+item HCSaltedsalmon
+	{
+		HungerChange		=	-30,
+		BoredomChange		=	0,
+		UnhappyChange		=	0,
+		StressChange		=	0,
+		ThirstChange		=	5,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Salmon,
+		Icon			=	HCSaltedsalmon,
+		DaysTotallyRotten	=	60,
+		DaysFresh		=	30,
+	}
+	
+item HCSaltedsmallanimalmeat
+	{
+		HungerChange		=	-15,
+		BoredomChange		=	0,
+		UnhappyChange		=	0,
+		StressChange		=	0,
+		ThirstChange		=	10,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Small Animal Meat,
+		Icon			=	HCSaltedsmallanimalmeat,
+		DaysTotallyRotten	=	120,
+		DaysFresh		=	80,
+	}
+	
+item HCSaltedsmallbirdmeat
+	{
+		HungerChange		=	-15,
+		BoredomChange		=	-5,
+		UnhappyChange		=	-8,
+		StressChange		=	0,
+		ThirstChange		=	5,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Small Bird Meat,
+		Icon			=	HCSaltedsmallbirdmeat,
+		DaysTotallyRotten	=	120,
+		DaysFresh		=	80,
+	}
+	
+	
+/************************RECIPES************************/
+
+recipe Salt Fish Fillet
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        FishFillet,
+        Result:HCSaltedfishfillet,
+        Time:3000.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Ham
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Ham,
+        Result:HCSaltedham,
+        Time:5000.0,
+	Category:Cooking,
+    }
+
+recipe Salt Mutton
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        MuttonChop,
+        Result:HCSaltedmutton,
+        Time:4000.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Pork
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        PorkChop,
+        Result:HCSaltedpork,
+        Time:5000.0,
+	Category:Cooking,
+    }
+
+recipe Salt Beef
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Steak,
+        Result:HCSaltedbeef,
+        Time:5000.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Rabbit Meat
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Rabbitmeat,
+        Result:HCSaltedrabbit,
+        Time:4000.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Salmon
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Salmon,
+        Result:HCSaltedsalmon,
+        Time:4000.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Small Animal Meat
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Smallanimalmeat,
+        Result:HCSaltedsmallanimalmeat,
+        Time:3500.0,
+	Category:Cooking,
+    }
+	
+recipe Salt Small Bird Meat
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt,
+        Smallbirdmeat,
+        Result:HCSaltedsmallbirdmeat,
+        Time:3500.0,
+	Category:Cooking,
+    }
+	   	
+}

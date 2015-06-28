@@ -1,0 +1,71 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+
+/************************RECIPES************************/	
+
+    recipe Dismantle
+    {
+       HCElectricguitar,
+       keep Screwdriver,
+
+       Result:ElectronicsScrap,
+       Time:30.0,
+       Category:Electrical,
+       OnGiveXP:DismantleElectronics_OnGiveXP,
+    }
+
+    recipe Dismantle
+    {
+       HCAmp,
+       keep Screwdriver,
+
+       Result:Amplifier,
+       Time:30.0,
+       Category:Electrical,
+       OnCreate:Dismantle_OnCreate,
+       OnGiveXP:DismantleElectronics_OnGiveXP,
+    }
+
+    recipe Dismantle
+    {
+       HCDVDPlayer,
+       keep Screwdriver,
+
+       Result:ElectronicsScrap=2,
+       Time:30.0,
+       Category:Electrical,
+       OnGiveXP:DismantleElectronics_OnGiveXP,
+    }
+
+    recipe Dismantle
+    {
+       HCToyrobot,
+       keep Screwdriver,
+
+       Result:ElectronicsScrap,
+       Time:30.0,
+       Category:Electrical,
+       OnGiveXP:DismantleElectronics_OnGiveXP,
+    }
+
+    recipe Dismantle
+    {
+       HCCalculator,
+       keep Screwdriver,
+
+       Result:ElectronicsScrap,
+       Time:30.0,
+       Category:Electrical,
+       OnGiveXP:DismantleElectronics_OnGiveXP,
+    }
+
+}

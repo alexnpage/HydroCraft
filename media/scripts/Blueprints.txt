@@ -1,0 +1,79 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+item HCBlueprintpoatocannon
+    {
+        Weight			=	0.1,
+        Type			=	Literature,
+        DisplayName		=	Longbow Blueprint,
+        Icon			=	HCBlueprint,
+        TeachedRecipes 		=   	Craft Potato Cannon,
+        ReplaceOnUse    	=   	HCBlueprintpoatocannon,
+    }
+
+item HCBlueprintducttapefletching
+    {
+        Weight			=	0.1,
+        Type			=	Literature,
+        DisplayName		=	Duct Tape Fletching Blueprint,
+        Icon			=	HCBlueprint,
+        TeachedRecipes 		=   	Make Duct Tape Fletching,
+        ReplaceOnUse    	=   	HCBlueprintducttapefletching,
+    }
+
+item HCBlueprintbonearrowhead
+    {
+        Weight			=	0.1,
+        Type			=	Literature,
+        DisplayName		=	Bone Arrowhead Blueprint,
+        Icon			=	HCBlueprint,
+        TeachedRecipes 		=   	Make Bone Arrowhead,
+        ReplaceOnUse    	=   	HCBlueprintbonearrowhead,
+    }
+
+/************************RECIPES************************/	
+
+
+recipe Make Potato Cannon Blueprint
+    {
+	Paper,
+	Pencil/Pen,
+	keep HCBookarchery,
+	keep HCBookplumbing,
+	keep HCBookphysics,
+   	Result:HCBlueprintpoatocannon,
+    	Time:500,
+       	Category:Engineer,
+    }
+
+recipe Make Duct Tape Fletching Blueprint
+    {
+	Paper,
+	Pencil/Pen,
+	keep DuctTape,
+	keep HCBookarchery,
+   	Result:HCBlueprintducttapefletching,
+    	Time:500,
+       	Category:Engineer,
+    }
+
+recipe Make Bone Arrowhead Blueprint
+    {
+	Paper,
+	Pencil/Pen,
+	keep HCBone/HCZombiebones,
+	keep HCBookarchery,
+   	Result:HCBlueprintbonearrowhead,
+    	Time:500,
+    	Category:Survivalist,
+    } 
+
+}

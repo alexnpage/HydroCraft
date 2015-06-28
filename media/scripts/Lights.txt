@@ -1,0 +1,215 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCLavalamp
+    {
+        Weight    =    1,
+        Type    =    Normal,
+        DisplayName    =    Lava Lamp,
+        Icon    =    HCLavalamp,
+    }
+
+item HCJarfireflies
+	{
+		LightDistance	=	3,
+		Weight	=	0.2,
+		DisappearOnUse	=	FALSE,
+		Type	=	Drainable,
+		TorchCone	=	TRUE,
+		UseDelta	=	0.003,
+		LightStrength	=	0.4,
+		DisplayName	=	Jar of Fireflies,
+		ActivatedItem	=	TRUE,
+		Icon	=	HCJarfireflies,
+	}
+
+item HCRoadflare
+    {
+        Weight    		=    1,
+        Type    		=    Normal,
+        DisplayName    		=    Road Flare,
+        Icon   		 	=    HCRoadflare,
+    }
+
+
+item HCRoadflareon
+	{
+		LightDistance	=	5,
+		Weight		=	1,
+		DisappearOnUse	=	TRUE,
+		Type		=	Drainable,
+		TorchCone	=	FALSE,
+		UseDelta	=	0.003,
+		LightStrength	=	0.4,
+		DisplayName	=	Road Flare,
+		ActivatedItem	=	TRUE,
+		Icon		=	HCRoadflareon,
+	}
+
+item HCLaserpointer
+    {
+        Weight    =    0.5,
+        Type    =    Normal,
+        DisplayName    =    Laser Pointer,
+        Icon    =    HCLaserpointer,
+    }
+
+
+item HCLaserpointeron
+	{
+		LightDistance	=	30,
+		Weight	=	0.5,
+		DisappearOnUse	=	FALSE,
+		Type	=	Drainable,
+		TorchCone	=	TRUE,
+		UseDelta	=	0.0009,
+		LightStrength	=	0.2,
+		DisplayName	=	Laser Pointer,
+		ActivatedItem	=	TRUE,
+		Icon	=	HCLaserpointeron,
+	}
+
+item HCGlowstickred
+    {
+        Weight    =    0.2,
+        Type    =    Normal,
+        DisplayName    =    Red Glowstick,
+        Icon    =    HCGlowstickred,
+    }
+
+
+item HCGlowstickredon
+	{
+		LightDistance	=	3,
+		Weight	=	0.2,
+		DisappearOnUse	=	FALSE,
+		Type	=	Drainable,
+		TorchCone	=	TRUE,
+		UseDelta	=	0.003,
+		LightStrength	=	0.4,
+		DisplayName	=	Red Glowstick,
+		ActivatedItem	=	TRUE,
+		Icon	=	HCGlowstickredon,
+	}
+
+item HCGlowstickblue
+    {
+        Weight    =    0.2,
+        Type    =    Normal,
+        DisplayName    =    Blue Glowstick,
+        Icon    =    HCGlowstickblue,
+    }
+
+
+item HCGlowstickblueon
+	{
+		LightDistance	=	3,
+		Weight	=	0.2,
+		DisappearOnUse	=	FALSE,
+		Type	=	Drainable,
+		TorchCone	=	TRUE,
+		UseDelta	=	0.003,
+		LightStrength	=	0.4,
+		DisplayName	=	Blue Glowstick,
+		ActivatedItem	=	TRUE,
+		Icon	=	HCGlowstickblueon,
+	}
+
+item HCGlowstickgreen
+    {
+        Weight    =    0.2,
+        Type    =    Normal,
+        DisplayName    =    Green Glowstick,
+        Icon    =    HCGlowstickgreen,
+    }
+
+
+item HCGlowstickgreenon
+	{
+		LightDistance	=	3,
+		Weight	=	0.2,
+		DisappearOnUse	=	FALSE,
+		Type	=	Drainable,
+		TorchCone	=	TRUE,
+		UseDelta	=	0.003,
+		LightStrength	=	0.4,
+		DisplayName	=	Green Glowstick,
+		ActivatedItem	=	TRUE,
+		Icon	=	HCGlowstickgreenon,
+	}
+
+item HCFlashlightoff
+    {
+        Weight    		=    1.5,
+        Type    		=    Normal,
+        DisplayName    		=    Small Flashlight,
+        Icon   		 	=    HCFlashlightoff,
+    }
+
+
+item HCFlashlighton
+	{
+		LightDistance	=	15,
+		Weight		=	1.5,
+		DisappearOnUse	=	TRUE,
+		Type		=	Drainable,
+		TorchCone	=	FALSE,
+		UseDelta	=	0.0009,
+		LightStrength	=	0.8,
+		DisplayName	=	Small Flashlight,
+		ActivatedItem	=	TRUE,
+		Icon		=	HCFlashlighton,
+	}
+
+/************************RECIPES************************/
+    
+recipe Ignite Road Flare
+    {
+    HCRoadflare,
+    Result:HCRoadflareon,
+    Time:15,
+    }
+
+recipe Turn on Laser Pointer
+    {
+    HCLaserpointer,
+    Result:HCLaserpointeron,
+    Time:15,
+    }
+
+recipe Shake Red Glowstick
+    {
+    HCGlowstickred,
+    Result:HCGlowstickredon,
+    Time:15,
+    }	
+
+recipe Shake Blue Glowstick
+    {
+    HCGlowstickblue,
+    Result:HCGlowstickblueon,
+    Time:15,
+    }	
+
+recipe Shake Green Glowstick
+    {
+    HCGlowstickgreen,
+    Result:HCGlowstickgreenon,
+    Time:15,
+    }	
+
+recipe Turn on Small Flashlight
+    {
+    HCFlashlightoff,
+    Result:HCFlashlighton,
+    Time:15,
+    }
+	
+}
