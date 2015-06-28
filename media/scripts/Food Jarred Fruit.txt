@@ -383,7 +383,7 @@ recipe Prepare Jarred Apples
 		destroy WaterPot,
 		HCLemonjuicebowl/HCLemonjuicebottle,
 		Sugar,
-		HCSlicedApple= 8,	
+		HCSlicedapple= 8,	
 		Result:HCJarredapplepot,
 		Time:75.0,
 	   	Category:Cooking,

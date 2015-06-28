@@ -254,7 +254,7 @@ recipe Make Pear Pie
 recipe Make Pumpkin Pie
 	{
 		HCPiecrust,
-		Pumpkin/HCCannedpumpkinopen,
+		HCCannedpumpkinopen,
 		Result:HCPiepumpkin,
 		Time:90.0,
 	   	Category:Cooking,

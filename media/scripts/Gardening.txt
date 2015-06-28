@@ -640,16 +640,16 @@ module Hydrocraft
 	Category:Farming,
     }
 
-    recipe Plant Pumpkin Seeds
-    {
-        SkillRequired:Farming=10,
-        Pumpkin,
-        HCClayflowerpotwithdirt,
-        keep HandShovel,
-        Result:HCPottedpumpkin,
-        Time:15,
-	Category:Farming,
-    }
+*    recipe Plant Pumpkin Seeds
+*    {
+*        SkillRequired:Farming=10,
+*        Pumpkin,
+*        HCClayflowerpotwithdirt,
+*        keep HandShovel,
+*        Result:HCPottedpumpkin,
+*        Time:15,
+*	Category:Farming,
+*    }
 
     recipe Plant Radish Seeds
     {
@@ -765,7 +765,7 @@ recipe Make Compost
 recipe Fill Bag With Compost
     {
     HCCompost=10,
-    EmptySandbag/FerilizerEmpty,
+    EmptySandbag,
     Result:Fertilizer,
     Sound:shoveling
     Time:150.0,
@@ -1003,16 +1003,16 @@ recipe Harvest Potatoes
     Category:Farming,
     }
 
-recipe Harvest Pumpkin
-    {
-    keep HCPottedpumpkin,
-    Fertilizer,
-    Water,
-    Result:Pumpkin=2,
-    CanBeDoneFromFloor:true,
-    Time:150.0,
-    Category:Farming,
-    }
+*recipe Harvest Pumpkin
+*    {
+*    keep HCPottedpumpkin,
+*    Fertilizer,
+*    Water,
+*    Result:Pumpkin=2,
+*    CanBeDoneFromFloor:true,
+*    Time:150.0,
+*    Category:Farming,
+*    }
 
 recipe Harvest Radishes
     {

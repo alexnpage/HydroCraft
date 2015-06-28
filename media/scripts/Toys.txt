@@ -427,7 +427,7 @@ recipe Unbox Balloons
 recipe Put Tennis Balls in Container
     {
     HCTennisballcontainer,
-    HCTennisball=3,
+    TennisBall=3,
     Result:HCTennisballcontainerfull,
     Time:15,
     }
@@ -612,7 +612,7 @@ recipe Play With
     {
     
     PoolBall,
-    Result:Poolball,
+    Result:PoolBall,
     Time:500,
     OnCreate:HC_ToyStatModifier,
     }
@@ -764,7 +764,7 @@ recipe Play With
 recipe Play With
     {
     
-    HCToymoneky,
+    HCToymonkey,
     Result:HCToymonkey,
     Time:500,
     OnCreate:HC_ToyStatModifier,

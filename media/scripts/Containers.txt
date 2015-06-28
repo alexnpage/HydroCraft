@@ -716,7 +716,7 @@ module Hydrocraft
 
 		recipe Add Duct Tape Pouches to Normal Hiking Bag
 	{
-			DHCDucttapepouch=2,
+			HCDucttapepouch=2,
 			destroy NormalHikingBag,
 			
 			Result:HCNormalhikingbagpouch,

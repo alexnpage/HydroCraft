@@ -685,7 +685,7 @@ recipe Prepare Pear Jam
 	{
         	SkillRequired:Cooking=4,
 		destroy HCJamstarter,
-		Pear=4,
+		HCPear=4,
 		Result:HCJampearpot,
 		Time:90.0,
 	   	Category:Cooking,

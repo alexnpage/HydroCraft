@@ -44,7 +44,7 @@ item HCBlueprintbonearrowhead
 
 recipe Make Potato Cannon Blueprint
     {
-	Paper,
+	SheetPaper,
 	Pencil/Pen,
 	keep HCBookarchery,
 	keep HCBookplumbing,
@@ -56,7 +56,7 @@ recipe Make Potato Cannon Blueprint
 
 recipe Make Duct Tape Fletching Blueprint
     {
-	Paper,
+	SheetPaper,
 	Pencil/Pen,
 	keep DuctTape,
 	keep HCBookarchery,
@@ -67,7 +67,7 @@ recipe Make Duct Tape Fletching Blueprint
 
 recipe Make Bone Arrowhead Blueprint
     {
-	Paper,
+	SheetPaper,
 	Pencil/Pen,
 	keep HCBone/HCZombiebones,
 	keep HCBookarchery,

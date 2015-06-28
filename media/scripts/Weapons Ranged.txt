@@ -30,7 +30,8 @@ module Hydrocraft
 		Count		=	1,
 		DisplayName	=	Crossbow Bolts,
 		Icon		=	HCBolt,
-		Type		=	Ammo,
+		Type     	=	Normal,
+		DisplayCategory =       Ammo,
 		Weight		=	0.1,
 	}
 
@@ -39,7 +40,8 @@ module Hydrocraft
 		Count		=	1,
 		DisplayName	=	Arrows,
 		Icon		=	HCArrow,
-		Type		=	Ammo,
+		Type	        =	Normal,
+		DisplayCategory =       Ammo,
 		Weight		=	0.1,
 	}
 
@@ -48,7 +50,8 @@ module Hydrocraft
         	Count        	=    	1,
         	DisplayName    	=    	BBs,
         	Icon        	=    	HCBB,
-        	Type        	=    	Ammo,
+		Type	        =	Normal,
+		DisplayCategory =       Ammo,
         	Weight        	=    	0.1,
     	}
 

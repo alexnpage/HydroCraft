@@ -403,7 +403,7 @@ recipe Dry Some Apple Slices
 	
 recipe Store Dried Apple Slices in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedapples,
 		Result:HCDriedapplesbag,
 		Time:30.0,
@@ -427,7 +427,7 @@ recipe Dry Some Peach Slices
 	
 recipe Store Dried Peach Slices in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedpeach,
 		Result:HCDriedpeachbag,
 		Time:30.0,
@@ -458,7 +458,7 @@ recipe Dry Some Orange Slices
 	
 recipe Store Dried Orange Slices in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedorange,
 		Result:HCDriedorangebag,
 		Time:30.0,
@@ -481,7 +481,7 @@ recipe Dry Some Banana Chips
 		
 recipe Store Dried Banana Chips in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedbananachips,
 		Result:HCDriedbananachipsbag,
 		Time:30.0,
@@ -495,7 +495,7 @@ recipe Dry Some Strawberry Slices
 		BakingTray,
 		keep KitchenKnife,
 		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
-		Strewberrie/Strawberry,	
+		Strewberrie,	
 		Result:HCDryingstrawberryslices,
 		Time:75.0,
 	   	Category:Cooking,
@@ -504,7 +504,7 @@ recipe Dry Some Strawberry Slices
 	
 recipe Store Dried Strawberry Slices in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedstrawberryslices,
 		Result:HCDriedstrawberryslicesbag,
 		Time:30.0,
@@ -517,7 +517,7 @@ recipe Dry Some Berries
         	SkillRequired:Cooking=3,
 		BakingTray,
 		HCLemonjuicebowl/HCLemonjuicebottle/HCPopbottlelemonjuice/HCWaterbottlelemonjuice/HCRemouladelemonjuice/HCMayonnaiselemonjuice/HCWhiskeylemonjuice/HCClingmuglemonjuice,
-		HCBunchOfberries,	
+		HCBunchofberries,	
 		Result:HCDryingberries,
 		Time:75.0,
 	   	Category:Cooking,
@@ -526,7 +526,7 @@ recipe Dry Some Berries
 	
 recipe Store Dried Berries in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedberries,
 		Result:HCDriedberriesbag,
 		Time:30.0,
@@ -558,7 +558,7 @@ recipe Dry Some Tomato Slices
 	
 recipe Store Dried Tomato Slices in Bag
 	{
-		HCZipperbag/Zipperbagempty,
+		HCZipperbag,
 		HCDriedtomato,
 		Result:HCDriedtomatobag,
 		Time:30.0,
