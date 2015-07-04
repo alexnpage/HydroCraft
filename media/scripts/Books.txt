@@ -61,11 +61,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Animal Husbandry Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookanimalhusbandry,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Breed Rabbits,
         	ReplaceOnUse    =   	HCBookanimalhusbandry,
 	}
@@ -110,11 +107,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Chemistry Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookchemistry,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Glue;Make Charcoal Powder;Make Saltpeter Powder;Make Sulphur Powder;Make Gunpowder,
         	ReplaceOnUse    =   	HCBookchemistry,
 	}
@@ -257,11 +251,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Medical Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookmedical,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Take Blood from Yourself;Take Blood from Zombie;Inject Yourself with Human Blood;Inject Yourself with Rabbit Blood;Inject Yourself with Zombie Blood,
         	ReplaceOnUse    =   	HCBookmedical,
 	}
@@ -337,7 +328,7 @@ module Hydrocraft
 		Icon		=	HCBookthesaurus,
 		BoredomChange	=	-50,
         	ReplaceOnUse    =   	HCBookthesaurus,
-	}
+	}'
 
 	item HCBooktreeguide
 	{
@@ -367,11 +358,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Veterinary Medicine Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookvet,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Take Blood from Rabbit;Inject Rabbit with Rabbit Blood;Inject Rabbit with Human Blood;Inject Rabbit with Zombie Blood,
         	ReplaceOnUse    =   	HCBookvet,
 	}
@@ -501,11 +489,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Geology Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookgeology,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Shift Dirt;Dig Mine;Mine,
         	ReplaceOnUse    =   	HCBookgeology,
 	}
@@ -706,11 +691,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Apiculture Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookapiculture,
-		BoredomChange	=	-50,
         	TeachedRecipes  =   	Build Honeycomb Frame;Build Brood Box;Build Beehive;Upgrade Beehive;Build Roof for Beehive;Fill Bee Smoker with Fuel;Harvest Honeycomb;Harvest 2 Honeycombs;Harvest 4 Honeycombs;Process Honeycomb;Collect Bee;Collect Bees;Collect New Queen Bee,
         	ReplaceOnUse    =   	HCBookapiculture,
 	}
@@ -755,11 +737,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Archery Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookarchery,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Longbow;Make Arrow;Make Crossbow;Make Bolt,
         	ReplaceOnUse    =   	HCBookarchery,
 	}
@@ -768,11 +747,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Pottery Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookpottery,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Kiln;Make Clay Pot;Make Clay Flowerpot;Make Clay Jar;Make Clay Mug;Make Clay Teapot;Make Clay Cauldron;Make Clay Urn;Make Clay Pipe;Make Ingot Mold;Make Nail Mold;Make Anvil Mold;Make Bullet Casing Mold;Make Bullet Tip Mold;Make Buckshot Mold,
         	ReplaceOnUse    =   	HCBookpottery,
 	}
@@ -781,11 +757,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Glass Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookglassworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Create Glass from Sand;Create Glass Flask;Recycle Glass;Create Glass Jar;Create Glass Whiskey Bottle;Create Glass Wine Bottle;Create Glass Graduated Cylinder;Create Glass Test Tube,
         	ReplaceOnUse    =   	HCBookglassworking,
 	}
@@ -794,11 +767,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Copper Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookcopperworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Copper Ingot;Recycle Copper,
         	ReplaceOnUse    =   	HCBookcopperworking,
 	}
@@ -807,11 +777,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Bronze Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBooktinworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Tin Ingot;Recycle Tin,
         	ReplaceOnUse    =   	HCBooktinworking,
 	}
@@ -820,11 +787,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Bronze Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookbronzeworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Bronze Ingot;Make Bronze Bullet Casings;Recycle Bronze,
         	ReplaceOnUse    =   	HCBookbronzeworking,
 	}
@@ -833,11 +797,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Iron Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookironworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Iron Ingot;Make Anvil;Make Nails;Recycle Iron,
         	ReplaceOnUse    =   	HCBookironworking,
 	}
@@ -846,11 +807,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Lead Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookleadworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Lead Ingot;Make Lead Buckshot;Make Lead Bullet Tips,
         	ReplaceOnUse    =   	HCBookleadworking,
 	}
@@ -859,11 +817,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Steel Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBooksteelworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Steel Ingot;Cut Steel Pipe;Make Steel BBs;Recycle Steel,
         	ReplaceOnUse    =   	HCBooksteelworking,
 	}
@@ -872,11 +827,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Silver Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBooksilverworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Silver Ingot;Recycle Silver,
         	ReplaceOnUse    =   	HCBooksilverworking,
 	}
@@ -885,11 +837,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Gold Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookgoldworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Gold Ingot;Recycle Gold,
         	ReplaceOnUse    =   	HCBookgoldworking,
 	}
@@ -898,11 +847,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Aluminum Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookaluminumworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Aluminum Ingot;Recycle Aluminum,
         	ReplaceOnUse    =   	HCBookaluminumworking,
 	}
@@ -911,11 +857,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Rubber Working Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookrubberworking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Recycle Rubber,
         	ReplaceOnUse    =   	HCBookrubberworking,
 	}
@@ -924,11 +867,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Candle Making Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookcandlemaking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Candleberry Wax;Recycle Wax,
         	ReplaceOnUse    =   	HCBookcandlemaking,
 	}
@@ -937,11 +877,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Basketry Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookbasketry,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Wicker Basket;Make Birch Bark Basket;Make Straw Basket,
         	ReplaceOnUse    =   	HCBookbasketry,
 	}
@@ -950,11 +887,8 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Masonry Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookmasonry,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Make Grey Brick;Make Red Brick;Make Smelter,
         	ReplaceOnUse    =   	HCBookmasonry,
 	}
@@ -963,12 +897,9 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Hunting Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookhunting,
-		BoredomChange	=	-50,
-		TeachedRecipes  =   	Skin Rabbit;Skin Squirrel;Make Drying Frame;Dry Fur;Stitch Fur Coat;Stitch Fur Pants,
+		TeachedRecipes  =   	Skin Animal;Make Drying Frame;Dry Fur;Stitch Fur Coat;Stitch Fur Pants,
         	ReplaceOnUse    =   	HCBookhunting,
 	}
 
@@ -976,12 +907,9 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
-		DisplayName	=	Masonry Textbook,
-		StressChange	=	-40,
+		DisplayName	=	Leather Working Textbook,
 		Icon		=	HCBookleatherworking,
-		BoredomChange	=	-50,
-		TeachedRecipes  =   	Make Tannin;Make Leather;Make Leather Boots,
+		TeachedRecipes  =   	Make Tannin;Make Leather;Make Hardened Leather;Make Leather Boots;Make Waterflask,
         	ReplaceOnUse    =   	HCBookleatherworking,
 	}
 
@@ -989,17 +917,15 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
 		DisplayName	=	Wine Making Textbook,
-		StressChange	=	-40,
 		Icon		=	HCBookwinemaking,
-		BoredomChange	=	-50,
 		TeachedRecipes  =   	Ferment Grape Juice;Ferment Wine,
         	ReplaceOnUse    =   	HCBookwinemaking,
 	}
 
-/************************RECIPES************************/
+/************************RECIPES************************/	
 
 
+    
 
 }

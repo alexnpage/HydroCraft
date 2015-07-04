@@ -12,6 +12,7 @@ getTexture("Item_HCGardenspider.png");
 getTexture("Item_HCCaterpillar.png");
 getTexture("Item_HCBumblebee.png");
 getTexture("Item_HCHoneybee.png");
+getTexture("Item_HCBeehive.png");
 
 -- bugs
 local HCBeetle = {};
@@ -49,11 +50,16 @@ HCBumblebee.type = "Hydrocraft.HCBumblebee";
 HCBumblebee.minCount = 1;
 HCBumblebee.maxCount = 2;
 HCBumblebee.skill = 7;
-local HCBumblebee = {};
-HCBumblebee.type = "Hydrocraft.HCHoneybee";
-HCBumblebee.minCount = 1;
-HCBumblebee.maxCount = 2;
-HCBumblebee.skill = 7;
+local HCHoneybee = {};
+HCHoneybee.type = "Hydrocraft.HCHoneybee";
+HCHoneybee.minCount = 1;
+HCHoneybee.maxCount = 2;
+HCHoneybee.skill = 7;
+local HCBeehive = {};
+HCBeehive.type = "Hydrocraft.HCBeehive";
+HCBeehive.minCount = 1;
+HCBeehive.maxCount = 1;
+HCBeehive.skill = 10;
 
 
 table.insert(scavenges.plants, HCBeetle);
@@ -64,3 +70,4 @@ table.insert(scavenges.plants, HCGardenspider);
 table.insert(scavenges.plants, HCCaterpillar);
 table.insert(scavenges.plants, HCBumblebee);
 table.insert(scavenges.plants, HCHoneybee);
+table.insert(scavenges.plants, HCBeehive);

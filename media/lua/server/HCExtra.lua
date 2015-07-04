@@ -113,6 +113,48 @@ function recipe_hcskinanimal(items, result, player)
 	inv:AddItem("Hydrocraft.HCAnimalfur");
 end 
 
+function recipe_hcskinanimal2(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCAnimalfur", 2, player);
+end 
+
+function recipe_hcskinanimal4(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCAnimalfur", 4, player);
+end 
+
+function recipe_hcskinanimal8(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCAnimalfur", 8, player);
+end 
+
+function recipe_hcsheepbutcher(items, result, player)
+	HCAddManySameItem("Base.MuttonChop", 3, player);
+	HCAddManySameItem("Hydrocraft.HCIntestines", 2, player);
+end 
+
+function recipe_hccowbutcher(items, result, player)
+	HCAddManySameItem("Base.Steak", 10, player);
+	HCAddManySameItem("Hydrocraft.HCIntestines", 5, player);
+end 
+
+function recipe_hcfoxbutcher(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCFoxsteak", 4, player);
+	HCAddManySameItem("Hydrocraft.HCIntestines", 2, player);
+end 
+
+function recipe_hcdeerbutcher(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCVenison", 10, player);
+	HCAddManySameItem("Hydrocraft.HCIntestines", 4, player);
+end 
+
+function recipe_hcbearbutcher(items, result, player)
+	HCAddManySameItem("Hydrocraft.HCBearsteak", 20, player);
+	HCAddManySameItem("Hydrocraft.HCIntestines", 6, player);
+end 
+
+function recipe_hcdeerantlers(items, result, player)
+	local inv = player:getInventory();
+	inv:AddItem("Hydrocraft.HCDeerantlers");
+end
+
 function recipe_hcsmalltuplid(items, result, player)
 	local inv = player:getInventory();
 	inv:AddItem("Hydrocraft.HCSmalltuplid");

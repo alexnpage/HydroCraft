@@ -16,6 +16,14 @@ item HCLeather
         Icon    		=    HCLeather.png,
     }
 
+item HCLeatherhard
+    {
+        Weight    		=    0.3,
+        Type   			=    Normal,
+        DisplayName   		=    Hardened Leather,
+        Icon    		=    HCLeatherhard.png,
+    }
+
 item HCBlacksmithapron
     {
         Weight    		=    1,
@@ -92,9 +100,33 @@ item HCLeatherboots
 		Icon		=	HCLeatherboots,
 	}
 
+item HCWaterflask
+    {
+        Weight    		= 	1,
+	CanStoreWater		=	TRUE,
+        Type    		= 	Normal,
+        DisplayName         	= 	Waterflask,
+	ReplaceOnUseOn		=	WaterSource-HCWaterflaskfull,
+        icon 			= 	HCWaterflask,
+    }
+
+item HCWaterflaskfull
+    {
+	IsWaterSource		=	TRUE,
+	Weight			=	2,
+	CanStoreWater		=	TRUE,
+	Type			=	Drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta		=	0.07,
+	DisplayName		=	Full Waterflask,
+	ReplaceOnDeplete	=	HCCanteen,
+	ReplaceOnUseOn		=	WaterSource-HCWaterflaskfull,
+	Icon			=	HCWaterflask,
+    }
+
 /************************RECIPES************************/
     
-recipe Skin Rabbit
+recipe Skin Animal
     {
         keep KitchenKnife/HuntingKnife/HCJackknife,
         DeadRabbit,
@@ -106,7 +138,7 @@ recipe Skin Rabbit
         OnCreate:recipe_hcskinanimal,
     }
 
-recipe Skin Squirrel
+recipe Skin Animal
     {
         keep KitchenKnife/HuntingKnife/HCJackknife,
         DeadSquirrel,
@@ -116,6 +148,55 @@ recipe Skin Squirrel
     	Category:Survivalist,
         OnCreate:recipe_hcskinanimal,
 	}
+
+recipe Skin Animal
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        HCFoxdead,
+
+        Result:HCFoxmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal2,
+    }
+
+recipe Skin Animal
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        HCBeardead,
+
+        Result:HCBearmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal8,
+    }
+
+recipe Skin Animal
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        HCSheepdead,
+
+        Result:HCSheepmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal4,
+    }
+
+recipe Skin Animal
+    {
+        keep KitchenKnife/HuntingKnife/HCJackknife,
+        HCCowdead,
+
+        Result:HCCowmeat,
+    	NeedToBeLearn:true,
+        Time:50.0,
+    	Category:Survivalist,
+        OnCreate:recipe_hcskinanimal8,
+    }
+
 
 recipe Make Drying Frame
     {
@@ -164,8 +245,8 @@ recipe Stitch Fur Pants
 	
 recipe Make Tannin
     {
-    HCWoodenbucketwater,
-    HCBark,
+    destroy HCWoodenbucketwater,
+    HCBark/HCDogpoop,
     CanBeDoneFromFloor:true,
     Result:HCWoodenbuckettan,
     NeedToBeLearn:true,
@@ -185,12 +266,47 @@ recipe Make Leather
     OnCreate:recipe_hcwoodenbucket,
     }
 
+recipe Make Hardened Leather
+    {
+    keep HCClaycauldron,
+    Charcoal,
+    HCLeather=3,
+    HCBeeswax=2,
+    Water,
+    Result:HCLeatherhard,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Hardened Leather
+    {
+    HCLeather=3,
+    HCCandleberrywax=2,
+    Result:HCLeatherhard,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+
 recipe Make Leather Boots
     {
     HCLeather=2,
     keep Needle,
     Thread=2,
-    Result:HCLeather,
+    Result:HCLeatherboots,
+    NeedToBeLearn:true,
+    Time:420.0,
+    Category:Survivalist,
+    }
+
+recipe Make Waterflask
+    {
+    HCLeather,
+    keep Needle,
+    Thread=2,
+    Result:HCWaterflask,
     NeedToBeLearn:true,
     Time:420.0,
     Category:Survivalist,

@@ -166,14 +166,58 @@ item HCSaltedsmallbirdmeat
 		DaysTotallyRotten	=	120,
 		DaysFresh		=	80,
 	}
-	
+
+item HCSaltedvenison
+	{
+		HungerChange		=	-50,
+		BoredomChange		=	-15,
+		UnhappyChange		=	-22,
+		StressChange		=	-10,
+		ThirstChange		=	15,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Venison,
+		Icon			=	HCSaltedvenison,
+		DaysTotallyRotten	=	400,
+		DaysFresh		=	300,
+	}	
+
+item HCSaltedbear
+	{
+		HungerChange		=	-50,
+		BoredomChange		=	-15,
+		UnhappyChange		=	-22,
+		StressChange		=	-10,
+		ThirstChange		=	15,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Bear Steak,
+		Icon			=	HCSaltedbear,
+		DaysTotallyRotten	=	400,
+		DaysFresh		=	300,
+	}
+
+item HCSaltedfox
+	{
+		HungerChange		=	-50,
+		BoredomChange		=	-15,
+		UnhappyChange		=	-22,
+		StressChange		=	-10,
+		ThirstChange		=	15,
+		Weight			=	0.1,
+		Type			=	Food,
+		DisplayName		=	Salted Fox Steak,
+		Icon			=	HCSaltedfox,
+		DaysTotallyRotten	=	400,
+		DaysFresh		=	300,
+	}
 	
 /************************RECIPES************************/
 
 recipe Salt Fish Fillet
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         FishFillet,
         Result:HCSaltedfishfillet,
         Time:3000.0,
@@ -183,7 +227,7 @@ recipe Salt Fish Fillet
 recipe Salt Ham
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Ham,
         Result:HCSaltedham,
         Time:5000.0,
@@ -193,7 +237,7 @@ recipe Salt Ham
 recipe Salt Mutton
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         MuttonChop,
         Result:HCSaltedmutton,
         Time:4000.0,
@@ -203,7 +247,7 @@ recipe Salt Mutton
 recipe Salt Pork
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         PorkChop,
         Result:HCSaltedpork,
         Time:5000.0,
@@ -213,7 +257,7 @@ recipe Salt Pork
 recipe Salt Beef
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Steak,
         Result:HCSaltedbeef,
         Time:5000.0,
@@ -223,7 +267,7 @@ recipe Salt Beef
 recipe Salt Rabbit Meat
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Rabbitmeat,
         Result:HCSaltedrabbit,
         Time:4000.0,
@@ -233,7 +277,7 @@ recipe Salt Rabbit Meat
 recipe Salt Salmon
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Salmon,
         Result:HCSaltedsalmon,
         Time:4000.0,
@@ -243,7 +287,7 @@ recipe Salt Salmon
 recipe Salt Small Animal Meat
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Smallanimalmeat,
         Result:HCSaltedsmallanimalmeat,
         Time:3500.0,
@@ -253,10 +297,40 @@ recipe Salt Small Animal Meat
 recipe Salt Small Bird Meat
     {
         SkillRequired:Cooking=3,
-        HCCuringsalt,
+        HCCuringsalt/HCSaltpeterpowder,
         Smallbirdmeat,
         Result:HCSaltedsmallbirdmeat,
         Time:3500.0,
+	Category:Cooking,
+    }
+
+recipe Salt Venison
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt/HCSaltpeterpowder,
+        HCVenison,
+        Result:HCSaltedvenison,
+        Time:5000.0,
+	Category:Cooking,
+    }
+
+recipe Salt Bear Steak
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt/HCSaltpeterpowder,
+        HCBearsteak,
+        Result:HCSaltedbear,
+        Time:5000.0,
+	Category:Cooking,
+    }
+
+recipe Salt Fox Steak
+    {
+        SkillRequired:Cooking=3,
+        HCCuringsalt/HCSaltpeterpowder,
+        HCFoxsteak,
+        Result:HCSaltedfox,
+        Time:5000.0,
 	Category:Cooking,
     }
 	   	

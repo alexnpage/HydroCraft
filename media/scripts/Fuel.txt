@@ -1,0 +1,287 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+
+ 
+/************************RECIPES************************/
+    
+recipe Make Charcoal
+    {
+    Log,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Plank=3,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    PercedWood=3,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCWoodblock=9,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    WoodenStick=24,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    TreeBranch=4,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Twigs=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Sheet=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    RippedSheets=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    SheetPaper=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Socks=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Socks2=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Newspaper=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Magazine=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Book=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    Newspaper=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC1dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC2dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC5dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC10dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC20dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC50dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HC100dollarbill=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCFirbough=4,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCWillowbranch=4,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCPinebough=4,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCOakleaves=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCHickoryleaves=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCFircone=4,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCBark=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCBirchbark=16,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCGrass=48,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCCowpoop=24,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+recipe Make Charcoal
+    {
+    HCCoal=8,
+    Result:Charcoal,
+    Time:15,
+    Category:Engineer,
+    }
+
+}

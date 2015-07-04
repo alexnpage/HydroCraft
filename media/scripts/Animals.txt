@@ -103,21 +103,19 @@ item HCFishtankfull
 	UseWhileEquipped	=	FALSE,
 	UseDelta		=	0.02641,
 	DisplayName		=	Full Fish Tank,
-	ReplaceOnDeplete	=	HCFishtank,
+	ReplaceOnDeplete	=	HCFishtankfull,
 	ReplaceOnUseOn		=	WaterSource-HCFishtankfull,
 	Icon			=	HCFishtank,
 	ResizeWorldIcon 	= 	FALSE,
     }
 
 item HCDogwhistle
-    {
-        Weight    		= 	0.1,
-	Type			= 	Drainable,
-	UseWhileEquipped	= 	FALSE,
-	UseDelta		= 	0.05,
-        DisplayName         	= 	Dog Whistle,
-        icon 			= 	HCDogwhistle,
-    }
+	{
+	Weight 				= 	0.1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dog Whistle,
+	Icon				=	HCDogwhistle,
+	}
 
 item HCCorgimale
 	{
@@ -477,6 +475,15 @@ item HCDeerfemale
 	ResizeWorldIcon 		= 	FALSE,
 	}
 
+item HCDeerdead
+	{
+	Weight 				= 	10,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dead Dee,
+	Icon				=	HCDeerdead,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
 item HCSheepmale
 	{
 	Weight 				= 	4,
@@ -494,6 +501,161 @@ item HCSheepfemale
 	Icon				=	HCSheepfemale,
 	ResizeWorldIcon 		= 	FALSE,
 	}
+
+item HCSheepdead
+	{
+	Weight 				= 	4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dead Sheep,
+	Icon				=	HCSheepdead,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCCowmale
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Cow (Male),
+	Icon				=	HCCowmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCCowfemale
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Cow (Female),
+	Icon				=	HCCowfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCCowdead
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dead Cow,
+	Icon				=	HCCowdead,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCFoxmale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Fox (Male),
+	Icon				=	HCFoxmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCFoxfemale
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Fox (Female),
+	Icon				=	HCFoxfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCFoxdead
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dead Fox,
+	Icon				=	HCFoxdead,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBearmale
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Bear (Male),
+	Icon				=	HCBearmale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBearfemale
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Bear (Female),
+	Icon				=	HCBearfemale,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBeardead
+	{
+	Weight 				= 	12,
+	Type 				= 	Normal,
+	DisplayName 			= 	Dead Bear,
+	Icon				=	HCBeardead,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCDeerantlers
+    {
+        Weight    		= 1,
+        Type    		= Normal,
+        DisplayName         	= Deer Antlers,
+        icon 			= HCDeerantlers,
+    }
+
+item HCRabbitpoop
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Rabbit Poop,
+        icon 			= HCRabbitpoop,
+    }
+
+item HCSheeppoop
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Sheep Poop,
+        icon 			= HCSheeppoop,
+    }
+
+item HCCowpoop
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Cow Poop,
+        icon 			= HCCowpoop,
+    }
+
+item HCFoxpoop
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Fox Poop,
+        icon 			= HCFoxpoop,
+    }
+
+item HCDeerpoop
+    {
+        Weight    		= 0.2,
+        Type    		= Normal,
+        DisplayName         	= Deer Poop,
+        icon 			= HCDeerpoop,
+    }
+
+item HCBearpoop
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Bear Poop,
+        icon 			= HCBearpoop,
+    }
+
+item HCWoodenbucketmilk
+    {
+        Weight    		= 4,
+        Type    		= Normal,
+        DisplayName         	= Wooden Bucket with Milk,
+        icon 			= HCWoodenbucketmilk,
+	ResizeWorldIcon 	= FALSE,
+    }
 		
 /************************RECIPES************************/
     
@@ -507,27 +669,15 @@ recipe Kill Rabbit
 
 recipe Feed Rabbit
     {
-    	HCRabbitmale,
-	Carrots/Cabbage/Potato/Tomato/Corn/BellPepper/Lettuce/Banana/Peach/HCGrass,
+    	HCRabbitmale/HCRabbitfemale,
+	Carrots/Cabbage/Potato/Tomato/Corn/BellPepper/Lettuce/Banana/Peach/HCGrass/HCStraw,
 	Water,
     	CanBeDoneFromFloor:true,
-    	Result:HCRabbitmale,
+    	Result:HCRabbitpoop,
     	OnCreate:HC_ToyStatModifier,
     	Time:15.0,
     	Category:Farming,
     }
-
-recipe Feed Rabbit
-    {
-    	HCRabbitfemale,
-	Carrots/Cabbage/Potato/Tomato/Corn/BellPepper/Lettuce/Banana/Peach/HCGrass,
-	Water,
-    	CanBeDoneFromFloor:true,
-    	Result:HCRabbitfemale,
-    	Time:15.0,
-    	Category:Farming,
-    	OnCreate:HC_ToyStatModifier,
-    }	
 
 recipe Breed Rabbits
     {
@@ -598,27 +748,6 @@ recipe Feed Dog
     	Time:15.0,
     	Category:Farming,
     	OnCreate:HC_ToyStatModifier,
-    }
-
-recipe Track Deer
-    {
-	HCBinoculars,
-    	HCDeerpoop,
-    	Result:HCBinoculars,
-    	Time:50.0,
-    	Category:Survivalist,
-    	OnCreate:getDeer,
-    }
-
-recipe Track Lost Sheep
-    {
-	HCBinoculars,
-    	keep HCCorgimale/HCCorgifemale/HCBordercolliemale/HCBordercolliefemale/HCColliemale/HCColliefemale/HCHeelermale/HCHeelerfemale,
-    	Rope,
-	Result:HCBinoculars,
-    	Time:50.0,
-    	Category:Farming,
-    	OnCreate:getSheep,
     }
 
 recipe Attach Bags to Dog
@@ -699,5 +828,142 @@ recipe Attach Bags to Dog
     	Result:HCBernesefemalepack2,
     	Time:50.0,
     	Category:Farming,
-    }				
+    }
+
+recipe Track Fox
+    {
+	HCBinoculars,
+    	HCFoxpoop,
+    	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Survivalist,
+    	OnCreate:getFox,
+    }
+
+recipe Track Deer
+    {
+	HCBinoculars,
+    	HCDeerpoop,
+    	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Survivalist,
+    	OnCreate:getDeer,
+    }
+
+recipe Track Bear
+    {
+	HCBinoculars,
+    	HCBearpoop,
+    	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Survivalist,
+    	OnCreate:getBear,
+    }
+
+recipe Track Lost Sheep
+    {
+	HCBinoculars,
+    	keep HCCorgimale/HCCorgifemale/HCBordercolliemale/HCBordercolliefemale/HCColliemale/HCColliefemale/HCGermanshepherdmale/HCGermanshepherdfemale/HCHeelermale/HCHeelerfemale,
+    	Rope,
+	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Farming,
+    	OnCreate:getSheep,
+    }
+
+recipe Track Lost Cows
+    {
+	HCBinoculars,
+    	keep HCCorgimale/HCCorgifemale/HCBordercolliemale/HCBordercolliefemale/HCColliemale/HCColliefemale/HCGermanshepherdmale/HCGermanshepherdfemale/HCHeelermale/HCHeelerfemale,
+    	Rope,
+	Result:HCBinoculars,
+    	Time:50.0,
+    	Category:Farming,
+    	OnCreate:getCow,
+    }
+
+recipe Kill Sheep
+    {
+    	HCSheepmale/HCSheepfemale,
+    	Result:HCSheepdead,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Kill Cow
+    {
+    	HCCowmale,
+    	Result:HCCowdead,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Kill Fox
+    {
+    	HCFoxmale/HCFoxfemale,
+    	Result:HCFoxdead,
+    	Time:15.0,
+    	Category:Survivalist,
+    }
+recipe Kill Deer
+    {
+    	HCDeermale/HCDeerfemale,
+    	Result:HCDeerdead,
+    	Time:15.0,
+    	Category:Survivalist,
+    }
+
+recipe Kill Bear
+    {
+    	HCBearmale/HCBearfemale,
+    	Result:HCBeardead,
+    	Time:15.0,
+    	Category:Survivalist,
+    }
+
+recipe Feed Sheep
+    {
+    	keep HCSheepmale/HCSheepfemale,
+	Apple/Carrots/Cabbage/Corn/Lettuce/HCGrass/HCStraw,
+	Water,
+    	CanBeDoneFromFloor:true,
+    	Result:HCSheeppoop,
+    	OnCreate:HC_ToyStatModifier,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Feed Cow
+    {
+    	keep HCCowmale/HCCowfemale,
+	Apple/Carrots/Cabbage/Corn/Lettuce/HCGrass/HCStraw,
+	Water,
+    	CanBeDoneFromFloor:true,
+    	Result:HCCowpoop,
+    	OnCreate:HC_ToyStatModifier,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Milk Cow
+    {
+    	keep HCCowfemale,
+    	HCWoodenbucket,
+	Apple/Carrots/Cabbage/Corn/Lettuce/HCGrass/HCStraw,
+	Water,
+    	CanBeDoneFromFloor:true,
+    	Result:HCWoodenbucketmilk,
+    	Time:15.0,
+    	Category:Farming,
+    }
+
+recipe Bottle Milk
+    {
+    	HCWoodenbucketmilk,
+    	Result:Milk=4,
+    	Time:15.0,
+    	Category:Farming,
+    	OnCreate:recipe_hcwoodenbucket,
+    }
+				
 }

@@ -605,7 +605,7 @@ item HCNachosgrande
 	Weight				=	0.3,
 	Type				=	Food,
 	DisplayName			=	Nachos Grande,
-	Icon				=	HCNachos,
+	Icon				=	HCNachosgrande,
 	ReplaceOnUse			=	Bowl,
 	DaysFresh			=	2,
 	DaysTotallyRotten		=	4,

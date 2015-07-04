@@ -247,7 +247,7 @@ recipe Make Cup of Hot Chocolate
 	{
 		Mugl,
 		Milk/HCUHTmilk/HCSoymilk,
-		HCCoco,
+		Coco,
 		Result:HCCococup,
 		Time:70.0,
 	   	Category:Cooking,	  
@@ -268,7 +268,7 @@ recipe Brew Irish Coffee
 		Mugl,
 		Water,
 		Coffee,
-		WhiskeyFull,
+		WhiskeyHalf/WhiskeyFull,
 		Result:HCCoffeeirish,
 		Time:70.0,
 	   	Category:Cooking,	  

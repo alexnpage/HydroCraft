@@ -16,6 +16,21 @@ item HCRopethick
         Icon    	=    HCRopethick,
     }
 
+item HCStrawhat
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Straw Hat,
+        icon 			= HCStrawhat,
+    }
+
+item HCYarn
+    {
+        Weight    		= 0.1,
+        Type    		= Normal,
+        DisplayName         	= Yarn,
+        icon 			= HCYarn,
+    }
 
 /************************RECIPES************************/
     
@@ -26,6 +41,23 @@ recipe Make Thread
     Time:15,
     Category:Survivalist,
     }
+
+recipe Make TWine
+    {
+    HCGrass=3,
+    Result:Twine,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make TWine
+    {
+    HCStraw=3,
+    Result:Twine,
+    Time:15,
+    Category:Survivalist,
+    }
+
 
 recipe Make Rope
     {
@@ -47,6 +79,14 @@ recipe Make Thick Rope
     {
     Rope=3,
     Result:HCRopethick,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Make Straw Hat
+    {
+    HCStraw=4,
+    Result:HCStrawhat,
     Time:15,
     Category:Survivalist,
     }

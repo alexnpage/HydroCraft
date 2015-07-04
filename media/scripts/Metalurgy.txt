@@ -164,7 +164,7 @@ recipe Make Smelter
 recipe Make Copper Ingot
     {
     HCCopperore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -179,7 +179,7 @@ recipe Make Copper Ingot
 recipe Make Tin Ingot
     {
     HCTinore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -196,7 +196,7 @@ recipe Make Bronze Ingot
     {
     HCCopperingot,
     HCTiningot,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -211,7 +211,7 @@ recipe Make Bronze Ingot
 recipe Make Iron Ingot
     {
     HCIronore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -226,7 +226,7 @@ recipe Make Iron Ingot
 recipe Make Lead Ingot
     {
     HCLeadore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -241,7 +241,7 @@ recipe Make Lead Ingot
 recipe Make Silver Ingot
     {
     HCSilverore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -256,7 +256,7 @@ recipe Make Silver Ingot
 recipe Make Gold Ingot
     {
     HCGoldore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -272,7 +272,7 @@ recipe Make Steel Ingot
     {
     HCIroningot,
     HCCoal/Charcoal,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -287,7 +287,7 @@ recipe Make Steel Ingot
 recipe Make Aluminum Ingot
     {
     HCBauxiteore,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -302,13 +302,13 @@ recipe Make Aluminum Ingot
 recipe Make Nails
     {
     HCIroningot,
-    Log,
+    Charcoal,
     HCNailmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
     keep HCSmelter,
     CanBeDoneFromFloor:true,
-    Result:Nails=2,
+    Result:Nails=10,
     NeedToBeLearn:true,
     Time:100,
     Category:Engineer,
@@ -317,7 +317,7 @@ recipe Make Nails
 recipe Make Anvil
     {
     HCIroningot=20,
-    Log,
+    Charcoal,
     HCAnvilmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -332,7 +332,7 @@ recipe Make Anvil
 recipe Make Bronze Bullet Casings
     {
     HCBronzeingot,
-    Log,
+    Charcoal,
     HCBulletcasingmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -347,7 +347,7 @@ recipe Make Bronze Bullet Casings
 recipe Make Lead Bullet Tips
     {
     HCLeadingot,
-    Log,
+    Charcoal,
     HCBullettipmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -362,7 +362,7 @@ recipe Make Lead Bullet Tips
 recipe Make Lead Buckshot
     {
     HCLeadingot,
-    Log,
+    Charcoal,
     HCBuckshotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -377,7 +377,7 @@ recipe Make Lead Buckshot
 recipe Make Steel BBs
     {
     HCSteelingot,
-    Log,
+    Charcoal,
     HCBuckshotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -400,5 +400,31 @@ recipe Cut Steel Pipe
     Time:50,
     Category:Engineer,
     }
+
+recipe Make Iron Hinge
+	{
+	   	HCIroningot,
+    		keep HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:Hinge,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Bronze Doorknob
+	{
+	   	HCBronzeingot,
+    		keep HCSmithyhammerbronze/HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:Doorknob,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
 
 }

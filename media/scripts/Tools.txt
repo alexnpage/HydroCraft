@@ -201,7 +201,7 @@ item HCNailgunammobox
     item HCNailgunammo
     {
         Count        		=    10,
-        Weight        		=    0.1,
+        Weight        		=    0.01,
         Type        		=    Normal,
         DisplayCategory    	=    Ammo,
         DisplayName    		=    Nail Gun Ammo,
@@ -211,7 +211,7 @@ item HCNailgunammobox
     item HCNailclip
     {
         Count        		=    12,
-        Weight        		=    0.2,
+        Weight        		=    0.1,
         Type        		=    Normal,
         DisplayName    		=    Nail gun clip,
         Icon       	 	=    HCNailgunclip,
@@ -488,7 +488,7 @@ recipe Make Nail Gun Ammo
 
 recipe Revert Nail Gun Ammo
 {
-    keep Hammer,
+    keep Hammer/HCSmithyhammersteel/Sledgehammer,
     HCNailgunammo,
     Result:Nails,
     Time:15,

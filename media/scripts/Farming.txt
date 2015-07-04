@@ -178,6 +178,64 @@ recipe Disassble Hedge Cutter
     Time:15,
     Category:Engineer,
 }
-   
+
+recipe Flatten Trowel
+{
+    keep Hammer/HCSmithyhammersteel/Sledgehammer,
+    HandShovel,
+    Result:HCMasontrowel,
+    Time:50,
+    Category:Engineer,
+}
+
+recipe Bend Mason Trowel
+{
+    keep HCPliers,
+    HandShovel,
+    Result:HCMasontrowel,
+    Time:50,
+    Category:Engineer,
+}
+
+recipe Make Iron Trowel
+	{
+	   	HCIroningot,
+    		keep HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HandShovel,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
+recipe Make Iron Spade
+	{
+	   	HCIroningot=2,
+    		WoodenStick,
+    		keep HCSmithyhammeriron/HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:Shovel,
+	   	Time:150.0,
+       		Category:Engineer,
+	}   
+
+recipe Make Steel Rake
+	{
+	   	HCSteelingot=2,
+    		WoodenStick,
+    		keep HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:HCRake,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
 
 }

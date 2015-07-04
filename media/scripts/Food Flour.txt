@@ -128,7 +128,7 @@ recipe Make Homemade Pancake Batter
        		Flour=1,
 	   	Sugar=1,
 	   	Yeast=1,
-	   	Egg/WildEggs,
+	   	Egg/Wildeggs,
       	 	Result:HCPancakebatter,
        		Time:30.0,
 	   	Category:Cooking,

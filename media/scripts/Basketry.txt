@@ -43,7 +43,7 @@ item HCStraw
         Type                = Container,
         Capacity            = 16,
         DisplayName         = Straw Basket,
-        Icon                = HCBirchbarkbasket,
+        Icon                = HCStrawbasket,
     }
 
 /************************RECIPES************************/

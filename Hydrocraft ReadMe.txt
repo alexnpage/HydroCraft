@@ -1,4 +1,4 @@
-Hydrocraft v2.6b
+Hydrocraft v2.7
 
 Credits
 
@@ -11,7 +11,6 @@ Included Parts from the following Mods
 - Craftable Axes By Tooks
 - Engless Sprites By Jatta Pake
 - Extra Weapons Mod By tommysticks
-- Fire Fighting Mod By Robyrq
 - FlourCraft Mod By Dudeman325
 - Fur Clothes Mod By Dudeman325
 - Homemade Bats and Clubs by Dudeman325
@@ -46,6 +45,3 @@ Artists from Open Game Art
 Other Artists
 - Icojam
 - Cartoonize My Pet
-
-ZT2 Mod Art
-- Artiodactya Pack 5

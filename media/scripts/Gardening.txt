@@ -640,16 +640,16 @@ module Hydrocraft
 	Category:Farming,
     }
 
-*    recipe Plant Pumpkin Seeds
-*    {
-*        SkillRequired:Farming=10,
-*        Pumpkin,
-*        HCClayflowerpotwithdirt,
-*        keep HandShovel,
-*        Result:HCPottedpumpkin,
-*        Time:15,
-*	Category:Farming,
-*    }
+    recipe Plant Pumpkin Seeds
+    {
+        SkillRequired:Farming=10,
+        Pumpkin,
+        HCClayflowerpotwithdirt,
+        keep HandShovel,
+        Result:HCPottedpumpkin,
+        Time:15,
+	Category:Farming,
+    }
 
     recipe Plant Radish Seeds
     {
@@ -755,7 +755,7 @@ recipe Build Compost Bin
 recipe Make Compost
     {
     keep HCCompostbin,
-    DeadRat/DeadMouse/DeadRabbit/DeadSquirrel/DeadBird/Catfish/Bass/Perch/Crappie/Panfish/Pike/Trout/BaitFish/BreadDough/CakeSlice/Lettuce/BellPepper/Processedcheese/Peach/Corndog/BreadSlices/Sandwich/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryPoisonIvy/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/DogfoodOpen/Lemon/Burger/BurgerRecipe/Pizza/Fries/Pancakes/Waffles/MeatPatty/Onion/FishFillet/Hotdog/MuttonChop/PorkChop/Rabbitmeat/Smallanimalmeat/Smallbirdmeat/Ham/Corn/Eggplant/Leek/Grapes/Dough/Apple/Banana/Bread/Broccoli/Carrots/Cheese/CheeseSandwich/Chicken/Egg/GrilledCheese/OpenBeans/Orange/Peas/Salmon/Steak/TunaTinOpen/Watermelon/WatermelonSliced/WatermelonSmashed/BloomingBroccoli/RedRadish/Strewberrie/Tomato/Potato/Cabbage/Bacon/BaconRashers/BaconBits/HCPear/Pineapple/Avocado/Zucchini/CannedCornedBeefOpen/CannedSardinesOpen/HCFriedherring/HCBBQsalmon/HCBBQsteak/HCBBQchicken/HCBBQrat/HCFriedegg/HCHardboiledegg/HCDogpoop/HCDeerpoop/HCCowpoop/HCSweetpotato/HCChinesecabbage/HCCucumber/HCCauliflower/HCBellpeppergreen/HCBellpepperyellow/HCOniongreen/HCGarlic/HCGinger/HCMushroom/HCShiitake/HCCrab,
+    DeadRat/DeadMouse/DeadRabbit/DeadSquirrel/DeadBird/Catfish/Bass/Perch/Crappie/Panfish/Pike/Trout/BaitFish/BreadDough/CakeSlice/Lettuce/BellPepper/Processedcheese/Peach/Corndog/BreadSlices/Sandwich/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/BerryPoisonIvy/MushroomGeneric1/MushroomGeneric2/MushroomGeneric3/MushroomGeneric4/MushroomGeneric5/MushroomGeneric6/MushroomGeneric7/DogfoodOpen/Lemon/Burger/BurgerRecipe/Pizza/Fries/Pancakes/Waffles/MeatPatty/Onion/FishFillet/Hotdog/MuttonChop/PorkChop/Rabbitmeat/Smallanimalmeat/Smallbirdmeat/Ham/Corn/Eggplant/Leek/Grapes/Dough/Apple/Banana/Bread/Broccoli/Carrots/Cheese/CheeseSandwich/Chicken/Egg/GrilledCheese/OpenBeans/Orange/Peas/Salmon/Steak/TunaTinOpen/Watermelon/WatermelonSliced/WatermelonSmashed/BloomingBroccoli/RedRadish/Strewberrie/Tomato/Potato/Cabbage/Bacon/BaconRashers/BaconBits/HCPear/Pineapple/Avocado/Zucchini/CannedCornedBeefOpen/CannedSardinesOpen/HCFriedherring/HCBBQsalmon/HCBBQsteak/HCBBQchicken/HCBBQrat/HCFriedegg/HCHardboiledegg/HCDogpoop/HCDeerpoop/HCCowpoop/HCSweetpotato/HCChinesecabbage/HCCucumber/HCCauliflower/HCBellpeppergreen/HCBellpepperyellow/HCOniongreen/HCGarlic/HCGinger/HCMushroom/HCShiitake/HCCrab/HCFoxpoop/HCBearpoop/HCSheeppoop/HCRabbitpoop,
     CanBeDoneFromFloor:true,
     Result:HCCompost,
     Time:1000.0,
@@ -765,7 +765,7 @@ recipe Make Compost
 recipe Fill Bag With Compost
     {
     HCCompost=10,
-    EmptySandbag,
+    EmptySandbag/FerilizerEmpty,
     Result:Fertilizer,
     Sound:shoveling
     Time:150.0,
@@ -1003,16 +1003,16 @@ recipe Harvest Potatoes
     Category:Farming,
     }
 
-*recipe Harvest Pumpkin
-*    {
-*    keep HCPottedpumpkin,
-*    Fertilizer,
-*    Water,
-*    Result:Pumpkin=2,
-*    CanBeDoneFromFloor:true,
-*    Time:150.0,
-*    Category:Farming,
-*    }
+recipe Harvest Pumpkin
+    {
+    keep HCPottedpumpkin,
+    Fertilizer,
+    Water,
+    Result:Pumpkin=2,
+    CanBeDoneFromFloor:true,
+    Time:150.0,
+    Category:Farming,
+    }
 
 recipe Harvest Radishes
     {

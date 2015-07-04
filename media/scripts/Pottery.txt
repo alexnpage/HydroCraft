@@ -212,7 +212,7 @@ recipe Make Kiln
 recipe Make Grey Brick
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCGreybrick,
@@ -224,7 +224,7 @@ recipe Make Grey Brick
 recipe Make Red Brick
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCRedbrick,
@@ -236,7 +236,7 @@ recipe Make Red Brick
 recipe Make Clay Pot
     {
     HCGreyclay=5,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaypot,
@@ -248,7 +248,7 @@ recipe Make Clay Pot
 recipe Make Clay Pot
     {
     HCRedclay=5,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaypot,
@@ -260,7 +260,7 @@ recipe Make Clay Pot
 recipe Make Clay Flowerpot
     {
     HCGreyclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayflowerpot,
@@ -272,7 +272,7 @@ recipe Make Clay Flowerpot
 recipe Make Clay Flowerpot
     {
     HCRedclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayflowerpot,
@@ -284,7 +284,7 @@ recipe Make Clay Flowerpot
 recipe Make Clay Jar
     {
     HCGreyclay=3,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayjar,
@@ -296,7 +296,7 @@ recipe Make Clay Jar
 recipe Make Clay Jar
     {
     HCRedclay=3,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayjar,
@@ -308,7 +308,7 @@ recipe Make Clay Jar
 recipe Make Clay Mug
     {
     HCGreyclay=2,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaymug,
@@ -320,7 +320,7 @@ recipe Make Clay Mug
 recipe Make Clay Mug
     {
     HCRedclay=2,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaymug,
@@ -332,7 +332,7 @@ recipe Make Clay Mug
 recipe Make Clay Teapot
     {
     HCGreyclay=4,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayteapot,
@@ -344,7 +344,7 @@ recipe Make Clay Teapot
 recipe Make Clay Teapot
     {
     HCRedclay=4,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayteapot,
@@ -356,7 +356,7 @@ recipe Make Clay Teapot
 recipe Make Clay Cauldron
     {
     HCGreyclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaycauldron,
@@ -368,7 +368,7 @@ recipe Make Clay Cauldron
 recipe Make Clay Cauldron
     {
     HCRedclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaycauldron,
@@ -380,7 +380,7 @@ recipe Make Clay Cauldron
 recipe Make Clay Urn
     {
     HCGreyclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayurn,
@@ -392,7 +392,7 @@ recipe Make Clay Urn
 recipe Make Clay Urn
     {
     HCRedclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClayurn,
@@ -404,7 +404,7 @@ recipe Make Clay Urn
 recipe Make Clay Pipe
     {
     HCGreyclay=2,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaypipe,
@@ -416,7 +416,7 @@ recipe Make Clay Pipe
 recipe Make Clay Pipe
     {
     HCRedclay=2,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCClaypipe,
@@ -428,7 +428,7 @@ recipe Make Clay Pipe
 recipe Make Ingot Mold
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCIngotmold,
@@ -440,7 +440,7 @@ recipe Make Ingot Mold
 recipe Make Ingot Mold
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCIngotmold,
@@ -452,7 +452,7 @@ recipe Make Ingot Mold
 recipe Make Nail Mold
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCNailmold,
@@ -464,7 +464,7 @@ recipe Make Nail Mold
 recipe Make Nail Mold
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCNailmold,
@@ -476,7 +476,7 @@ recipe Make Nail Mold
 recipe Make Anvil Mold
     {
     HCGreyclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCAnvilmold,
@@ -488,7 +488,7 @@ recipe Make Anvil Mold
 recipe Make Anvil Mold
     {
     HCRedclay=10,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCAnvilmold,
@@ -501,7 +501,7 @@ recipe Make Anvil Mold
 recipe Make Bullet Casing Mold
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBulletcasingmold,
@@ -513,7 +513,7 @@ recipe Make Bullet Casing Mold
 recipe Make Bullet Casing Mold
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBulletcasingmold,
@@ -525,7 +525,7 @@ recipe Make Bullet Casing Mold
 recipe Make Bullet Tip Mold
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBullettipmold,
@@ -537,7 +537,7 @@ recipe Make Bullet Tip Mold
 recipe Make Bullet Tip Mold
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBullettipmold,
@@ -549,7 +549,7 @@ recipe Make Bullet Tip Mold
 recipe Make Buckshot Mold
     {
     HCGreyclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBuckshotmold,
@@ -561,7 +561,7 @@ recipe Make Buckshot Mold
 recipe Make Buckshot Mold
     {
     HCRedclay,
-    Log,
+    Charcoal,
     keep HCKiln,
     CanBeDoneFromFloor:true,
     Result:HCBuckshotmold,

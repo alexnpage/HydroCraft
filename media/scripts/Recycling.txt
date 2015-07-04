@@ -49,6 +49,14 @@ item HCPVCpipe
         Icon 			= 	HCPVCpipe,
     }
 
+item HCCopperpipe
+    {
+        Weight 			= 	1.25,
+        Type 			= 	Normal,
+        DisplayName 		= 	Copper Pipe,
+        Icon 			= 	HCCopperpipe,
+    }
+
 
 /************************WEAPONS************************/
 
@@ -92,7 +100,7 @@ item HCPVCpipe
 recipe Recycle Steel
     {
     Fork=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -107,7 +115,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Spoon=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -122,7 +130,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Hammer,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -137,7 +145,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     Needle=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -152,7 +160,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     Saw,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -167,7 +175,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Sledgehammer,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -182,7 +190,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Screwdriver=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -197,7 +205,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     NailsBox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -212,7 +220,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     ScrewsBox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -227,7 +235,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     Hinge=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -242,7 +250,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     Doorknob=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -257,7 +265,7 @@ recipe Recycle Bronze
 recipe Recycle Iron
     {
     Wire=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -272,7 +280,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     ButterKnife=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -287,7 +295,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     KitchenKnife=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -302,7 +310,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HuntingKnife=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -317,7 +325,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     Pan,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -332,7 +340,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     Kettle,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -347,7 +355,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     BakingPan=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -361,8 +369,8 @@ recipe Recycle Iron
 
 recipe Recycle Iron
     {
-    BakingTray=5,
-    Log,
+    BakingSheet=5,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -377,7 +385,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     RoastingPan,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -392,7 +400,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     Pot,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -407,7 +415,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     HCHubcap,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -422,7 +430,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     GardeningSprayEmpty/GardeningSprayFull,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -437,7 +445,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     WateredCan/WateredCanFull,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -452,7 +460,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     HandShovel=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -467,7 +475,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     Shovel,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -482,7 +490,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     PaperclipBox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -497,7 +505,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Tweezers=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -512,7 +520,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     Crowbar,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -527,7 +535,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     Golfclub,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -542,7 +550,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Axe,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -557,7 +565,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Scissors=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -572,7 +580,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     Corkscrew=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -587,7 +595,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCTongs=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -602,7 +610,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     HCPliers=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -617,7 +625,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCAnvil,
-    Log,
+    Charcoal,
     HCIngotmold=18,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -632,7 +640,7 @@ recipe Recycle Iron
 recipe Recycle Gold
     {
     WeddingRing_Man=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -647,7 +655,7 @@ recipe Recycle Gold
 recipe Recycle Gold
     {
     WeddingRing_Woman=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -662,7 +670,7 @@ recipe Recycle Gold
 recipe Recycle Silver
     {
     Ring=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -677,7 +685,7 @@ recipe Recycle Silver
 recipe Recycle Gold
     {
     Locket=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -692,7 +700,7 @@ recipe Recycle Gold
 recipe Recycle Gold
     {
     Earrings=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -707,7 +715,7 @@ recipe Recycle Gold
 recipe Recycle Iron
     {
     BarbedWire=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -722,7 +730,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     TinOpener=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -737,7 +745,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     TentPeg=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -752,7 +760,7 @@ recipe Recycle Iron
 recipe Recycle Glass
     {
     WhiskeyEmpty=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -767,7 +775,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     Salt=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -782,7 +790,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     Mirror=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -797,7 +805,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     WineEmpty=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -812,7 +820,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     WineEmpty2=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -828,7 +836,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     EmptyJar=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -843,7 +851,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     Pepper=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -858,7 +866,7 @@ recipe Recycle Glass
 recipe Recycle Aluminum
     {
     JarLid=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -892,7 +900,7 @@ recipe Recycle Feather Duster
 recipe Recycle Steel
     {
     HCTireiron,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -907,7 +915,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCJackknife=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -922,7 +930,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCToolbox,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -937,7 +945,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCRake,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -952,7 +960,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCHedgetrimmer,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -967,7 +975,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCBottleopener=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -982,7 +990,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCCheesegrater=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -997,7 +1005,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCEggbeater=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1012,7 +1020,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCColander,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1027,7 +1035,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCIcecreamscoop=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1042,7 +1050,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCLadle=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1057,7 +1065,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCPizzacutter=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1072,7 +1080,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCTablespoon=6,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1087,7 +1095,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCTeaspoon=8,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1102,7 +1110,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCToaster,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1117,7 +1125,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCNutcracker=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1132,7 +1140,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCPotatopeeler=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1147,7 +1155,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCSteakknife=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1162,7 +1170,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMeatcleaver,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1177,7 +1185,7 @@ recipe Recycle Steel
 recipe Recycle Glass
     {
     HCGlassflask=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1192,7 +1200,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     HCGlassgraduatedcylinder=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1207,7 +1215,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     HCGlasstesttube=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1222,7 +1230,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     HCEyedropper=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1237,7 +1245,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     LightBulb=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1252,7 +1260,7 @@ recipe Recycle Glass
 recipe Recycle Glass
     {
     HCThermometer=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1267,7 +1275,7 @@ recipe Recycle Glass
 recipe Recycle Steel
     {
     HCHeadmirror=8,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1282,7 +1290,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCBonesaw,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1297,7 +1305,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCScalpel=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1312,7 +1320,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCStaplesbox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1327,7 +1335,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCStapler=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1342,7 +1350,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     LetterOpener=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1357,7 +1365,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCAuger,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1372,7 +1380,7 @@ recipe Recycle Steel
 recipe Recycle Bronze
     {
     HCShoehorn=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1387,7 +1395,7 @@ recipe Recycle Bronze
 recipe Recycle Steel
     {
     HCChildsafetyscissors=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1402,7 +1410,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCNailgunammobox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1417,7 +1425,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     HCWrench=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1432,7 +1440,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMonkeywrench,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1447,7 +1455,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCHarmonica=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1462,7 +1470,7 @@ recipe Recycle Steel
 recipe Recycle Aluminum
     {
     UmbrellaOpen=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1477,7 +1485,7 @@ recipe Recycle Aluminum
 recipe Recycle Steel
     {
     HCWirehanger=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1492,7 +1500,7 @@ recipe Recycle Steel
 recipe Recycle Tin
     {
     HCWirehanger=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1507,7 +1515,7 @@ recipe Recycle Tin
 recipe Recycle Steel
     {
     HCMakeshiftaxe,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1522,7 +1530,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMakeshiftaxeworn,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1537,7 +1545,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMakeshiftaxeblunt,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1552,7 +1560,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCAxehead,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1567,7 +1575,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCAxeheadworn,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1582,7 +1590,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCAxeheadblunt,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1597,7 +1605,7 @@ recipe Recycle Steel
 recipe Recycle Glass
     {
     HCFishtank,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1612,7 +1620,7 @@ recipe Recycle Glass
 recipe Recycle Steel
     {
     HCToywagon,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1627,7 +1635,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCWheelbarrow,
-    Log,
+    Charcoal,
     HCIngotmold=4,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1642,7 +1650,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMedicalbox,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1657,7 +1665,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCLunchbox,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1672,7 +1680,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCMetalbox=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1687,7 +1695,7 @@ recipe Recycle Steel
 recipe Recycle Aluminum
     {
     HCFireextinguisherempty,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1702,7 +1710,7 @@ recipe Recycle Aluminum
 recipe Recycle Steel
     {
     HCWhisk=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1717,7 +1725,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCSieve=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1732,7 +1740,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCJuicer2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1747,7 +1755,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCPotatomasher=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1762,7 +1770,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCSpatula=4,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1777,7 +1785,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCSurvivalaxe=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1792,7 +1800,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCHatchetsteel=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1807,7 +1815,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCHatchetiron=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1822,13 +1830,13 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCHatchetbronze=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
     keep HCSmelter,
     CanBeDoneFromFloor:true,
-    Result:HCBronzeingot,
+    Result:HCBronzelingot,
     NeedToBeLearn:true,
     Time:100,
     Category:Engineer,
@@ -1837,7 +1845,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCHatchetcopper=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1852,7 +1860,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCBattleaxesteel,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1867,7 +1875,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCBattleaxeiron,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1882,7 +1890,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCBattleaxebronze,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1897,7 +1905,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCBattleaxecopper,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1912,7 +1920,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCMachete=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1927,7 +1935,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCCombatknife=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1942,7 +1950,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCKatana,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1957,7 +1965,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCKnifesteel=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1972,7 +1980,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCKnifeiron=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -1987,7 +1995,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCKnifebronze=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2002,7 +2010,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCKnifecopper=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2017,7 +2025,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCDaggersteel=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2032,7 +2040,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCDaggeriron=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2047,7 +2055,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCDaggerbronze=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2062,7 +2070,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCDaggercopper=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2077,7 +2085,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCShortswordsteel=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2092,7 +2100,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCShortswordiron=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2107,7 +2115,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCShortswordbronze=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2122,7 +2130,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCShortswordcopper=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2137,7 +2145,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCLongswordsteel,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2152,7 +2160,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCLongswordiron,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2167,7 +2175,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCLongswordbronze,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2182,7 +2190,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCLongswordcopper,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2197,7 +2205,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCBastardswordsteel,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2212,7 +2220,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCBastardswordiron,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2227,7 +2235,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCBastardswordbronze,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2242,7 +2250,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCBastardswordcopper,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2257,7 +2265,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCGreatswordsteel,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2272,7 +2280,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCGreatswordiron,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2287,7 +2295,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCGreatswordbronze,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2302,7 +2310,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCGreatswordcopper,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2317,7 +2325,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCSmithyhammersteel=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2332,7 +2340,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCSmithyhammeriron=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2347,13 +2355,13 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCSmithyhammerbronze=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
     keep HCSmelter,
     CanBeDoneFromFloor:true,
-    Result:HCBronzeingot,
+    Result:HCbronzeingot,
     NeedToBeLearn:true,
     Time:100,
     Category:Engineer,
@@ -2362,7 +2370,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCSmithyhammercopper=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2377,7 +2385,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCWarhammersteel,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2392,7 +2400,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCWarhammeriron,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2407,7 +2415,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCWarhammerbronze,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2422,7 +2430,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCWarhammercopper,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2437,7 +2445,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     HCHalberdsteel,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2452,7 +2460,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCHalberdiron,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2467,7 +2475,7 @@ recipe Recycle Iron
 recipe Recycle Bronze
     {
     HCHalberdbronze,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2482,7 +2490,7 @@ recipe Recycle Bronze
 recipe Recycle Copper
     {
     HCHalberdcopper,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2497,7 +2505,7 @@ recipe Recycle Copper
 recipe Recycle Wax
     {
     Crayons=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2512,7 +2520,7 @@ recipe Recycle Wax
 recipe Recycle Wax
     {
     Candle=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2527,7 +2535,7 @@ recipe Recycle Wax
 recipe Recycle Rubber
     {
     Rubberducky=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2542,7 +2550,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     Shoes=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2557,7 +2565,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     Rainboots,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2572,7 +2580,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     RecoilPad=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2587,7 +2595,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCRubberball,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2602,7 +2610,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     Basketball,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2617,7 +2625,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     TennisBall,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2632,7 +2640,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCBalloonbox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2647,7 +2655,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCPaddleball=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2662,7 +2670,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     DogChew=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2677,7 +2685,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCPlunger=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2692,7 +2700,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCGardenhose,
-    Log,
+    Charcoal,
     HCIngotmold=3,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2707,7 +2715,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCStethoscope=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2722,7 +2730,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCRubberbandbox=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2737,7 +2745,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCWeldinghose,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2752,7 +2760,7 @@ recipe Recycle Rubber
 recipe Recycle Rubber
     {
     HCBungeecord=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2767,7 +2775,7 @@ recipe Recycle Rubber
 recipe Recycle Steel
     {
     HCSteelpipe,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2779,10 +2787,25 @@ recipe Recycle Steel
     Category:Engineer,
     }
 
+recipe Recycle Copper
+    {
+    HCCopperpipe,
+    Charcoal,
+    HCIngotmold,
+    keep HCTongs,
+    keep HCWorkgloves/HCOvenmitts,
+    keep HCSmelter,
+    CanBeDoneFromFloor:true,
+    Result:HCCopperingot,
+    NeedToBeLearn:true,
+    Time:100,
+    Category:Engineer,
+    }
+
 recipe Recycle Steel
     {
     Pipe=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2797,7 +2820,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     IcePick=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2812,7 +2835,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     KnittingNeedles=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2827,7 +2850,7 @@ recipe Recycle Steel
 recipe Recycle Copper
     {
     ElectronicsScrap,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2842,7 +2865,7 @@ recipe Recycle Copper
 recipe Recycle Steel
     {
     ScrapMetal,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2858,7 +2881,7 @@ recipe Recycle Steel
 recipe Recycle Aluminum
     {
     SheetMetal,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2873,7 +2896,7 @@ recipe Recycle Aluminum
 recipe Recycle Rubber
     {
     Eraser=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2906,7 +2929,7 @@ recipe Recycle Wooden Beehive
 recipe Recycle Steel
     {
     HCNailclipper=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2921,7 +2944,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCDustpan=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2936,7 +2959,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     HCBreadknife=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2951,7 +2974,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCFloursieve=2,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2966,7 +2989,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCScale,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2981,7 +3004,7 @@ recipe Recycle Steel
 recipe Recycle Iron
     {
     HCMuffinpan=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -2996,7 +3019,7 @@ recipe Recycle Iron
 recipe Recycle Iron
     {
     HCBreadpan=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3011,7 +3034,7 @@ recipe Recycle Iron
 recipe Recycle Glass
     {
     HCMeasuringcup=3,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3026,7 +3049,7 @@ recipe Recycle Glass
 recipe Recycle Iron
     {
     HCWok,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3041,7 +3064,7 @@ recipe Recycle Iron
 recipe Recycle Steel
     {
     HCBinderclip=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3056,7 +3079,7 @@ recipe Recycle Steel
 recipe Recycle Aluminum
     {
     HCBookend=5,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3071,7 +3094,7 @@ recipe Recycle Aluminum
 recipe Recycle Steel
     {
     HCClipboard=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3086,7 +3109,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCStapleremover=10,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -3101,7 +3124,7 @@ recipe Recycle Steel
 recipe Recycle Steel
     {
     HCThumbtack=20,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,

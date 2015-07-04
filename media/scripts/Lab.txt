@@ -161,6 +161,51 @@ item HCZombiebones
         icon 			= HCZombiebones,
     } 
 
+item HCSheepbones
+	{
+	Weight 				= 	1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Sheep Skeleton,
+	Icon				=	HCSheepbones,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCCowbones
+	{
+	Weight 				= 	5,
+	Type 				= 	Normal,
+	DisplayName 			= 	Cow Skeleton,
+	Icon				=	HCCowbones,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCFoxbones
+	{
+	Weight 				= 	0.4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Fox Skeleton,
+	Icon				=	HCFoxbones,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCDeerbones
+	{
+	Weight 				= 	4,
+	Type 				= 	Normal,
+	DisplayName 			= 	Deer Skeleton,
+	Icon				=	HCDeerbones,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
+item HCBearbones
+	{
+	Weight 				= 	5,
+	Type 				= 	Normal,
+	DisplayName 			= 	Bear Skeleton,
+	Icon				=	HCBearbones,
+	ResizeWorldIcon 		= 	FALSE,
+	}
+
 /************************RECIPES************************/
     
 recipe Harvest Bones
@@ -168,6 +213,57 @@ recipe Harvest Bones
     keep HCBonesaw/Saw,
     CorpseMale/CorpseFemale,
     Result:HCZombiebones,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    HCSheepbones,
+    Result:HCBone=3,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    HCCowbones,
+    Result:HCBone=6,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    HCFoxbones,
+    Result:HCBone=2,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+    }
+
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    HCDeerbones,
+    Result:HCBone=6,
+    NeedToBeLearn:true,
+    Time:15,
+    Category:Survivalist,
+       OnCreate:recipe_hcdeerantlers,
+    }
+
+recipe Harvest Bones
+    {
+    keep HCBonesaw/Saw,
+    HCBearbones,
+    Result:HCBone=12,
     NeedToBeLearn:true,
     Time:15,
     Category:Survivalist,

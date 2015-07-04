@@ -266,5 +266,23 @@ recipe Unbox Rubberbands
     HCRubberbandbox,
     Result:RubberBand=100,
     Time:15,
-    }   	
+    }   
+
+recipe Erase Notebook
+    {
+    Notebook,
+    Eraser/HCWhiteout,
+    Result:Notebook,
+    Time:25,
+    }   
+
+recipe Erase Journal
+    {
+    Journal,
+    Eraser/HCWhiteout,
+    Result:Notebook,
+    Time:25,
+    }   
+
+	
 }

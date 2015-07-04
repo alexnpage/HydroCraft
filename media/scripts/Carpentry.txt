@@ -141,10 +141,11 @@ item HCCoffinfull
 
 item HCWoodenladder
     {
-        Weight    		= 36,
+        Weight    		= 20,
         Type   			= Normal,
         DisplayName         	= Wooden Ladder,
         icon 			= HCWoodenladder,
+	ResizeWorldIcon 	= FALSE,
     }
 
 /************************RECIPES************************/
@@ -165,6 +166,337 @@ recipe Make Charcoal
     {
     Log,
     keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Plank=3,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    PercedWood=3,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCWoodblock=9,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    WoodenStick=24,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    TreeBranch=4,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Twigs=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Sheet=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    RippedSheets=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    SheetPaper=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Socks=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Socks2=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Newspaper=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Magazine=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Book=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    Newspaper=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC1dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC2dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC5dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC10dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC20dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC50dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HC100dollarbill=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCFirbough=4,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCWillowbranch=4,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCPinebough=4,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCOakleaves=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCHickoryleaves=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCFircone=4,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCBark=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCBirchbark=16,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCGrass=48,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCCowpoop=24,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
+    Result:Charcoal,
+    Time:100,
+    Category:Carpentry,
+    }
+
+recipe Make Charcoal
+    {
+    HCCoal,
+    keep HCKiln,
+    CanBeDoneFromFloor:true,
     Result:Charcoal,
     Time:100,
     Category:Carpentry,

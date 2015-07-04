@@ -354,6 +354,19 @@ recipe Remove Lid
 	   	Category:Cooking,
 	}
 
+recipe Make Aluminum Jar Lid
+	{
+	   	HCAluminumingot,
+    		keep HCSmithyhammersteel,
+    		keep HCTongs,
+    		keep HCWorkgloves/HCOvenmitts,
+		keep HCAnvil,
+    		CanBeDoneFromFloor:true,
+	   	Result:JarLid=8,
+	   	Time:150.0,
+       		Category:Engineer,
+	}
+
 recipe Prepare Jarred Waterlon 
 	{
         	SkillRequired:Cooking=4,
@@ -383,7 +396,7 @@ recipe Prepare Jarred Apples
 		destroy WaterPot,
 		HCLemonjuicebowl/HCLemonjuicebottle,
 		Sugar,
-		HCSlicedapple= 8,	
+		HCSlicedApple= 8,	
 		Result:HCJarredapplepot,
 		Time:75.0,
 	   	Category:Cooking,

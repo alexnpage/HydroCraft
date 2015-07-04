@@ -1,0 +1,207 @@
+module Hydrocraft
+{
+    imports
+    {
+        Base
+
+    }
+
+/************************ITEMS************************/
+
+item HCSheepmeat
+    {
+        HungerChange			=	-100,
+        Weight				=	3,
+        Type				=	Food,
+        DisplayName			=	Sheep Carcass,
+        Icon				=	HCSheepmeat,
+        IsCookable			=	TRUE,
+        DangerousUncooked		=	TRUE,
+        DaysTotallyRotten		=	12,
+        MinutesToBurn			=	120,
+        MinutesToCook			=	50,
+        DaysFresh			=	8,
+	ResizeWorldIcon 		= 	FALSE,
+    }
+
+item HCCowmeat
+    {
+        HungerChange			=	-400,
+        Weight				=	10,
+        Type				=	Food,
+        DisplayName			=	Cow Carcass,
+        Icon				=	HCCowmeat,
+        IsCookable			=	TRUE,
+        DangerousUncooked		=	TRUE,
+        DaysTotallyRotten		=	12,
+        MinutesToBurn			=	600,
+        MinutesToCook			=	250,
+        DaysFresh			=	8,
+	ResizeWorldIcon 		= 	FALSE,
+    }
+
+item HCFoxmeat
+    {
+        HungerChange			=	-40,
+        Weight				=	0.8,
+        Type				=	Food,
+        DisplayName			=	Fox Carcass,
+        Icon				=	HCFoxmeat,
+        IsCookable			=	TRUE,
+        DangerousUncooked		=	TRUE,
+        DaysTotallyRotten		=	12,
+        MinutesToBurn			=	60,
+        MinutesToCook			=	25,
+        DaysFresh			=	8,
+	ResizeWorldIcon 		= 	FALSE,
+    }
+
+item HCDeermeat
+    {
+        HungerChange			=	-200,
+        Weight				=	8,
+        Type				=	Food,
+        DisplayName			=	Deer Carcass,
+        Icon				=	HCDeermeat,
+        IsCookable			=	TRUE,
+        DangerousUncooked		=	TRUE,
+        DaysTotallyRotten		=	12,
+        MinutesToBurn			=	300,
+        MinutesToCook			=	200,
+        DaysFresh			=	8,
+	ResizeWorldIcon 		= 	FALSE,
+    }
+
+item HCBearmeat
+    {
+        HungerChange			=	-400,
+        Weight				=	10,
+        Type				=	Food,
+        DisplayName			=	Bear Carcass,
+        Icon				=	HCBearmeat,
+        IsCookable			=	TRUE,
+        DangerousUncooked		=	TRUE,
+        DaysTotallyRotten		=	12,
+        MinutesToBurn			=	600,
+        MinutesToCook			=	250,
+        DaysFresh			=	8,
+	ResizeWorldIcon 		= 	FALSE,
+    }
+
+item HCIntestines
+	{
+	Weight 				= 	0.1,
+	Type 				= 	Normal,
+	DisplayName 			= 	Intestines,
+	Icon				=	HCIntestines,
+	}
+
+item HCFoxsteak
+	{
+		HungerChange		=	-40,
+		Weight			=	0.3,
+		Type			=	Food,
+		IsCookable		=	TRUE,
+		DangerousUncooked	=	TRUE,
+		DaysTotallyRotten	=	4,
+		MinutesToBurn		=	70,
+		DisplayName		=	Fox Steak,
+		Icon			=	HCFoxsteak,
+		DaysFresh		=	2,
+		MinutesToCook		=	50,
+		EvolvedRecipe 		= 	Stew:15;Stir fry:15;Burger:15;Roasted Vegetables:15,
+		FoodType    		=  	Meat,
+	}
+
+item HCVenison
+	{
+		HungerChange		=	-40,
+		Weight			=	0.3,
+		Type			=	Food,
+		IsCookable		=	TRUE,
+		DangerousUncooked	=	TRUE,
+		DaysTotallyRotten	=	4,
+		MinutesToBurn		=	70,
+		DisplayName		=	Venison,
+		Icon			=	HCVenison,
+		DaysFresh		=	2,
+		MinutesToCook		=	50,
+		EvolvedRecipe 		= 	Stew:15;Stir fry:15;Burger:15;Roasted Vegetables:15,
+		FoodType    		=  	Meat,
+	}
+
+item HCBearsteak
+	{
+		HungerChange		=	-40,
+		Weight			=	0.3,
+		Type			=	Food,
+		IsCookable		=	TRUE,
+		DangerousUncooked	=	TRUE,
+		DaysTotallyRotten	=	4,
+		MinutesToBurn		=	70,
+		DisplayName		=	Bear Steak,
+		Icon			=	HCBearsteak,
+		DaysFresh		=	2,
+		MinutesToCook		=	50,
+		EvolvedRecipe 		= 	Stew:15;Stir fry:15;Burger:15;Roasted Vegetables:15,
+		FoodType    		=  	Meat,
+	}
+	
+/************************RECIPES************************/
+
+recipe Butcher Carcass
+	{
+        	SkillRequired:Cooking=2,
+		HCSheepmeat,
+		keep HCMeatcleaver,
+		Result:HCSheepbones,
+		Time:200.0,
+	   	Category:Cooking,
+        	OnCreate:recipe_hcsheepbutcher,
+	}
+
+recipe Butcher Carcass
+	{
+        	SkillRequired:Cooking=2,
+		HCCowmeat,
+		keep HCMeatcleaver,
+		Result:HCCowbones,
+		Time:200.0,
+	   	Category:Cooking,
+        	OnCreate:recipe_hccowbutcher,
+	}
+
+recipe Butcher Carcass
+	{
+        	SkillRequired:Cooking=2,
+		HCFoxmeat,
+		keep HCMeatcleaver,
+		Result:HCFoxbones,
+		Time:200.0,
+	   	Category:Cooking,
+        	OnCreate:recipe_hcfoxbutcher,
+	}
+
+recipe Butcher Carcass
+	{
+        	SkillRequired:Cooking=2,
+		HCDeermeat,
+		keep HCMeatcleaver,
+		Result:HCDeerbones,
+		Time:200.0,
+	   	Category:Cooking,
+        	OnCreate:recipe_hcdeerbutcher,
+	}
+
+recipe Butcher Carcass
+	{
+        	SkillRequired:Cooking=2,
+		HCBearmeat,
+		keep HCMeatcleaver,
+		Result:HCBearbones,
+		Time:200.0,
+	   	Category:Cooking,
+        	OnCreate:recipe_hcfoxbutcher,
+	}
+  	
+}

@@ -125,6 +125,7 @@ item HCDiaper
 	ReplaceOnUse    	= HCDiaperDirty,
 	CanBandage		= TRUE,
 	BandagePower    	= 2,
+        Tooltip 		= Tooltip_UseOnHealthPanel,
     }
 
 item HCDiaperAlcohol
@@ -166,6 +167,7 @@ item HCMenstrualpad
 	ReplaceOnUse    	= HCMenstrualpadDirty,
 	CanBandage		= TRUE,
 	BandagePower    	= 2,
+        Tooltip 		= Tooltip_UseOnHealthPanel,
     }
 
 item HCMenstrualpadAlcohol
@@ -378,7 +380,7 @@ recipe Unbox Cotton Swabs
 
 recipe Pack Diapers
     {
-    HCDiaper=100,
+    HCDiaper=20,
     Result:HCDiaperpack,
     Time:15,
     }
@@ -386,13 +388,13 @@ recipe Pack Diapers
 recipe Unpack Diapers
     {
     HCDiaperpack,
-    Result:HCDiaper=100,
+    Result:HCDiaper=20,
     Time:15,
     }
 
 recipe Box Menstrual Pads
     {
-    HCMenstrualpad=100,
+    HCMenstrualpad=20,
     Result:HCMenstrualpadbox,
     Time:15,
     }
@@ -400,13 +402,13 @@ recipe Box Menstrual Pads
 recipe Unbox Menstrual Pads
     {
     HCMenstrualpadbox,
-    Result:HCMenstrualpad=100,
+    Result:HCMenstrualpad=20,
     Time:15,
     }
 
 recipe Box Tampons
     {
-    HCTampon=100,
+    HCTampon=20,
     Result:HCTamponbox,
     Time:15,
     }
@@ -414,7 +416,7 @@ recipe Box Tampons
 recipe Unbox Tampons
     {
     HCTamponbox,
-    Result:HCTampon=100,
+    Result:HCTampon=20,
     Time:15,
     }
 

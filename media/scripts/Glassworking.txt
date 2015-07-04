@@ -51,7 +51,7 @@ recipe Make Iron Blowpipe
 recipe Create Glass from Sand
     {
     Sandbag,
-    Log,
+    Charcoal,
     HCIngotmold=2,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -65,7 +65,7 @@ recipe Create Glass from Sand
 recipe Create Glass Flask
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -79,7 +79,7 @@ recipe Create Glass Flask
 recipe Create Glass Jar
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -93,7 +93,7 @@ recipe Create Glass Jar
 recipe Create Glass Whiskey Bottle
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -107,7 +107,7 @@ recipe Create Glass Whiskey Bottle
 recipe Create Glass Wine Bottle
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -121,7 +121,7 @@ recipe Create Glass Wine Bottle
 recipe Create Glass Graduated Cylinder
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -135,7 +135,7 @@ recipe Create Glass Graduated Cylinder
 recipe Create Glass Test Tube
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,
@@ -149,7 +149,7 @@ recipe Create Glass Test Tube
 recipe Create Wine Glass
     {
     HCGlassingot,
-    Log,
+    Charcoal,
     keep HCTongs,
     keep HCIronblowpipe,
     keep HCWorkgloves/HCOvenmitts,

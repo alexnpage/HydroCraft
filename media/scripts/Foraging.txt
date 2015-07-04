@@ -202,22 +202,6 @@ item HCBluejayfeather
         icon = HCBluejayfeather,
     }
 
-item HCDeerpoop
-    {
-        Weight    = 0.2,
-        Type    = Normal,
-        DisplayName         = Deer Poop,
-        icon = HCDeerpoop,
-    }
-
-item HCCowpoop
-    {
-        Weight    = 0.2,
-        Type    = Normal,
-        DisplayName         = Cow Poop,
-        icon = HCCowpoop,
-    }
-
 item HCStonearrowhead
     {
         Weight    = 0.1,

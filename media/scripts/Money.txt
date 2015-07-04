@@ -10,7 +10,7 @@ module Hydrocraft
 
 item HCPenny
     {
-        Weight    = 0.1,
+        Weight    = 0.02,
         Type    = Normal,
         DisplayName         = Penny,
         icon = HCPenny,
@@ -18,7 +18,7 @@ item HCPenny
 
 item HCNickel
     {
-        Weight    = 0.1,
+        Weight    = 0.03,
         Type    = Normal,
         DisplayName         = Nickel,
         icon = HCNickel,
@@ -26,7 +26,7 @@ item HCNickel
 
 item HCDime
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = Dime,
         icon = HCDime,
@@ -34,7 +34,7 @@ item HCDime
 
 item HCQuarter
     {
-        Weight    = 0.1,
+        Weight    = 0.04,
         Type    = Normal,
         DisplayName         = Quarter,
         icon = HCQuarter,
@@ -42,7 +42,7 @@ item HCQuarter
 
 item HCHalfdollar
     {
-        Weight    = 0.1,
+        Weight    = 0.05,
         Type    = Normal,
         DisplayName         = Half Dollar,
         icon = HCHalfdollar,
@@ -50,7 +50,7 @@ item HCHalfdollar
 
 item HCDollar
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = Dollar,
         icon = HCDollar,
@@ -58,7 +58,7 @@ item HCDollar
 
 item HC1dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 1 Dollar Bill,
         icon = HC1dollarbill,
@@ -67,7 +67,7 @@ item HC1dollarbill
 
 item HC2dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 2 Dollar Bill,
         icon = HC2dollarbill,
@@ -76,7 +76,7 @@ item HC2dollarbill
 
 item HC5dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 5 Dollar Bill,
         icon = HC5dollarbill,
@@ -85,7 +85,7 @@ item HC5dollarbill
 
 item HC10dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 10 Dollar Bill,
         icon = HC10dollarbill,
@@ -94,7 +94,7 @@ item HC10dollarbill
 
 item HC20dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 20 Dollar Bill,
         icon = HC20dollarbill,
@@ -103,7 +103,7 @@ item HC20dollarbill
 
 item HC50dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 50 Dollar Bill,
         icon = HC50dollarbill,
@@ -112,7 +112,7 @@ item HC50dollarbill
 
 item HC100dollarbill
     {
-        Weight    = 0.1,
+        Weight    = 0.01,
         Type    = Normal,
         DisplayName         = 100 Dollar Bill,
         icon = HC100dollarbill,
@@ -132,7 +132,7 @@ item HCPiggybank
 recipe Recycle Bronze
     {
     HCPenny=100,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -146,7 +146,7 @@ recipe Recycle Bronze
 recipe Recycle Bronze
     {
     HCNickel=80,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -160,7 +160,7 @@ recipe Recycle Bronze
 recipe Recycle Bronze
     {
     HCDime=120,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -174,7 +174,7 @@ recipe Recycle Bronze
 recipe Recycle Bronze
     {
     HCQuarter=60,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -188,7 +188,7 @@ recipe Recycle Bronze
 recipe Recycle Bronze
     {
     HCHalfdollar=20,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,
@@ -202,7 +202,7 @@ recipe Recycle Bronze
 recipe Recycle Bronze
     {
     HCDollar=40,
-    Log,
+    Charcoal,
     HCIngotmold,
     keep HCTongs,
     keep HCWorkgloves/HCOvenmitts,

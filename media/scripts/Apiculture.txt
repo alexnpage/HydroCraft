@@ -108,6 +108,14 @@ item HCBroodbox
 	Icon				=	HCBroodbox,
 	}
 
+item HCBeehive
+	{
+	Weight 				= 	3,
+	Type 				= 	Normal,
+	DisplayName 			= 	Wild Beehive,
+	Icon				=	HCBeehive,
+	}
+
 item HCBeehive1
 	{
 	Weight 				= 	4,
@@ -161,6 +169,23 @@ recipe Build Brood Box
     	keep Hammer,
     	keep Saw,
     	Result:HCBroodbox,
+       	NeedToBeLearn:true,
+    	Time:50.0,
+    	Category:Carpentry,
+	SkillRequired:Woodwork=3,
+    	Sound:PZ_Hammer,
+    }
+
+recipe Build Beehive
+    {
+	Plank,
+	Nails,
+	HCBroodbox,
+	HCHoneycombframe=3,
+	HCBeehive,
+    	keep Hammer,
+    	keep Saw,
+    	Result:HCBeehive1,
        	NeedToBeLearn:true,
     	Time:50.0,
     	Category:Carpentry,

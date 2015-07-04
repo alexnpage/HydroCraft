@@ -93,7 +93,7 @@ item HCDownjacket
 	Temperature		= 25,
 	SpriteName		= Shirt,
 	DisplayName		= Down Jacket,
-	Icon			= Sweater,
+	Icon			= HCDownjacket,
 	}
 
 item HCLifevest
